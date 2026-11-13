@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+.DS_Store
+logs/*.log
+data/raw/private/
+*.sqlite3
+.ipynb_checkpoints/
+
+# Local reference material and generated results
+/docs/references/private/
+/labs/
+/outputs/
