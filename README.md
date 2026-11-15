@@ -1,69 +1,107 @@
-# Data Mining I project
+# Data Mining I - Student segmentation
 
-Student clustering coursework and guided Python learning in VS Code/Jupyter. Begin with the [project brief](docs/project-brief.md), follow [PLAN.md](PLAN.md), and use [AGENTS.md](AGENTS.md) for agent boundaries and the teaching workflow.
+Coursework project exploring academic performance, engagement and contextual profiles among students at two Portuguese secondary schools. The workspace also supports guided Python learning through small notebook cells and explanations based on the supplied labs.
 
-## Open the workspace
-Open the whole `D:\IMS\Data Mining Project` folder in VS Code using File > Open Folder. This is the workspace root; Git has not been initialized. Run terminal commands from this root so paths and responsibilities remain consistent.
+Read [the project brief](docs/project-brief.md) for requirements, [PLAN.md](PLAN.md) for recorded progress and pending decisions, and [AGENTS.md](AGENTS.md) for project working rules. Some older plan and memory entries describe previous layouts. The paths below reflect the workspace inspected on 15 November 2026.
 
-## Folder responsibilities
-| Path | Contents and ownership |
+## Current notebooks
+
+| Notebook | Purpose and status |
 | --- | --- |
-| `AGENTS.md` | Durable agent rules; user approves consequential methodology and direct notebook edits. |
-| `PLAN.md` | One active execution plan, progress, validation, and the next learning step. |
-| `notebooks/` | Notebook deliverables and future working analysis. The supplied `datamining1.ipynb` remains a protected original until a working copy is chosen. |
-| `notebooks/reference/` | The second original notebook, relocated from the project root, unchanged. |
-| `src/` | Reserved for reusable Python/dashboard source when justified; implementation has not started. |
-| `tests/` | Reserved for meaningful checks of later reusable code; no test framework selected yet. |
-| `docs/` | Project brief, methodological explanations, and submission documentation. |
-| `docs/references/private/` | Local assignment PDF, original Word notes, and excluded Loop archive; unchanged content, ignored by Git. |
-| `scripts/` | Workspace and maintenance helpers; separate from analysis code. |
-| `memory/` | Confirmed decisions, verified data findings, and the class coding baseline. |
-| `skills/` | Project-specific agent skills if needed later; see its README. |
-| `data/raw/private/` | Immutable supplied student CSV; local input, ignored by Git. |
-| `outputs/` | Generated figures, tables, exports, and dashboard/submission bundles; ignored by default. |
-| `logs/` | Generated local logs; `.log` files are ignored. |
-| `labs/` | Unchanged supplied course PDFs and lab ZIPs, used as the coding baseline; local reference material, ignored by default. |
+| [data_exploration.ipynb](notebooks/data_exploration.ipynb) | Working exploration of distributions, missingness, family comparisons, grades and relationships. |
+| [data_preprocessing.ipynb](notebooks/data_preprocessing.ipynb) | Earlier preprocessing notebook. Currently references `student_data` without defining it, so fresh-session execution needs correction. |
+| [GroupXX_DMI_2627_Preprocessing.ipynb](notebooks/aitest/GroupXX_DMI_2627_Preprocessing.ipynb) | Standalone preprocessing draft with documented assumptions, before/after checks and prepared CSV export. |
+| [GroupXX_DMI_2627_Modelling.ipynb](notebooks/aitest/GroupXX_DMI_2627_Modelling.ipynb) | Executed model experiments covering K-means, Ward hierarchical clustering, DBSCAN, SOM and RFM applicability. Includes profiles and sensitivity comparisons. |
+| [GroupXX_DMI_2627_EDA.ipynb](notebooks/reference/GroupXX_DMI_2627_EDA.ipynb) | Earlier combined EDA/preprocessing version. Contains conflicting treatments and a loader assigning `df` while printing `data.shape`. Review before reuse. |
 
-The reserved source/test folders are intentionally empty. Populate them when implementation requires them; the project remains notebook-led.
+The two `aitest/` notebooks are reviewable experimental drafts. Family-size exclusion and several imputation and modelling choices remain provisional. Their location does not establish final submission status.
 
-## Commands and verification status
-The following commands are for a PowerShell terminal opened at the workspace root.
+## Running the notebooks
+
+Open the project root in VS Code and select the intended Python kernel. The notebook paths currently assume the kernel working directory is `D:\IMS\Data Mining Project\notebooks`, including the drafts stored under `notebooks/aitest/`.
+
+Check the kernel working directory before running. If VS Code starts a draft kernel in `notebooks/aitest/`, its current `../data/` and `../outputs/` paths resolve incorrectly. Configure execution from `notebooks/` or adapt those paths before a fresh run. The relocated notebooks have not been validated in the selected VS Code kernel.
+
+Use this execution sequence for the experimental pipeline.
+
+1. Run `GroupXX_DMI_2627_Preprocessing.ipynb` from a fresh kernel.
+2. Confirm `outputs/student_data_preprocessed.csv` is generated.
+3. Run `GroupXX_DMI_2627_Modelling.ipynb` from a fresh kernel.
+4. Review results and methodological assumptions before selecting the final solution.
+
+The raw input is `data/raw/student_data.csv`. From the documented notebook working directory, its relative path is `../data/raw/student_data.csv`. Preserve the literal education category `None` when loading by using `keep_default_na=False` and `na_values=['']`.
+
+The CSV has 649 rows and 34 imported columns, including an exported row index. Excluding that index leaves 33 analytical features. The preprocessing draft excludes family size and exports 32 features with a separate source row identifier.
+
+## Preprocessing decisions
+
+- Missing `failures` and `absences` become zero under the user-confirmed assumption that blanks represent zero occurrences. Source confirmation remains pending.
+- Missing Yes/No responses become `Unknown`. At least one such response is missing for 140 students, representing 21.57% of rows. A separate mode-filled scenario supports later comparisons.
+- Recorded grades, including zero grades, are retained in the standalone preprocessing draft.
+- Family-size exclusion, education mode filling, grouped time medians and rating medians are documented draft choices requiring review.
+
+See [decision memory](memory/decisions.md), [the data audit](memory/data-audit.md), and the current notebook explanations. The earlier reference notebook contains superseded or conflicting treatments.
+
+## Models and current findings
+
+The modelling draft compares K-means and Ward cuts at 2-5 groups, a DBSCAN neighborhood-parameter grid, and 3x3, 4x4 and 5x5 SOM maps. It evaluates candidate separation, sizes, original-unit profiles, initialization sensitivity, and Unknown-versus-mode sensitivity. RFM applicability is explained because the current dataset lacks dated events and a suitable value measure.
+
+The working two-group K-means baseline has silhouette approximately 0.083 and strongly reflects school membership. The selected DBSCAN candidate has groups of 486 and 5 students, plus 158 noise observations. The provisional 4x4 SOM has topographic error approximately 0.55. These are exploratory findings. Final educational profiles and model selection require further validation.
+
+## Generated outputs
+
+| Location | Contents and use |
+| --- | --- |
+| `outputs/student_data_preprocessed.csv` | Prepared input consumed by the modelling notebook. Recreated by preprocessing. |
+| `outputs/modelling/` | Candidate evaluation tables, exploratory assignments, sensitivity results and validation figures. |
+| [Final report PDF](outputs/reports/GroupXX_DMI_2627_Final_Report.pdf) | Nine-page analytical report with profiles, interventions, practical support framework and limitations. Group details and final validation remain outstanding. |
+| [Model-selection review PDF](outputs/reports/model_selection_review.pdf) | Detailed review of candidate solutions and required follow-up checks. |
+| `outputs/reports/*preview/` | Rendered page images used for PDF layout checks. |
+| `outputs/graphify-runtime/` | Isolated Graphify environment, approximately 168 MB at inspection. |
+| `outputs/modelling-runtime/` | Isolated modelling/PDF environment, approximately 199 MB at inspection. |
+| [graphify-out/graph.html](graphify-out/graph.html) | Interactive project knowledge graph. Loads its visualization library from the internet. |
+| [graphify-out/GRAPH_REPORT.md](graphify-out/GRAPH_REPORT.md) | Knowledge-graph audit report. The graph reflects the 13 November source snapshot and can be stale after edits or moves. |
+
+The runtime folders contain installed third-party packages. They support assistant execution and can be recreated when needed. Keep runtime environments outside coursework submission bundles. Generated data, notebook outputs and graph content require review before public sharing.
+
+## Environment and validation
+
+The recorded user notebook environment used Python 3.14.10 and pandas 3.1.1. The experimental modelling run recorded NumPy 2.5.4, scikit-learn 1.9.1, SciPy 1.18.1, Matplotlib 3.11.2, Seaborn 0.13.2 and MiniSom 2.3.6. Preprocessing needs pandas. Modelling additionally uses NumPy, scikit-learn, SciPy, Matplotlib, Seaborn and MiniSom. PDF generation used ReportLab and PyMuPDF in the isolated runtime.
+
+On 14 November, the standalone preprocessing draft passed all 13 code cells in a fresh assistant IPython namespace. Checks covered row alignment, preserved observations, completeness, raw-data integrity and CSV export/reload. The modelling draft passed all 19 code cells with saved outputs, and its four generated figures were visually inspected. Both PDFs were rendered and visually checked.
+
+These checks precede the notebooks' relocation to `notebooks/aitest/`. A fresh top-to-bottom run in the selected VS Code kernel remains pending. The project has no consolidated dependency manifest or verified automated analysis test suite. An interactive dashboard has yet to be implemented.
+
+## Workspace helper
+
+From the project root, run the read-only standard-library check with the following command.
 
 ```powershell
 python scripts/check_workspace.py
 ```
 
-This dependency-free helper checks required folders, protected reference paths, documented file links, ignore entries, and notebook identity. It reads metadata and hashes, prints no student rows, and does not run analysis. Verified during the workspace update using the available system Python; this does not verify the notebook kernel.
+On 15 November 2026, it reported missing historical paths and a broken memory link. It still expects `data/raw/private/student_data.csv`, both old `datamining1.ipynb` locations and an old ignore entry. `memory/course-baseline.md` also links to an absent `prior-experiments.md`. The helper needs reconciliation with the current layout before a clean result is meaningful.
 
-To display the terminal interpreter version:
+For terminal interpreter identification, use `python --version`. The VS Code notebook kernel may use a different interpreter.
 
-```powershell
-python --version
-```
+## Folder responsibilities
 
-This does not necessarily identify the interpreter selected in a VS Code notebook. Check the notebook kernel selector before running project cells.
+| Folder | Purpose |
+| --- | --- |
+| `data/raw/` | Supplied immutable CSV input. |
+| `notebooks/` | Working analysis notebooks and experimental/reference subfolders. |
+| `docs/` | Project brief and local reference documents. |
+| `memory/` | Decisions, verified findings and course coding references. |
+| `labs/` | Supplied course notebooks and PDFs. |
+| `scripts/` | Workspace maintenance and validation helpers. |
+| `src/`, `tests/`, `skills/` | Reserved for reusable implementation, checks and project-specific skills. |
+| `outputs/` | Regenerable datasets, results, reports and isolated runtimes. |
+| `graphify-out/` | Generated project knowledge graph, cache and audit files. |
 
-`code .` is an optional way to open the root; the VS Code command was found on PATH, but launching it was not tested. No analysis, dashboard, dependency-install, or automated test command is documented as working yet. Record each command here with its working directory, prerequisites, and validation evidence when it becomes available.
+## Version control and submission
 
-## Raw input and notebook execution
-The active working notebooks are [data_exploration.ipynb](notebooks/data_exploration.ipynb) and [data_preprocessing.ipynb](notebooks/data_preprocessing.ipynb). Exploration contains missingness analysis, summaries, family comparisons, travel-time checks, and study-time checks on recorded values. Preprocessing evaluates duplicates and fills missing absences and failures with zero under the approved assumption. Each loads `../data/raw/student_data.csv` independently and should run with its working directory set to `notebooks/`. The current CSV is at `data/raw/student_data.csv`; older private-path references below describe the previous layout.
+Git is initialized. At inspection, `data/raw/student_data.csv` is tracked. Current ignore rules exclude `outputs/`, `labs/`, private reference documents, environment files and common generated files. Raw data and `graphify-out/` have no matching ignore rule. Ignore rules do not remove files already tracked or erase history.
 
-`notebooks/student_clustering.ipynb` is retained as the combined reference snapshot. On 2026-11-12 both new notebooks were run sequentially in separate IPython namespaces using the assistant runtime, and their outputs were saved. This checked all 21 exploration and 7 preprocessing code cells. Jupyter kernel execution and visual inspection in VS Code remain pending because nbformat/nbclient/nbconvert are unavailable in that runtime. In VS Code, select the project kernel and use Restart Kernel and Run All for each notebook.
+Confirm redistribution permissions before making the repository public. Saved notebook outputs can expose individual student records and local computer paths. A previous local screening found no recognizable secrets in the patterns checked, which provides limited screening evidence rather than a guarantee.
 
-The supplied input is now `data/raw/private/student_data.csv`. The original notebooks are retained unchanged, including their historical `pd.read_csv('student_data.csv')` cell; that cell must be adapted in the future working copy before execution.
-
-Use project-relative paths with a documented working directory. From a notebook executing in the project root, the CSV path is `data/raw/private/student_data.csv`; from inside `notebooks/`, it is `../data/raw/private/student_data.csv`. Establish the actual working directory before selecting one. Preserve the literal education category `None` separately from blanks; see [the data audit](memory/data-audit.md).
-
-On 2026-11-10, user-run diagnostic output in `notebooks/student_clustering.ipynb` confirmed Python 3.14.10 at `C:\Users\henri\AppData\Local\Programs\Python\Python314\python.exe`, with working directory `D:\IMS\Data Mining Project\notebooks`. Use `../data/raw/private/student_data.csv` from that directory. Analysis package availability/versions and fresh-kernel execution of the analysis remain unverified; the diagnostic does not establish those.
-
-## Tracking and private material
-Saved working-notebook output inspected on 2026-11-10 confirms `import pandas as pd` succeeded and `print(pd.__version__)` returned 3.1.1 in the user's kernel. Other analysis packages and full analysis execution remain unverified.
-
-The minimum ignore rules are installed in `.gitignore`, with additional exclusions for local course references, private project documents, and generated outputs. Keep raw inputs immutable and write derived material to `outputs/`. Keep credentials, API keys, local `.env` files, virtual environments, databases, and generated logs out of version control. A safe `.env.example` can be tracked if configuration is introduced; none is needed now.
-
-Private PDFs, raw data, and large generated outputs should be included in version control only when the project explicitly requires it. Document any exception and review its contents first. Ignore rules do not untrack files already tracked in an existing repository. Notebook outputs can also contain student-level data; review them before sharing or committing.
-
-This local workspace currently contains the supplied data. A clone that excludes private paths will need those files restored to the documented locations before analysis can run. Final coursework packaging must still contain required inputs or clear loading instructions; Git exclusions do not decide submission requirements.
-
-## Workspace changes
-The authorized organization moved root raw data into `data/raw/private/`, reference documents into `docs/references/private/`, and the root notebook into `notebooks/reference/`. File contents were preserved and their SHA-256 hashes checked. Existing teaching and direct-edit boundaries continue to apply. No Git initialization, package installation, or analysis/dashboard implementation was performed.
+The assignment requires an executed notebook or notebook ZIP with the final group identifier and member information. This PDF report supplements the notebook deliverable. Include required data or clear loading instructions, record dependencies and assumptions, and complete final validation and the chosen practical outcome before submission.
