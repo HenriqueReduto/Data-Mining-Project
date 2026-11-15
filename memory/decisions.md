@@ -27,7 +27,10 @@ Entries are current unless marked otherwise. Setup entries are dated 2026-11-10;
 - Ratings (famrel, freetime, goout, Dalc, Walc, health): missing → column median (4, 3, 3, 1, 2, 4).
 - `Pstatus`: missing → "U" (user's choice). Medu, Fedu, Mjob, Fjob, reason, address: missing → "Unknown" (user asked for "same logic"; the agent used the full word because "U" already means Urban in `address`). Education "Unknown" stays distinct from literal "None"; it has no rank, which encoding must handle.
 - `school`: missing (1) → mode (GP).
-- Not yet decided: `sex` (10), `guardian` (8), `famsize` (3).
+- `sex`: missing (10) → new category "U" (user chose a new value over the mode; "U" follows the single-letter F/M coding, as for Pstatus).
+- `guardian`: missing (8) → mode (mother).
+- `famsize`: excluded from the working dataset (user decision). Evidence: 57 zeros + 31 size-1 with Pstatus T = 88 inconsistent records (13.56%), plus 3 missing = 91 (14.02%); values cannot be derived from other features; correlation with G3 −0.06; family context kept through Pstatus, guardian, famrel, famsup. Its 3 missing values therefore need no treatment.
+- Result: `student_data_clean` has no missing values (649 × 32), asserted in the notebook.
 
 ## Separate exploration and preprocessing notebooks
 - Date/status: 2026-11-12; current, explicitly requested by the user.
