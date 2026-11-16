@@ -10,6 +10,28 @@ Entries are current unless marked otherwise. Setup entries are dated 2026-11-10;
 - Evidence: User stated, "We will keep the missing failures and absences as 0", after reviewing background experiments that used a different treatment, then requested inclusion in agent files.
 - Qualification: This is an adopted methodological assumption. Confirmation of the source/export meaning of blanks remains pending. The attached experiments' unresolved-count treatment is superseded for the current working approach.
 
+## Missing Yes/No responses become "Unknown"
+- Date/status: 2026-11-15; current, explicitly decided by the user.
+- Decision: Fill missing values in the eight Yes/No features (schoolsup, famsup, paid, activities, nursery, higher, internet, romantic) with the category "Unknown" in `student_data_clean`.
+- Reason: Avoid guessing an answer. Justified with the exploration finding that Yes/No missingness rarely overlaps (140 students with at least one missing response, 135 with exactly one, largest pairwise overlap 2).
+- Consequence: Each Yes/No feature has a third level, which the later encoding step must handle.
+- Related user choices the same day: `data_exploration.ipynb` stays the group's exploration notebook; preprocessing extends the existing `data_preprocessing.ipynb`; remaining missing values are treated in descending order of missing count; notebook edits must match the existing notebook's formatting and structure.
+
+## Grouped medians for study and travel time
+- Date/status: 2026-11-15; current, explicitly decided by the user ("same method as GroupXX_DMI_2627_EDA").
+- Decision: Missing `studytime` → median of the student's school (GP 203.5, MS 156). Missing `traveltime` → median of the student's school + address group (GP-R 19, GP-U 9, MS-R 25, MS-U 17). Medians come from recorded values, computed before school/address are themselves filled.
+- Evidence: all 14 study-time and 11 travel-time gaps have recorded school and address, so no fallback was needed; both checks assert recorded values unchanged.
+
+## Ratings, categorical unknowns, and school
+- Date/status: 2026-11-15; current, explicitly decided by the user.
+- Ratings (famrel, freetime, goout, Dalc, Walc, health): missing → column median (4, 3, 3, 1, 2, 4).
+- `Pstatus`: missing → "U" (user's choice). Medu, Fedu, Mjob, Fjob, reason, address: missing → "Unknown" (user asked for "same logic"; the agent used the full word because "U" already means Urban in `address`). Education "Unknown" stays distinct from literal "None"; it has no rank, which encoding must handle.
+- `school`: missing (1) → mode (GP).
+- `sex`: missing (10) → new category "U" (user chose a new value over the mode; "U" follows the single-letter F/M coding, as for Pstatus).
+- `guardian`: missing (8) → mode (mother).
+- `famsize`: excluded from the working dataset (user decision). Evidence: 57 zeros + 31 size-1 with Pstatus T = 88 inconsistent records (13.56%), plus 3 missing = 91 (14.02%); values cannot be derived from other features; correlation with G3 −0.06; family context kept through Pstatus, guardian, famrel, famsup. Its 3 missing values therefore need no treatment.
+- Result: `student_data_clean` has no missing values (649 × 32), asserted in the notebook.
+
 ## Separate exploration and preprocessing notebooks
 - Date/status: 2026-11-12; current, explicitly requested by the user.
 - Decision: Use `notebooks/data_exploration.ipynb` for analysis and `notebooks/data_preprocessing.ipynb` for filling missing values and evaluating duplicate records.
