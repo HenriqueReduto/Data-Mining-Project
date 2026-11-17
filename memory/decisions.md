@@ -2,6 +2,15 @@
 
 Entries are current unless marked otherwise. Setup entries are dated 2026-11-10; later decisions carry explicit dates. Evidence is the user's decisions and inspected source files where specified.
 
+## Retain family size in separate correction-scenario notebooks
+- Date/status: 2026-11-17; retention direction confirmed, numerical correction method provisional.
+- Evidence: The user reports that the professor considered dropping `famsize` excessive, clarifies that the student is excluded from its count, and explicitly requests new exploration and preprocessing notebooks around retaining/correcting it.
+- Scope: `notebooks/data_exploration_famsize.ipynb` and `notebooks/data_preprocessing_famsize.ipynb`; existing notebooks remain preserved for comparison. The earlier exclusion decision below describes the historical pipeline, not the new variant.
+- Preserve recorded positive counts, including 1. Neither parental education nor guardianship establishes household membership. `guardian = other` follows the same residence caveat as mother/father. Do not force size-1 / Pstatus-T observations to 2.
+- Candidate scenario: zero/missing sizes are estimated from positive recorded sizes by recorded Pstatus + guardian median, falling back to Pstatus then overall median; round half upward. Raw grouping keys prevent imputed guardians from becoming evidence. These are modelling assumptions requiring review, not recovered household counts or professor-prescribed rules.
+- Raw CSV checks in this session: 649 students; famsize 0: 57, 1: 48, missing: 3. For zero counts, guardians mother/father/other/missing: 40/13/2/2. Education `None` remains a recorded category, not an absent parent.
+- Outputs are isolated under `outputs/famsize_scenario/`, including a per-row correction audit. Final adoption and clustering sensitivity remain pending.
+
 ## Missing failures and absences become zero
 - Date/status: 2026-11-12; current, explicitly reconfirmed by the user.
 - Decision: Replace missing `failures` and `absences` with 0 in the working dataset used for analysis and clustering.

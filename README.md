@@ -6,6 +6,8 @@ Read [the project brief](docs/project-brief.md) for requirements, [PLAN.md](PLAN
 
 ## Current notebooks
 
+New family-size retention variants (17 November): [exploration](notebooks/data_exploration_famsize.ipynb) and [preprocessing](notebooks/data_preprocessing_famsize.ipynb). These preserve positive recorded sizes and evaluate a provisional group-median treatment for zero/missing counts under the user-supplied definition excluding the student. Both load raw input independently and accept the project root or `notebooks/` as the working directory. Preprocessing exports separately to `outputs/famsize_scenario/`, including a per-row audit. Existing notebooks remain unchanged. Review correction assumptions and rerun in the selected VS Code kernel before adoption. This variant changes the earlier exclusion direction; the historical descriptions below may refer to the earlier pipeline.
+
 | Notebook | Purpose and status |
 | --- | --- |
 | [data_exploration.ipynb](notebooks/data_exploration.ipynb) | Working exploration of distributions, missingness, family comparisons, grades and relationships. |
