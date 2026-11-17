@@ -1,8 +1,8 @@
-# Notebook source notebooks/data_exploration.ipynb
+# Notebook source: notebooks/data_exploration.ipynb
 
+Source-only extract; outputs omitted. Cell numbers are zero-based.
 
 ## Cell 0 (markdown)
-
 # Data exploration
 
 Inspect recorded values, distributions, missingness, and relationships.
@@ -10,28 +10,20 @@ Missing entries remain visible in the analysis.
 
 Run this notebook from the `notebooks/` directory with Python and pandas installed. The input is `../data/raw/student_data.csv`. Each notebook loads the input independently. The previous user environment used Python 3.14.10 and pandas 3.1.1. Execution outputs below record the validation runtime.
 
-
 ## Cell 1 (markdown)
-
 ### Environment check
 
 The Python interpreter, version, working directory, and pandas version
 are displayed to record the execution environment.
 
-
 ## Cell 2 (code)
-
-```python
 import sys
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-```
-
 
 ## Cell 3 (markdown)
-
 ### Data loading and initial dimensions
 
 The CSV is loaded into the DataFrame `data`.
@@ -40,67 +32,44 @@ while treating empty fields as missing values.
 
 A table of student variables is created by excluding the exported row index.
 
-
 ## Cell 4 (code)
-
-```python
 data = pd.read_csv(
     '../data/raw/student_data.csv',
     keep_default_na=False,
     na_values=['']
 )
-```
-
 
 ## Cell 5 (code)
-
-```python
 student_data = data.drop(columns=['Unnamed: 0'])
 
 student_data.shape
-```
-
 
 ## Cell 6 (markdown)
-
 ---
 
-
 ## Cell 7 (markdown)
-
 ### Duplicate records
 
 Records are checked for identical values across the student variables.
 The exported row index is excluded because its unique values could
 hide otherwise identical records.
 
-
 ## Cell 8 (code)
-
-```python
 duplicate_count = student_data.duplicated().sum()
 
 duplicate_count
-```
-
 
 ## Cell 9 (markdown)
-
 ---
 
-
 ## Cell 10 (markdown)
-
 ### Missing-value analysis
 
 Missing values are counted for each column to assess data completeness.
 The distribution of recorded values is also inspected, including missing
 entries, to support later preprocessing decisions.
 
-
 ## Cell 11 (code)
-
-```python
 missing_counts = student_data.isna().sum()
 missing_percentages = (missing_counts / len(student_data) * 100).round(2)
 
@@ -110,61 +79,56 @@ missing_summary = pd.DataFrame({
 })
 
 missing_summary
-```
-
 
 ## Cell 12 (markdown)
+### Students with at least one missing value
 
+The number and percentage of students with at least one missing value
+are calculated across the features, excluding absences and previous failures.
+
+## Cell 13 (code)
+features_to_check = student_data.drop(columns=['absences', 'failures'])
+
+rows_with_missing = features_to_check.isna().any(axis=1)
+
+missing_rows_summary = pd.DataFrame({
+    'Students': [rows_with_missing.sum()],
+    'Percentage (%)': [rows_with_missing.mean() * 100]
+}, index=['At least one missing value'])
+
+display(missing_rows_summary.round(2))
+
+## Cell 14 (markdown)
 ### Column types and structure
 
 Inspect each column's stored data type and number of non-missing
 values before reviewing variable roles and distributions.
 
-
-## Cell 13 (code)
-
-```python
+## Cell 15 (code)
 student_data.info()
-```
 
-
-## Cell 14 (markdown)
-
+## Cell 16 (markdown)
 ### Numerical summary
 
 Summary statistics are inspected to understand the distribution and
 range of numerical columns and identify values requiring investigation.
 
-
-## Cell 15 (code)
-
-```python
+## Cell 17 (code)
 student_data.describe()
-```
 
-
-## Cell 16 (markdown)
-
+## Cell 18 (markdown)
 ### Categorical summary
 
 Categorical columns are inspected to identify the number of distinct
 categories, the most frequent category, and its frequency.
 
-
-## Cell 17 (code)
-
-```python
+## Cell 19 (code)
 student_data.describe(include=['str']).T
-```
 
-
-## Cell 18 (markdown)
-
+## Cell 20 (markdown)
 ---
 
-
-## Cell 19 (markdown)
-
+## Cell 21 (markdown)
 ### Correlation between numerical features
 
 A Pearson correlation matrix is calculated for the numerical features
@@ -173,10 +137,7 @@ to examine the direction and strength of linear relationships.
 Each coefficient uses students with recorded values for both features.
 The number of observations can therefore differ between comparisons.
 
-
-## Cell 20 (code)
-
-```python
+## Cell 22 (code)
 correlation_matrix = student_data.corr(numeric_only=True)
 
 plt.figure(figsize=(16, 12))
@@ -194,11 +155,8 @@ sns.heatmap(
 plt.title('Pearson correlation between numerical features')
 plt.tight_layout()
 plt.show()
-```
 
-
-## Cell 21 (markdown)
-
+## Cell 23 (markdown)
 ### Correlation between binary and rating features
 
 Yes/No responses are represented numerically as 1 and 0 in a separate
@@ -207,19 +165,14 @@ analysis copy. The rating features retain their existing 1–5 values.
 Spearman correlations examine associations between these features.
 Missing responses are excluded separately for each pair.
 
-
-## Cell 22 (markdown)
-
+## Cell 24 (markdown)
 ### Correlation between Yes/No features
 
 Yes/No responses are encoded as 1 and 0 in a separate analysis copy.
 Pearson correlations examine associations between the binary features.
 Missing responses are excluded separately for each pair.
 
-
-## Cell 23 (code)
-
-```python
+## Cell 25 (code)
 yes_no_columns = [
     'schoolsup', 'famsup', 'paid', 'activities',
     'nursery', 'higher', 'internet', 'romantic'
@@ -252,20 +205,14 @@ sns.heatmap(
 plt.title('Pearson correlation between Yes/No features')
 plt.tight_layout()
 plt.show()
-```
 
-
-## Cell 24 (markdown)
-
+## Cell 26 (markdown)
 ### Correlation between rating features
 
 Spearman correlations examine associations between the ordered
 1–5 ratings. Missing responses are excluded separately for each pair.
 
-
-## Cell 25 (code)
-
-```python
+## Cell 27 (code)
 rating_columns = [
     'famrel', 'freetime', 'goout',
     'Dalc', 'Walc', 'health'
@@ -294,20 +241,14 @@ sns.heatmap(
 plt.title('Spearman correlation between rating features')
 plt.tight_layout()
 plt.show()
-```
 
-
-## Cell 26 (markdown)
-
+## Cell 28 (markdown)
 ### Distribution of categorical features
 
 The percentage of students in each category is displayed for every
 categorical feature. Missing responses are included in the percentages.
 
-
-## Cell 27 (code)
-
-```python
+## Cell 29 (code)
 yes_no_columns = [
     'schoolsup', 'famsup', 'paid', 'activities',
     'nursery', 'higher', 'internet', 'romantic'
@@ -323,12 +264,8 @@ categorical_columns = student_data.select_dtypes(
 ).columns
 
 remaining_columns = categorical_columns.drop(yes_no_columns)
-```
 
-
-## Cell 28 (code)
-
-```python
+## Cell 30 (code)
 yes_no_percentages = pd.DataFrame(index=yes_no_columns)
 
 for column in yes_no_columns:
@@ -343,20 +280,14 @@ for column in yes_no_columns:
     )
 
 display(yes_no_percentages.round(2))
-```
 
-
-## Cell 29 (markdown)
-
+## Cell 31 (markdown)
 ### Rating percentages
 
 The percentage of students selecting each rating is displayed alongside
 the percentage with missing responses.
 
-
-## Cell 30 (code)
-
-```python
+## Cell 32 (code)
 rating_percentages = pd.DataFrame(index=rating_columns)
 
 for column in rating_columns:
@@ -370,21 +301,15 @@ for column in rating_columns:
     )
 
 display(rating_percentages.round(2))
-```
 
-
-## Cell 31 (markdown)
-
+## Cell 33 (markdown)
 ### Remaining categorical percentages
 
 The remaining categorical features are displayed with one row per feature
 and one column per category. Empty cells indicate categories that do not
 apply to that feature.
 
-
-## Cell 32 (code)
-
-```python
+## Cell 34 (code)
 for column in remaining_columns:
     remaining_percentages = (
         student_data[column]
@@ -396,114 +321,78 @@ for column in remaining_columns:
     )
 
     display(remaining_percentages.round(2))
-```
 
-
-## Cell 33 (markdown)
-
+## Cell 35 (markdown)
 ---
 
-
-## Cell 34 (markdown)
-
+## Cell 36 (markdown)
 ### Parental education and occupation
 
 Parental education and occupation are examined together to identify
 common combinations and records requiring further investigation.
 
-
-## Cell 35 (code)
-
-```python
+## Cell 37 (code)
 mother_education_job = pd.crosstab(
     student_data['Medu'].fillna('Missing'),
     student_data['Mjob'].fillna('Missing')
 )
 
 mother_education_job
-```
 
-
-## Cell 36 (code)
-
-```python
+## Cell 38 (code)
 father_education_job = pd.crosstab(
     student_data['Fedu'].fillna('Missing'),
     student_data['Fjob'].fillna('Missing')
 )
 
 father_education_job
-```
 
-
-## Cell 37 (markdown)
-
+## Cell 39 (markdown)
 ### Parental status and guardian
 
 Parental living arrangements are compared with the recorded guardian.
 
-
-## Cell 38 (code)
-
-```python
+## Cell 40 (code)
 parental_status_guardian = pd.crosstab(
     student_data['Pstatus'].fillna('Missing'),
     student_data['guardian'].fillna('Missing')
 )
 
 parental_status_guardian
-```
 
-
-## Cell 39 (markdown)
-
+## Cell 41 (markdown)
 ### Family size and parental status
 
 Family-size values are compared with parental living arrangements.
 
-
-## Cell 40 (code)
-
-```python
+## Cell 42 (code)
 family_size_parental_status = pd.crosstab(
     student_data['famsize'].astype('string').fillna('Missing'),
     student_data['Pstatus'].fillna('Missing')
 )
 
 family_size_parental_status
-```
 
-
-## Cell 41 (markdown)
-
+## Cell 43 (markdown)
 ### Family size and guardian
 
 Family-size values are compared with the recorded guardian.
 
-
-## Cell 42 (code)
-
-```python
+## Cell 44 (code)
 family_size_guardian = pd.crosstab(
     student_data['famsize'].astype('string').fillna('Missing'),
     student_data['guardian'].fillna('Missing')
 )
 
 family_size_guardian
-```
 
-
-## Cell 43 (markdown)
-
+## Cell 45 (markdown)
 ### Family-size 0 consistency checks
 
 Family size 0 is examined alongside parental status and guardian information
 to identify and count combinations requiring further investigation.
 
-
-## Cell 44 (code)
-
-```python
+## Cell 46 (code)
 zero_family_together = (
     (student_data['famsize'] == 0) &
     (student_data['Pstatus'] == 'T')
@@ -533,11 +422,8 @@ family_combination_counts = pd.DataFrame({
 })
 
 family_combination_counts
-```
 
-
-## Cell 45 (markdown)
-
+## Cell 47 (markdown)
 ### Questionable family-size combinations
 
 Several combinations raise questions about the meaning of `famsize`.
@@ -558,37 +444,23 @@ Several combinations raise questions about the meaning of `famsize`.
 Parental status and guardianship do not establish household membership,
 but these combinations make the family-size values questionable.
 
-
-## Cell 46 (markdown)
-
+## Cell 48 (markdown)
 ---
 
-
-## Cell 47 (markdown)
-
+## Cell 49 (markdown)
 ### Analysis of failures and absences
 
 The distributions of previous failures and absences are inspected,
 including missing entries, to investigate recorded values and the
 possible meaning of blanks before deciding on a treatment.
 
-
-## Cell 48 (code)
-
-```python
+## Cell 50 (code)
 student_data['failures'].value_counts(dropna=False).sort_index()
-```
 
-
-## Cell 49 (code)
-
-```python
+## Cell 51 (code)
 student_data['absences'].value_counts(dropna=False).sort_index()
-```
 
-
-## Cell 50 (markdown)
-
+## Cell 52 (markdown)
 ### Interpretation of missing failures and absences
 
 `failures` contains 551 missing values (84.9%), while `absences`
@@ -599,43 +471,30 @@ This pattern suggests that NaN may represent zero previous failures
 or absences. We can adopt this interpretation and replace missing entries
 with zero during preprocessing.
 
-
-## Cell 51 (markdown)
-
+## Cell 53 (markdown)
 ---
 
-
-## Cell 52 (markdown)
-
+## Cell 54 (markdown)
 ### Travel time, residence, and school
 
 Travel-time distributions are compared across residence types and
 schools. Zero-duration journeys are inspected to identify patterns
 requiring clarification.
 
-
-## Cell 53 (code)
-
-```python
+## Cell 55 (code)
 travel_summary = student_data.groupby(
     ['school', 'address'],
     dropna=False
 )['traveltime'].describe()
 
 travel_summary
-```
 
-
-## Cell 54 (markdown)
-
+## Cell 56 (markdown)
 ### Zero travel times
 
 Zero-duration journeys are counted by school and residence type.
 
-
-## Cell 55 (code)
-
-```python
+## Cell 57 (code)
 zero_travel = student_data.loc[
     student_data['traveltime'] == 0,
     ['school', 'address', 'traveltime']
@@ -645,11 +504,8 @@ zero_travel.groupby(
     ['school', 'address'],
     dropna=False
 ).size()
-```
 
-
-## Cell 56 (markdown)
-
+## Cell 58 (markdown)
 ### Interpretation of zero travel times
 
 There are 29 recorded zero-minute journeys, including 24 among urban
@@ -658,39 +514,26 @@ and 1 with missing residence information.
 
 The concentration among urban GP students is compatible with very short journeys rounded to zero or a school-specific practice where students live in the same building. At GP it could be an error in data recording. Should be analysed further. #(!)#
 
-
-## Cell 57 (markdown)
-
+## Cell 59 (markdown)
 ---
 
-
-## Cell 58 (markdown)
-
+## Cell 60 (markdown)
 ### Study-time distribution
 
 Weekly study time is inspected to identify zero values and unusually
 high observations requiring further investigation.
 
-
-## Cell 59 (code)
-
-```python
+## Cell 61 (code)
 student_data['studytime'].describe()
-```
 
-
-## Cell 60 (markdown)
-
+## Cell 62 (markdown)
 ### Study-time intervals
 
 Zero and missing study times are counted separately.
 Positive study times are grouped into 100-minute intervals
 to inspect their distribution.
 
-
-## Cell 61 (code)
-
-```python
+## Cell 63 (code)
 study_intervals = pd.cut(
     student_data['studytime'],
     bins=range(0, 1501, 100)
@@ -712,26 +555,18 @@ study_summary.loc['Missing', 'Students'] = (
 
 study_summary
 
-```
 
-
-## Cell 62 (markdown)
-
+## Cell 64 (markdown)
 ---
 
-
-## Cell 63 (markdown)
-
+## Cell 65 (markdown)
 ### Yes/No variables
 
 Response frequencies are inspected for educational support,
 activities, aspirations, internet access, and personal background.
 Missing responses are included to assess completeness.
 
-
-## Cell 64 (code)
-
-```python
+## Cell 66 (code)
 yes_no_columns = [
     'schoolsup', 'famsup', 'paid', 'activities',
     'nursery', 'higher', 'internet', 'romantic'
@@ -748,47 +583,35 @@ for column in yes_no_columns:
     yes_no_summary.loc[column, 'Missing'] = student_data[column].isna().sum()
 
 yes_no_summary
-```
 
-
-## Cell 65 (markdown)
-
+## Cell 67 (markdown)
 ### Students with missing rating responses
 
 Students with at least one missing response across the six rating
 features are counted, together with their percentage of the dataset.
 
-
-## Cell 66 (code)
-
-```python
-rating_columns = [
-    'famrel', 'freetime', 'goout',
-    'Dalc', 'Walc', 'health'
+## Cell 68 (code)
+yes_no_columns = [
+    'schoolsup', 'famsup', 'paid', 'activities',
+    'nursery', 'higher', 'internet', 'romantic'
 ]
 
-missing_ratings = student_data[rating_columns].isna().any(axis=1)
+missing_yes_no = student_data[yes_no_columns].isna().any(axis=1)
 
-rating_missing_summary = pd.DataFrame({
-    'Students': [missing_ratings.sum()],
-    'Percentage (%)': [missing_ratings.mean() * 100]
-}, index=['At least one missing rating response'])
+yes_no_missing_summary = pd.DataFrame({
+    'Students': [missing_yes_no.sum()],
+    'Percentage (%)': [missing_yes_no.mean() * 100]
+}, index=['At least one missing Yes/No response'])
 
-display(rating_missing_summary.round(2))
-```
+display(yes_no_missing_summary.round(2))
 
-
-## Cell 67 (markdown)
-
+## Cell 69 (markdown)
 ### Missing-value overlap in Yes/No features
 
 Students with missing responses in each pair of Yes/No features
 are counted to examine how often unanswered fields occur together.
 
-
-## Cell 68 (code)
-
-```python
+## Cell 70 (code)
 yes_no_columns = [
     'schoolsup', 'famsup', 'paid', 'activities',
     'nursery', 'higher', 'internet', 'romantic'
@@ -799,11 +622,8 @@ missing_indicators = student_data[yes_no_columns].isna().astype(int)
 missing_overlap = missing_indicators.T.dot(missing_indicators)
 
 missing_overlap
-```
 
-
-## Cell 69 (markdown)
-
+## Cell 71 (markdown)
 ### Interpretation of missing-value overlap
 
 Missing responses in the Yes/No features rarely occur together.
@@ -815,23 +635,16 @@ The largest pairwise overlaps involve only two students, between
 This suggests that missing responses are mostly scattered across
 students.
 
-
-## Cell 70 (markdown)
-
+## Cell 72 (markdown)
 ---
 
-
-## Cell 71 (markdown)
-
+## Cell 73 (markdown)
 ### Rating-value counts
 
 Responses from 1 to 5 and missing entries are counted for each
 rating feature to examine their distributions and completeness.
 
-
-## Cell 72 (code)
-
-```python
+## Cell 74 (code)
 rating_columns = [
     'famrel', 'freetime', 'goout',
     'Dalc', 'Walc', 'health'
@@ -853,20 +666,14 @@ for column in rating_columns:
     )
 
 rating_summary
-```
 
-
-## Cell 73 (markdown)
-
+## Cell 75 (markdown)
 ### Students with missing rating responses
 
 Students with at least one missing response across the six rating
 features are counted, together with their percentage of the dataset.
 
-
-## Cell 74 (code)
-
-```python
+## Cell 76 (code)
 rating_columns = [
     'famrel', 'freetime', 'goout',
     'Dalc', 'Walc', 'health'
@@ -880,20 +687,14 @@ rating_missing_summary = pd.DataFrame({
 }, index=['At least one missing rating response'])
 
 display(rating_missing_summary.round(2))
-```
 
-
-## Cell 75 (markdown)
-
+## Cell 77 (markdown)
 ### Missing-value overlap in rating features
 
 Students with missing responses in each pair of rating features
 are counted to examine how often unanswered fields occur together.
 
-
-## Cell 76 (code)
-
-```python
+## Cell 78 (code)
 rating_missing_indicators = (
     student_data[rating_columns].isna().astype(int)
 )
@@ -903,11 +704,8 @@ rating_missing_overlap = (
 )
 
 rating_missing_overlap
-```
 
-
-## Cell 77 (markdown)
-
+## Cell 79 (markdown)
 ### Interpretation of missing-value overlap
 
 Missing responses rarely overlap across the six rating features.
@@ -916,23 +714,16 @@ The largest pairwise overlap involves three students missing both
 
 These counts suggest limited overlap in unanswered ratings.
 
-
-## Cell 78 (markdown)
-
+## Cell 80 (markdown)
 ---
 
-
-## Cell 79 (markdown)
-
+## Cell 81 (markdown)
 ### Grade distributions
 
 The three grade features are examined through summary statistics and
 frequency counts. Missing values and recorded zeros are counted separately.
 
-
-## Cell 80 (code)
-
-```python
+## Cell 82 (code)
 grade_columns = ['G1', 'G2', 'G3']
 
 display(student_data[grade_columns].describe())
@@ -944,31 +735,22 @@ grade_counts = pd.DataFrame({
 
 display(grade_counts)
 
-```
 
-
-## Cell 81 (markdown)
-
+## Cell 83 (markdown)
 ### Students with zero grades
 
 Students with a zero in any grading period are examined across all three
 periods to identify when zeros occur and whether they persist.
 
-
-## Cell 82 (code)
-
-```python
+## Cell 84 (code)
 zero_grade_students = student_data.loc[
     student_data[grade_columns].eq(0).any(axis=1),
     ['G1', 'G2', 'G3', "absences"]
 ]
 
 display(zero_grade_students)
-```
 
-
-## Cell 83 (markdown)
-
+## Cell 85 (markdown)
 ### Grade analysis conclusion
 
 The student with G1 = 0, G2 = 11, and G3 = 11 shows that a zero in the
@@ -978,14 +760,10 @@ with G2 = 0 also had G3 = 0.
 The reason for the recorded zeros remains unknown. The individual student could be retained
 because there is insufficient evidence that it is an error.
 
-
-## Cell 84 (markdown)
-
+## Cell 86 (markdown)
 ---
 
-
-## Cell 85 (markdown)
-
+## Cell 87 (markdown)
 ## Final exploration conclusion (REMOVE)
 
 ### Dataset structure and completeness

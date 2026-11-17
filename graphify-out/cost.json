@@ -6,6 +6,13 @@
       "output_tokens": null,
       "token_usage_available": false,
       "files": 19
+    },
+    {
+      "date": "2026-11-17T16:45:20.554331+00:00",
+      "input_tokens": null,
+      "output_tokens": null,
+      "files": 24,
+      "usage_status": "unavailable: agent tool metadata has no token usage"
     }
   ],
   "total_input_tokens": null,

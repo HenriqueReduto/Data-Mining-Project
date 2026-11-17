@@ -1,25 +1,25 @@
 {
-  "corpus_tokens": 31630,
-  "corpus_words": 23723,
-  "nodes": 130,
-  "edges": 208,
-  "avg_query_tokens": 1233,
-  "reduction_ratio": 25.7,
+  "corpus_tokens": 51641,
+  "corpus_words": 38731,
+  "nodes": 512,
+  "edges": 640,
+  "avg_query_tokens": 24586,
+  "reduction_ratio": 2.1,
   "per_question": [
     {
-      "question": "what is the main entry point",
-      "query_tokens": 465,
-      "reduction": 68.0
+      "question": "Why retain famsize and what correction assumptions remain provisional?",
+      "query_tokens": 19778,
+      "reduction": 2.6
     },
     {
-      "question": "how are errors handled",
-      "query_tokens": 1602,
-      "reduction": 19.7
+      "question": "How do recorded education categories differ from missing values?",
+      "query_tokens": 27012,
+      "reduction": 1.9
     },
     {
-      "question": "what connects the data layer to the api",
-      "query_tokens": 1633,
-      "reduction": 19.4
+      "question": "What validation is required before selecting clustering models?",
+      "query_tokens": 26968,
+      "reduction": 1.9
     }
   ]
 }
