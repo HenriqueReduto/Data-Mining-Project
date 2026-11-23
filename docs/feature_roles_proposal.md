@@ -104,3 +104,25 @@ The share of the distance taken by each variable after scaling (its variance ove
 With MinMax, a single binary variable takes about half of each perspective's distance, because 0/1 values always sit at the extremes of the range, while absences is squeezed by a few very high values. The academic clustering would mostly group students by whether they want higher education rather than by their grades. **StandardScaler** (z-scores) gives every variable variance 1, so all variables weigh the same, as in the SOM class (z-scores, each source "an eighth" of the distance).
 
 Side effect: rare values become extreme z-scores. The ~10% of students without higher-education aspirations get z ≈ −3 (acceptable, a group worth identifying), but a student with 32 absences gets z ≈ 6.1. **Extreme values of studytime and absences must therefore be treated before scaling.**
+
+## 7. Extreme values (studytime and absences)
+
+Only studytime and absences need treatment, because traveltime only describes the clusters. Both have long right tails: the gaps between percentiles grow towards the top (studytime: median 186, 90th percentile 510, maximum 1465 minutes; absences: median 2, 90th percentile 10, maximum 32).
+
+| | studytime | absences |
+|---|---|---|
+| Above the upper whisker (IQR rule) | 53 students (8.2%): a long tail rather than isolated outliers | 20 students (3.1%) |
+| Real or errors? | Real: these students get higher grades (G3 13.2 vs 11.8) and have fewer past failures | Real: these students get lower grades (G3 10.7 vs 11.9) and have more past failures |
+| Treatment for the clustering | Capped at the upper whisker (547 minutes) | Log-transformed (log1p) |
+| Result | Skew 0.85, no student with \|z\| > 3 | Skew 0.25, no student with \|z\| > 3 |
+
+Options compared (skew, and number of students with |z| > 3 after standardising):
+
+| Option | studytime | absences |
+|---|---|---|
+| Keep | 2.55, 18 | 2.07, 11 |
+| Cap at upper whisker | **0.85, 0** | 1.29, 0 |
+| Square root | 0.92, 13 | 0.45, 2 |
+| log1p | −1.25, 11 | **0.25, 0** |
+
+A log transform was not used for studytime because three students with 0–2 minutes would become new extremes at the bottom (z = −4.7). The transformed versions (`studytime_clip`, `absences_log`) are used only for the clustering; the original values are kept for the profiling.
