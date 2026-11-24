@@ -1,27 +1,27 @@
 student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason,guardian,traveltime,studytime,failures,schoolsup,famsup,paid,activities,nursery,higher,internet,romantic,famrel,freetime,goout,Dalc,Walc,health,absences,G1,G2,G3
 0,GP,F,18,U,7.0,A,Higher Education,Higher Education,at_home,teacher,course,mother,17.0,222.0,0.0,yes,no,no,no,yes,Unknown,no,no,4.0,3.0,4.0,1.0,1.0,3.0,4.0,0,11,11
 1,GP,F,17,U,4.0,T,Primary Education,Primary Education,at_home,other,course,father,6.0,182.0,0.0,no,yes,no,no,no,yes,yes,no,5.0,3.0,3.0,1.0,1.0,3.0,2.0,9,11,11
-2,GP,F,15,U,6.0,T,Primary Education,Primary Education,at_home,other,other,mother,9.0,282.0,0.0,Unknown,no,no,no,yes,yes,yes,no,4.0,3.0,2.0,2.0,2.0,3.0,6.0,12,13,12
+2,GP,F,15,U,1.0,T,Primary Education,Primary Education,at_home,other,other,mother,9.0,282.0,0.0,Unknown,no,no,no,yes,yes,yes,no,4.0,3.0,2.0,2.0,2.0,3.0,6.0,12,13,12
 3,GP,F,15,U,4.0,T,Higher Education,Middle School Education,health,services,home,mother,9.0,350.0,0.0,no,yes,no,yes,yes,yes,yes,yes,3.0,2.0,2.0,1.0,1.0,5.0,0.0,14,14,14
 4,GP,F,16,U,9.0,T,Secondary Education,Secondary Education,other,other,home,father,6.0,224.0,0.0,no,yes,no,no,yes,yes,no,no,4.0,3.0,2.0,1.0,2.0,5.0,0.0,11,13,13
-5,GP,M,16,U,6.0,T,Higher Education,Secondary Education,services,other,reputation,mother,8.0,139.0,0.0,no,yes,no,yes,yes,yes,yes,no,5.0,4.0,2.0,1.0,2.0,5.0,6.0,12,12,13
+5,GP,M,16,U,1.0,T,Higher Education,Secondary Education,services,other,reputation,mother,8.0,139.0,0.0,no,yes,no,yes,yes,yes,yes,no,5.0,4.0,2.0,1.0,2.0,5.0,6.0,12,12,13
 6,GP,M,16,U,3.0,T,Middle School Education,Middle School Education,other,other,home,mother,15.0,158.0,0.0,no,no,no,Unknown,yes,yes,yes,no,4.0,4.0,4.0,1.0,1.0,3.0,0.0,13,12,13
 7,GP,F,17,U,6.0,A,Higher Education,Higher Education,other,teacher,home,mother,27.0,203.0,0.0,yes,yes,no,no,yes,yes,no,no,4.0,1.0,4.0,1.0,1.0,1.0,2.0,10,13,13
-8,GP,M,15,unknown,5.0,A,Secondary Education,Middle School Education,services,other,home,mother,12.0,132.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,2.0,2.0,1.0,1.0,1.0,0.0,15,16,17
+8,GP,M,15,unknown,1.0,A,Secondary Education,Middle School Education,services,other,home,mother,12.0,132.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,2.0,2.0,1.0,1.0,1.0,0.0,15,16,17
 9,GP,M,15,U,7.0,T,Secondary Education,Higher Education,other,other,home,mother,11.0,249.0,0.0,no,yes,no,yes,yes,yes,yes,no,5.0,5.0,1.0,1.0,1.0,5.0,0.0,12,12,13
 10,GP,F,15,U,7.0,T,Higher Education,Higher Education,teacher,health,reputation,mother,7.0,181.0,0.0,no,yes,no,no,yes,yes,yes,no,3.0,3.0,3.0,1.0,2.0,2.0,2.0,14,14,14
 11,GP,F,15,U,9.0,T,Middle School Education,Primary Education,services,other,reputation,father,49.0,496.0,0.0,no,yes,no,yes,yes,yes,yes,no,5.0,2.0,2.0,1.0,1.0,4.0,0.0,10,12,13
-12,GP,M,15,U,6.0,T,Higher Education,Higher Education,health,services,course,father,9.0,25.0,0.0,no,yes,no,yes,yes,yes,yes,no,4.0,3.0,3.0,1.0,3.0,5.0,0.0,12,13,12
+12,GP,M,15,U,1.0,T,Higher Education,Higher Education,health,services,course,father,9.0,25.0,0.0,no,yes,no,yes,yes,yes,yes,no,4.0,3.0,3.0,1.0,3.0,5.0,0.0,12,13,12
 13,GP,M,15,U,5.0,T,Higher Education,Secondary Education,teacher,other,course,mother,22.0,170.0,0.0,no,yes,no,no,yes,yes,yes,no,5.0,4.0,3.0,1.0,2.0,3.0,0.0,12,12,13
 14,GP,M,15,U,6.0,U,Middle School Education,Middle School Education,other,other,home,other,6.0,332.0,0.0,no,yes,no,no,yes,Unknown,yes,yes,4.0,5.0,2.0,1.0,1.0,3.0,0.0,14,14,15
 15,GP,F,16,U,7.0,T,Higher Education,Higher Education,health,other,home,mother,11.0,45.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,4.0,4.0,1.0,2.0,2.0,6.0,17,17,17
 16,GP,F,16,U,9.0,T,Higher Education,Higher Education,services,services,reputation,mother,13.0,574.0,0.0,no,yes,no,yes,yes,yes,yes,no,3.0,2.0,3.0,1.0,2.0,2.0,10.0,13,13,14
 17,GP,F,16,U,9.0,T,Secondary Education,Secondary Education,other,other,reputation,mother,33.0,138.0,0.0,yes,yes,no,yes,yes,yes,no,no,5.0,3.0,2.0,1.0,1.0,4.0,2.0,13,14,14
 18,GP,M,17,U,4.0,T,unknown,Middle School Education,services,services,course,mother,1.0,66.0,3.0,no,yes,yes,yes,yes,yes,yes,no,5.0,5.0,5.0,2.0,4.0,5.0,2.0,8,8,7
-19,GP,M,16,U,6.0,T,Higher Education,Secondary Education,health,other,home,father,2.0,75.0,0.0,no,no,no,Unknown,yes,yes,yes,no,3.0,1.0,3.0,1.0,3.0,5.0,0.0,12,12,12
+19,GP,M,16,U,1.0,T,Higher Education,Secondary Education,health,other,home,father,2.0,75.0,0.0,no,no,no,Unknown,yes,yes,yes,no,3.0,1.0,3.0,1.0,3.0,5.0,0.0,12,12,12
 20,GP,M,15,U,9.0,T,Higher Education,Secondary Education,teacher,other,reputation,mother,11.0,267.0,0.0,no,no,no,no,yes,yes,yes,no,4.0,4.0,1.0,1.0,1.0,1.0,0.0,12,13,14
 21,GP,M,15,U,4.0,T,Higher Education,Higher Education,health,health,other,father,5.0,69.0,0.0,no,yes,yes,no,yes,yes,yes,no,5.0,4.0,2.0,1.0,1.0,5.0,0.0,11,12,12
-22,GP,M,16,U,6.0,T,Higher Education,Middle School Education,teacher,other,course,mother,5.0,250.0,0.0,no,no,no,yes,yes,yes,yes,no,4.0,5.0,1.0,1.0,3.0,5.0,0.0,12,13,14
+22,GP,M,16,U,1.0,T,Higher Education,Middle School Education,teacher,other,course,mother,5.0,250.0,0.0,no,no,no,yes,yes,yes,yes,no,4.0,5.0,1.0,1.0,3.0,5.0,0.0,12,13,14
 23,GP,M,16,U,3.0,U,Middle School Education,Middle School Education,other,other,reputation,mother,28.0,232.0,0.0,no,yes,no,yes,yes,yes,yes,no,5.0,4.0,4.0,2.0,4.0,5.0,2.0,10,10,10
 24,GP,F,15,R,6.0,T,Middle School Education,Higher Education,services,health,course,mother,12.0,556.0,0.0,yes,yes,no,yes,yes,yes,yes,no,4.0,3.0,2.0,1.0,1.0,5.0,2.0,10,11,10
 25,GP,F,16,U,5.0,T,Middle School Education,Middle School Education,services,services,home,mother,5.0,48.0,0.0,no,yes,no,no,no,yes,yes,no,1.0,2.0,2.0,1.0,3.0,5.0,6.0,10,11,12
@@ -39,21 +39,21 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 37,GP,M,16,R,5.0,A,Higher Education,Higher Education,other,teacher,reputation,mother,28.0,358.0,0.0,no,yes,no,yes,yes,yes,yes,yes,2.0,4.0,3.0,1.0,1.0,5.0,4.0,13,13,13
 38,GP,F,15,R,6.0,T,Secondary Education,Higher Education,services,health,course,mother,1.0,359.0,0.0,yes,yes,no,yes,yes,yes,yes,no,4.0,3.0,2.0,1.0,1.0,5.0,2.0,11,12,12
 39,GP,F,15,R,6.0,T,Middle School Education,Middle School Education,at_home,other,reputation,mother,1.0,116.0,0.0,yes,yes,no,yes,yes,yes,no,no,4.0,3.0,1.0,1.0,1.0,2.0,8.0,14,13,12
-40,GP,F,16,U,6.0,T,Middle School Education,Middle School Education,other,other,home,mother,18.0,138.0,0.0,no,yes,no,yes,no,yes,yes,yes,3.0,3.0,3.0,1.0,2.0,3.0,16.0,11,11,10
-41,GP,M,15,U,7.0,T,Higher Education,Higher Education,teacher,other,home,other,11.0,15.0,0.0,no,yes,no,no,no,yes,yes,yes,5.0,4.0,3.0,2.0,4.0,5.0,8.0,10,11,11
+40,GP,F,16,U,1.0,T,Middle School Education,Middle School Education,other,other,home,mother,18.0,138.0,0.0,no,yes,no,yes,no,yes,yes,yes,3.0,3.0,3.0,1.0,2.0,3.0,16.0,11,11,10
+41,GP,M,15,U,1.0,T,Higher Education,Higher Education,teacher,other,home,other,11.0,15.0,0.0,no,yes,no,no,no,yes,yes,yes,5.0,4.0,3.0,2.0,4.0,5.0,8.0,10,11,11
 42,GP,M,15,U,7.0,T,Higher Education,Higher Education,services,teacher,course,father,15.0,296.0,0.0,no,yes,no,yes,Unknown,yes,yes,no,4.0,3.0,3.0,1.0,1.0,5.0,0.0,14,15,15
 43,GP,M,15,U,4.0,T,Middle School Education,Middle School Education,services,services,course,father,6.0,103.0,0.0,yes,yes,no,no,yes,yes,yes,no,5.0,4.0,1.0,1.0,1.0,1.0,0.0,9,10,10
-44,GP,F,16,U,6.0,T,Middle School Education,Middle School Education,other,at_home,course,father,27.0,245.0,1.0,yes,no,no,yes,yes,yes,yes,no,4.0,3.0,3.0,2.0,2.0,5.0,14.0,10,11,11
-45,GP,F,15,U,5.0,A,Higher Education,Secondary Education,other,other,course,mother,3.0,182.0,0.0,yes,yes,yes,yes,yes,yes,yes,yes,5.0,2.0,2.0,1.0,1.0,5.0,4.0,10,11,11
-46,GP,F,16,U,5.0,A,Secondary Education,Secondary Education,other,services,home,mother,12.0,168.0,0.0,no,yes,no,no,yes,yes,yes,no,2.0,3.0,5.0,1.0,4.0,3.0,6.0,13,12,13
+44,GP,F,16,U,1.0,T,Middle School Education,Middle School Education,other,at_home,course,father,27.0,245.0,1.0,yes,no,no,yes,yes,yes,yes,no,4.0,3.0,3.0,2.0,2.0,5.0,14.0,10,11,11
+45,GP,F,15,U,1.0,A,Higher Education,Secondary Education,other,other,course,mother,3.0,182.0,0.0,yes,yes,yes,yes,yes,yes,yes,yes,5.0,2.0,2.0,1.0,1.0,5.0,4.0,10,11,11
+46,GP,F,16,U,1.0,A,Secondary Education,Secondary Education,other,services,home,mother,12.0,168.0,0.0,no,yes,no,no,yes,yes,yes,no,2.0,3.0,5.0,1.0,4.0,3.0,6.0,13,12,13
 47,GP,M,16,U,4.0,T,Higher Education,Secondary Education,health,services,unknown,mother,10.0,942.0,0.0,no,no,no,yes,Unknown,yes,yes,no,4.0,2.0,2.0,1.0,1.0,2.0,2.0,17,17,17
 48,GP,M,15,U,9.0,T,Higher Education,Middle School Education,teacher,other,home,mother,6.0,189.0,0.0,no,yes,no,no,yes,yes,no,no,4.0,3.0,3.0,2.0,2.0,5.0,0.0,11,12,13
 49,GP,F,15,U,4.0,T,Higher Education,Higher Education,services,teacher,other,father,9.0,234.0,0.0,yes,yes,no,yes,no,yes,yes,no,4.0,4.0,4.0,1.0,1.0,3.0,2.0,13,12,12
 50,GP,F,16,U,2.0,T,Middle School Education,Middle School Education,services,services,course,mother,32.0,270.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,3.0,3.0,2.0,3.0,4.0,0.0,14,13,13
-51,GP,F,15,U,6.0,T,Higher Education,Middle School Education,health,other,other,mother,10.0,224.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,3.0,3.0,1.0,1.0,5.0,0.0,16,14,16
-52,GP,M,15,U,5.0,A,Higher Education,Middle School Education,health,health,other,father,24.0,96.0,0.0,no,no,no,no,yes,yes,no,no,5.0,5.0,5.0,3.0,4.0,5.0,4.0,10,9,9
+51,GP,F,15,U,1.0,T,Higher Education,Middle School Education,health,other,other,mother,10.0,224.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,3.0,3.0,1.0,1.0,5.0,0.0,16,14,16
+52,GP,M,15,U,1.0,A,Higher Education,Middle School Education,health,health,other,father,24.0,96.0,0.0,no,no,no,no,yes,yes,no,no,5.0,5.0,5.0,3.0,4.0,5.0,4.0,10,9,9
 53,GP,F,15,U,7.0,T,Higher Education,unknown,services,services,course,mother,13.0,56.0,0.0,yes,yes,no,no,yes,yes,yes,no,3.0,3.0,4.0,2.0,3.0,5.0,0.0,13,12,12
-54,GP,F,15,U,5.0,A,Secondary Education,Secondary Education,other,other,other,mother,3.0,13.0,0.0,no,no,no,no,yes,yes,yes,no,5.0,3.0,4.0,1.0,4.0,1.0,0.0,13,12,13
+54,GP,F,15,U,1.0,A,Secondary Education,Secondary Education,other,other,other,mother,3.0,13.0,0.0,no,no,no,no,yes,yes,yes,no,5.0,3.0,4.0,1.0,4.0,1.0,0.0,13,12,13
 55,GP,F,16,U,6.0,A,Middle School Education,Primary Education,other,other,other,mother,0.0,175.0,0.0,no,no,no,yes,yes,yes,yes,yes,5.0,3.0,4.0,1.0,1.0,2.0,2.0,12,13,12
 56,GP,F,15,U,6.0,A,Higher Education,Secondary Education,services,services,reputation,mother,8.0,182.0,0.0,no,yes,no,yes,yes,yes,yes,no,4.0,3.0,2.0,1.0,1.0,1.0,0.0,15,14,15
 57,GP,M,15,U,9.0,T,Higher Education,Higher Education,teacher,health,reputation,mother,13.0,200.0,0.0,no,yes,no,yes,yes,yes,no,no,3.0,2.0,2.0,1.0,1.0,5.0,8.0,15,15,16
@@ -67,8 +67,8 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 65,GP,F,16,U,3.0,T,unknown,Secondary Education,teacher,services,course,mother,45.0,247.0,0.0,no,yes,no,yes,yes,yes,yes,no,5.0,4.0,3.0,1.0,2.0,1.0,2.0,16,15,16
 66,GP,M,15,U,6.0,U,Higher Education,Higher Education,other,services,reputation,mother,6.0,1465.0,0.0,no,yes,no,yes,no,yes,yes,yes,1.0,3.0,3.0,5.0,5.0,3.0,0.0,11,12,12
 67,GP,F,16,U,7.0,T,Secondary Education,Primary Education,services,other,course,mother,0.0,800.0,0.0,yes,yes,no,no,yes,yes,yes,no,4.0,3.0,3.0,1.0,2.0,5.0,0.0,10,9,10
-68,GP,F,15,R,6.0,T,Middle School Education,Middle School Education,health,services,reputation,mother,25.0,253.0,0.0,yes,yes,no,no,yes,yes,yes,no,4.0,1.0,3.0,1.0,2.0,4.0,0.0,11,10,11
-69,GP,F,15,R,6.0,T,Secondary Education,Primary Education,other,other,reputation,father,20.0,713.0,0.0,no,yes,no,no,no,yes,yes,no,4.0,3.0,2.0,2.0,2.0,3.0,6.0,15,15,15
+68,GP,F,15,R,1.0,T,Middle School Education,Middle School Education,health,services,reputation,mother,25.0,253.0,0.0,yes,yes,no,no,yes,yes,yes,no,4.0,1.0,3.0,1.0,2.0,4.0,0.0,11,10,11
+69,GP,F,15,R,1.0,T,Secondary Education,Primary Education,other,other,reputation,father,20.0,713.0,0.0,no,yes,no,no,no,yes,yes,no,4.0,3.0,2.0,2.0,2.0,3.0,6.0,15,15,15
 70,GP,M,16,U,8.0,U,Secondary Education,Primary Education,other,other,reputation,father,29.0,797.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,3.0,3.0,1.0,1.0,5.0,2.0,13,11,11
 71,GP,M,15,U,7.0,T,Higher Education,Middle School Education,other,other,course,mother,14.0,663.0,0.0,no,no,no,Unknown,yes,yes,yes,no,3.0,3.0,3.0,1.0,1.0,3.0,0.0,11,9,10
 72,GP,F,15,unknown,4.0,T,Primary Education,Primary Education,other,other,reputation,mother,15.0,170.0,0.0,yes,yes,no,no,no,yes,yes,yes,3.0,3.0,4.0,1.0,4.0,5.0,2.0,13,11,11
@@ -81,19 +81,19 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 79,GP,F,16,U,5.0,T,Secondary Education,Higher Education,at_home,other,course,mother,5.0,137.0,0.0,no,yes,no,no,yes,yes,yes,no,2.0,4.0,3.0,1.0,2.0,3.0,14.0,12,11,11
 80,GP,M,15,U,8.0,T,Middle School Education,Secondary Education,other,services,course,father,7.0,43.0,0.0,yes,yes,no,yes,no,yes,yes,yes,3.0,2.0,2.0,1.0,3.0,3.0,0.0,11,11,12
 81,GP,M,15,U,6.0,T,Middle School Education,Secondary Education,other,other,home,mother,11.0,377.0,0.0,yes,no,no,no,no,yes,yes,no,5.0,3.0,2.0,1.0,2.0,4.0,2.0,10,9,9
-82,GP,F,15,U,6.0,T,Secondary Education,Middle School Education,services,other,reputation,mother,14.0,171.0,0.0,no,yes,no,no,yes,Unknown,yes,no,4.0,4.0,4.0,1.0,1.0,5.0,4.0,12,11,11
-83,GP,M,15,U,6.0,T,Middle School Education,Middle School Education,services,services,home,mother,25.0,240.0,0.0,no,no,yes,yes,yes,yes,yes,no,5.0,3.0,3.0,1.0,3.0,4.0,2.0,13,12,13
+82,GP,F,15,U,1.0,T,Secondary Education,Middle School Education,services,other,reputation,mother,14.0,171.0,0.0,no,yes,no,no,yes,Unknown,yes,no,4.0,4.0,4.0,1.0,1.0,5.0,4.0,12,11,11
+83,GP,M,15,U,1.0,T,Middle School Education,Middle School Education,services,services,home,mother,25.0,240.0,0.0,no,no,yes,yes,yes,yes,yes,no,5.0,3.0,3.0,1.0,3.0,4.0,2.0,13,12,13
 84,GP,F,15,U,9.0,T,Primary Education,Primary Education,other,other,home,father,4.0,179.0,0.0,no,yes,no,yes,no,yes,yes,no,4.0,3.0,2.0,2.0,3.0,4.0,2.0,13,12,12
 85,GP,F,15,U,4.0,T,Higher Education,Higher Education,services,services,reputation,father,17.0,157.0,0.0,no,no,no,no,yes,yes,yes,yes,4.0,4.0,4.0,2.0,3.0,5.0,4.0,12,11,12
 86,GP,F,16,U,3.0,T,Middle School Education,Middle School Education,at_home,other,course,mother,10.0,125.0,0.0,no,yes,no,no,yes,yes,no,no,4.0,3.0,4.0,1.0,2.0,2.0,6.0,13,11,11
 87,GP,F,15,U,5.0,T,Higher Education,Middle School Education,other,other,reputation,mother,7.0,315.0,0.0,no,yes,no,yes,yes,yes,yes,no,5.0,3.0,3.0,1.0,3.0,1.0,4.0,15,15,15
 88,GP,M,16,U,6.0,T,Middle School Education,Middle School Education,services,other,reputation,father,22.0,226.0,0.0,no,no,no,yes,no,yes,yes,no,4.0,4.0,2.0,1.0,2.0,3.0,6.0,12,10,11
-89,GP,M,16,U,5.0,A,Higher Education,unknown,teacher,health,reputation,mother,10.0,139.0,0.0,no,yes,no,no,yes,yes,no,no,4.0,1.0,3.0,3.0,5.0,5.0,6.0,9,9,10
+89,GP,M,16,U,1.0,A,Higher Education,unknown,teacher,health,reputation,mother,10.0,139.0,0.0,no,yes,no,no,yes,yes,no,no,4.0,1.0,3.0,3.0,5.0,5.0,6.0,9,9,10
 90,GP,F,16,U,9.0,T,Secondary Education,Secondary Education,other,other,home,mother,3.0,310.0,0.0,no,yes,no,no,yes,yes,yes,yes,4.0,3.0,3.0,1.0,3.0,4.0,2.0,9,11,11
 91,GP,F,15,U,7.0,T,Higher Education,Secondary Education,services,other,reputation,mother,5.0,203.5,0.0,no,no,no,yes,yes,yes,yes,no,4.0,5.0,5.0,1.0,3.0,1.0,6.0,14,13,13
 92,GP,F,16,U,3.0,T,Secondary Education,Primary Education,other,other,home,father,5.0,280.0,0.0,yes,yes,Unknown,no,yes,yes,no,no,3.0,3.0,3.0,2.0,3.0,2.0,0.0,12,13,12
 93,GP,F,16,U,6.0,T,Higher Education,Middle School Education,teacher,services,home,mother,26.0,289.0,0.0,no,yes,no,yes,yes,yes,yes,no,5.0,3.0,3.0,1.0,1.0,1.0,2.0,13,14,14
-94,GP,M,15,U,6.0,U,Middle School Education,Middle School Education,services,unknown,reputation,mother,4.0,927.0,0.0,no,yes,no,yes,yes,yes,yes,no,4.0,3.0,4.0,1.0,1.0,4.0,2.0,11,12,12
+94,GP,M,15,U,1.0,U,Middle School Education,Middle School Education,services,unknown,reputation,mother,4.0,927.0,0.0,no,yes,no,yes,yes,yes,yes,no,4.0,3.0,4.0,1.0,1.0,4.0,2.0,11,12,12
 95,GP,F,15,R,6.0,T,Primary Education,Primary Education,at_home,other,home,mother,17.0,1069.0,0.0,yes,Unknown,yes,Unknown,Unknown,yes,yes,no,3.0,1.0,2.0,1.0,1.0,1.0,4.0,13,13,13
 96,GP,M,16,R,8.0,T,unknown,Secondary Education,services,other,reputation,mother,19.0,60.0,0.0,yes,yes,yes,yes,no,yes,yes,no,3.0,3.0,3.0,1.0,1.0,4.0,6.0,9,11,11
 97,GP,F,16,U,9.0,T,Middle School Education,Primary Education,other,other,course,mother,8.0,134.0,0.0,no,yes,no,no,yes,yes,no,yes,4.0,3.0,5.0,1.0,1.0,5.0,0.0,13,12,12
@@ -109,10 +109,10 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 107,GP,M,16,U,4.0,T,Secondary Education,Secondary Education,services,other,home,father,10.0,346.0,0.0,no,yes,Unknown,yes,yes,yes,yes,no,5.0,3.0,3.0,1.0,1.0,5.0,0.0,13,14,14
 108,GP,M,15,R,7.0,T,Higher Education,Higher Education,other,other,home,father,88.0,795.0,0.0,no,yes,no,yes,yes,yes,yes,yes,1.0,3.0,5.0,3.0,5.0,1.0,8.0,12,10,11
 109,GP,F,16,U,3.0,T,Higher Education,Higher Education,health,health,other,mother,9.0,581.0,0.0,no,yes,no,yes,yes,yes,yes,yes,5.0,4.0,5.0,1.0,2.0,4.0,2.0,15,15,14
-110,GP,M,15,U,5.0,A,Higher Education,Higher Education,teacher,teacher,course,mother,13.0,35.0,0.0,no,no,no,yes,yes,yes,yes,no,5.0,5.0,3.0,1.0,1.0,4.0,4.0,13,14,14
+110,GP,M,15,U,1.0,A,Higher Education,Higher Education,teacher,teacher,course,mother,13.0,35.0,0.0,no,no,no,yes,yes,yes,yes,no,5.0,5.0,3.0,1.0,1.0,4.0,4.0,13,14,14
 111,GP,F,16,R,7.0,T,Secondary Education,Secondary Education,services,other,reputation,father,8.0,405.0,0.0,yes,yes,no,yes,yes,yes,yes,no,4.0,1.0,2.0,1.0,1.0,2.0,4.0,11,11,11
 112,GP,F,16,U,8.0,T,Middle School Education,Middle School Education,at_home,other,home,mother,7.0,157.0,1.0,yes,no,no,yes,yes,yes,yes,no,3.0,1.0,2.0,1.0,1.0,5.0,12.0,8,10,10
-113,GP,M,15,U,6.0,T,Higher Education,Middle School Education,teacher,other,course,mother,1.0,29.0,0.0,no,no,no,no,yes,yes,yes,no,3.0,5.0,2.0,1.0,1.0,3.0,10.0,18,17,18
+113,GP,M,15,U,1.0,T,Higher Education,Middle School Education,teacher,other,course,mother,1.0,29.0,0.0,no,no,no,no,yes,yes,yes,no,3.0,5.0,2.0,1.0,1.0,3.0,10.0,18,17,18
 114,GP,M,15,R,4.0,T,Middle School Education,Primary Education,health,services,reputation,mother,10.0,153.0,0.0,no,no,no,yes,yes,yes,yes,yes,5.0,4.0,3.0,1.0,1.0,5.0,4.0,10,9,10
 115,GP,M,16,U,5.0,T,Higher Education,Higher Education,teacher,teacher,course,father,0.0,256.0,0.0,Unknown,yes,no,yes,yes,yes,yes,no,5.0,4.0,4.0,1.0,2.0,5.0,6.0,16,14,14
 116,GP,M,15,U,5.0,T,unknown,Higher Education,other,teacher,reputation,father,25.0,151.0,0.0,no,yes,no,yes,yes,yes,no,no,4.0,4.0,3.0,1.0,1.0,2.0,4.0,16,15,16
@@ -125,7 +125,7 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 123,GP,M,16,U,8.0,T,Higher Education,Higher Education,health,other,course,mother,4.0,104.0,0.0,no,yes,no,yes,yes,yes,yes,no,3.0,4.0,4.0,1.0,4.0,5.0,4.0,12,13,13
 124,GP,F,16,U,4.0,T,Middle School Education,Middle School Education,other,other,home,mother,13.0,265.0,0.0,no,no,no,no,yes,yes,yes,yes,4.0,4.0,4.0,1.0,1.0,5.0,0.0,12,11,11
 125,GP,M,15,U,5.0,T,Secondary Education,Higher Education,services,services,home,father,0.0,95.0,0.0,yes,no,no,no,yes,yes,yes,no,5.0,5.0,5.0,3.0,2.0,5.0,2.0,9,9,9
-126,GP,F,15,U,5.0,A,Secondary Education,Higher Education,other,other,home,mother,2.0,283.0,0.0,yes,no,no,yes,yes,yes,yes,yes,5.0,3.0,2.0,1.0,1.0,1.0,0.0,10,11,11
+126,GP,F,15,U,1.0,A,Secondary Education,Higher Education,other,other,home,mother,2.0,283.0,0.0,yes,no,no,yes,yes,yes,yes,yes,5.0,3.0,2.0,1.0,1.0,1.0,0.0,10,11,11
 127,GP,F,19,U,4.0,T,None,Primary Education,at_home,other,course,other,5.0,236.0,2.0,no,yes,no,no,no,no,no,no,3.0,4.0,2.0,1.0,1.0,5.0,0.0,9,10,11
 128,GP,M,16,R,7.0,T,Higher Education,Higher Education,teacher,teacher,course,mother,11.0,0.0,0.0,no,no,no,Unknown,yes,yes,yes,no,3.0,5.0,5.0,2.0,5.0,4.0,8.0,14,14,15
 129,GP,M,16,U,5.0,U,Middle School Education,Secondary Education,other,other,course,mother,19.0,356.0,0.0,no,yes,no,Unknown,no,yes,yes,yes,3.0,2.0,3.0,2.0,2.0,1.0,4.0,13,12,13
@@ -133,7 +133,7 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 131,GP,F,18,U,4.0,T,Middle School Education,Primary Education,services,other,reputation,mother,11.0,169.0,3.0,no,yes,no,yes,yes,no,yes,yes,5.0,4.0,5.0,1.0,3.0,5.0,10.0,10,9,8
 132,GP,F,17,U,3.0,A,Middle School Education,Primary Education,unknown,other,course,mother,46.0,115.0,0.0,no,yes,no,no,yes,yes,yes,no,3.0,2.0,2.0,1.0,2.0,5.0,8.0,11,10,11
 133,GP,F,15,U,4.0,T,Primary Education,Primary Education,at_home,other,course,mother,58.0,62.0,0.0,no,yes,Unknown,yes,no,yes,yes,yes,4.0,3.0,3.0,1.0,2.0,4.0,6.0,11,12,13
-134,GP,F,17,U,6.0,T,Middle School Education,Middle School Education,other,other,course,father,4.0,116.0,0.0,no,yes,no,no,yes,yes,yes,yes,3.0,4.0,4.0,1.0,3.0,5.0,0.0,13,12,12
+134,GP,F,17,U,1.0,T,Middle School Education,Middle School Education,other,other,course,father,4.0,116.0,0.0,no,yes,no,no,yes,yes,yes,yes,3.0,4.0,4.0,1.0,3.0,5.0,0.0,13,12,12
 135,GP,F,16,U,9.0,A,Secondary Education,Higher Education,services,other,course,father,0.0,96.0,0.0,no,no,no,no,yes,yes,yes,no,3.0,2.0,1.0,1.0,4.0,5.0,12.0,15,13,14
 136,GP,M,16,U,6.0,T,Middle School Education,Primary Education,at_home,other,course,mother,142.0,118.0,0.0,no,no,Unknown,no,yes,yes,no,no,4.0,3.0,1.0,1.0,1.0,2.0,4.0,9,9,11
 137,GP,F,16,U,6.0,A,Middle School Education,Middle School Education,other,other,home,mother,11.0,203.5,1.0,no,no,no,no,yes,yes,no,no,5.0,3.0,4.0,1.0,1.0,5.0,12.0,13,11,11
@@ -141,7 +141,7 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 139,GP,F,15,U,6.0,T,Higher Education,Higher Education,services,at_home,course,mother,3.0,593.0,0.0,no,yes,no,Unknown,yes,yes,yes,yes,4.0,3.0,3.0,1.0,1.0,5.0,4.0,13,14,15
 140,GP,M,17,R,4.0,T,Secondary Education,Higher Education,at_home,other,course,mother,40.0,185.0,0.0,no,no,no,no,yes,yes,no,no,4.0,4.0,5.0,2.0,4.0,5.0,2.0,10,9,10
 141,GP,F,16,R,5.0,T,Primary Education,Primary Education,at_home,other,course,mother,106.0,245.0,0.0,no,yes,no,no,yes,Unknown,no,no,5.0,1.0,3.0,1.0,2.0,3.0,0.0,14,13,13
-142,GP,M,18,U,6.0,T,Secondary Education,Primary Education,services,services,course,mother,19.0,41.0,0.0,no,no,no,yes,yes,yes,yes,yes,3.0,3.0,4.0,4.0,5.0,4.0,2.0,11,11,12
+142,GP,M,18,U,1.0,T,Secondary Education,Primary Education,services,services,course,mother,19.0,41.0,0.0,no,no,no,yes,yes,yes,yes,yes,3.0,3.0,4.0,4.0,5.0,4.0,2.0,11,11,12
 143,GP,F,18,U,9.0,A,Secondary Education,Middle School Education,other,services,course,other,6.0,424.0,0.0,no,yes,Unknown,yes,no,yes,yes,yes,4.0,3.0,3.0,5.0,1.0,5.0,10.0,12,11,11
 144,GP,F,16,R,4.0,T,Primary Education,Primary Education,other,services,reputation,mother,24.0,70.0,0.0,no,yes,no,yes,yes,yes,no,yes,3.0,3.0,3.0,1.0,2.0,1.0,8.0,12,11,11
 145,GP,F,16,U,8.0,A,Secondary Education,unknown,other,other,course,other,9.0,85.0,0.0,no,yes,no,yes,no,yes,yes,yes,4.0,3.0,2.0,1.0,1.0,5.0,4.0,9,9,10
@@ -161,9 +161,9 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 159,GP,F,15,U,5.0,T,Primary Education,Middle School Education,at_home,other,course,mother,9.0,298.0,0.0,no,yes,no,no,no,yes,yes,no,4.0,3.0,3.0,1.0,1.0,5.0,6.0,13,12,13
 160,GP,F,15,U,5.0,T,Primary Education,Middle School Education,at_home,services,course,father,8.0,190.0,0.0,no,no,no,no,no,yes,no,yes,2.0,3.0,4.0,2.0,4.0,1.0,6.0,11,11,11
 161,GP,M,16,U,9.0,T,Higher Education,Higher Education,teacher,teacher,course,mother,0.0,0.0,0.0,no,yes,no,no,yes,no,yes,yes,3.0,3.0,2.0,2.0,1.0,5.0,16.0,9,9,8
-162,GP,M,15,U,5.0,A,unknown,Primary Education,services,other,course,mother,93.0,15.0,0.0,no,no,Unknown,no,yes,yes,yes,no,4.0,5.0,5.0,2.0,5.0,5.0,0.0,12,11,11
-163,GP,M,18,U,6.0,T,Primary Education,Primary Education,other,other,course,mother,11.0,32.0,2.0,no,no,no,no,yes,no,yes,yes,2.0,3.0,5.0,2.0,5.0,4.0,0.0,11,9,0
-164,GP,M,16,U,6.0,T,Middle School Education,Primary Education,at_home,other,course,mother,14.0,48.0,1.0,no,no,no,yes,yes,yes,no,yes,4.0,4.0,4.0,3.0,5.0,4.0,6.0,9,10,10
+162,GP,M,15,U,1.0,A,unknown,Primary Education,services,other,course,mother,93.0,15.0,0.0,no,no,Unknown,no,yes,yes,yes,no,4.0,5.0,5.0,2.0,5.0,5.0,0.0,12,11,11
+163,GP,M,18,U,1.0,T,Primary Education,Primary Education,other,other,course,mother,11.0,32.0,2.0,no,no,no,no,yes,no,yes,yes,2.0,3.0,5.0,2.0,5.0,4.0,0.0,11,9,0
+164,GP,M,16,U,1.0,T,Middle School Education,Primary Education,at_home,other,course,mother,14.0,48.0,1.0,no,no,no,yes,yes,yes,no,yes,4.0,4.0,4.0,3.0,5.0,4.0,6.0,9,10,10
 165,GP,F,15,R,5.0,T,unknown,Secondary Education,services,services,reputation,other,22.0,538.0,0.0,no,yes,yes,yes,yes,yes,yes,yes,4.0,2.0,1.0,2.0,3.0,3.0,2.0,13,13,13
 166,GP,M,19,U,5.0,T,Secondary Education,Middle School Education,services,at_home,home,mother,6.0,61.0,0.0,Unknown,yes,no,no,yes,no,yes,yes,4.0,5.0,4.0,1.0,1.0,4.0,6.0,11,9,11
 167,GP,F,17,U,7.0,T,Higher Education,Higher Education,other,teacher,course,mother,15.0,2.0,0.0,yes,yes,no,no,yes,yes,no,yes,4.0,2.0,1.0,1.0,1.0,4.0,0.0,13,13,13
@@ -188,7 +188,7 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 186,GP,M,17,U,2.0,T,Higher Education,Higher Education,teacher,other,reputation,mother,15.0,194.0,0.0,no,yes,no,yes,yes,yes,yes,no,4.0,4.0,4.0,1.0,3.0,5.0,0.0,11,9,10
 187,GP,F,16,U,5.0,T,Primary Education,Secondary Education,at_home,services,home,mother,6.0,152.0,0.0,no,no,no,yes,no,yes,yes,yes,4.0,3.0,5.0,1.0,1.0,3.0,0.0,14,13,13
 188,GP,F,16,U,3.0,T,Secondary Education,Secondary Education,other,other,reputation,mother,19.0,294.0,0.0,no,yes,no,yes,yes,yes,yes,no,4.0,4.0,5.0,1.0,1.0,4.0,0.0,14,14,15
-189,GP,M,17,U,6.0,T,Higher Education,Secondary Education,teacher,other,course,mother,20.0,289.0,0.0,no,no,no,yes,Unknown,yes,yes,no,4.0,4.0,4.0,4.0,4.0,4.0,0.0,10,11,11
+189,GP,M,17,U,1.0,T,Higher Education,Secondary Education,teacher,other,course,mother,20.0,289.0,0.0,no,no,no,yes,Unknown,yes,yes,no,4.0,4.0,4.0,4.0,4.0,4.0,0.0,10,11,11
 190,GP,F,16,U,6.0,T,Middle School Education,Middle School Education,services,other,reputation,mother,25.0,156.0,0.0,no,no,no,yes,no,yes,yes,no,3.0,4.0,4.0,1.0,4.0,5.0,0.0,13,12,14
 191,GP,M,17,U,6.0,T,Secondary Education,Secondary Education,other,other,reputation,father,6.0,203.5,0.0,no,no,no,yes,no,Unknown,yes,no,4.0,3.0,4.0,1.0,4.0,4.0,4.0,11,9,10
 192,GP,M,16,R,5.0,T,Higher Education,Middle School Education,teacher,services,other,mother,2.0,119.0,0.0,no,yes,no,yes,yes,yes,yes,yes,4.0,3.0,3.0,3.0,4.0,3.0,8.0,10,9,11
@@ -196,11 +196,11 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 194,GP,M,16,U,4.0,T,Higher Education,Secondary Education,teacher,other,home,mother,13.0,230.0,0.0,no,yes,yes,yes,yes,yes,yes,no,3.0,4.0,3.0,2.0,3.0,3.0,4.0,11,10,11
 195,GP,M,16,U,5.0,T,Secondary Education,Secondary Education,services,other,home,mother,7.0,235.0,0.0,no,no,no,yes,yes,yes,yes,yes,4.0,2.0,3.0,1.0,2.0,3.0,0.0,11,12,13
 196,GP,F,17,U,5.0,T,Middle School Education,Higher Education,services,services,reputation,father,6.0,212.0,0.0,Unknown,yes,no,yes,yes,yes,no,no,5.0,4.0,2.0,2.0,3.0,5.0,0.0,17,18,17
-197,GP,F,17,U,6.0,T,Secondary Education,Secondary Education,other,other,reputation,mother,7.0,149.0,0.0,no,yes,no,yes,yes,yes,yes,yes,5.0,3.0,3.0,2.0,3.0,1.0,32.0,14,13,14
+197,GP,F,17,U,1.0,T,Secondary Education,Secondary Education,other,other,reputation,mother,7.0,149.0,0.0,no,yes,no,yes,yes,yes,yes,yes,5.0,3.0,3.0,2.0,3.0,1.0,32.0,14,13,14
 198,GP,F,16,U,4.0,T,Secondary Education,Middle School Education,other,other,reputation,mother,8.0,300.0,0.0,no,yes,no,no,yes,yes,yes,no,1.0,2.0,2.0,1.0,2.0,1.0,8.0,14,15,16
 199,GP,M,17,U,4.0,T,Secondary Education,Secondary Education,services,services,other,mother,5.0,237.0,0.0,no,yes,no,Unknown,yes,yes,yes,yes,4.0,3.0,4.0,2.0,3.0,4.0,6.0,11,13,14
 200,GP,M,16,U,9.0,T,Primary Education,Middle School Education,services,services,other,mother,10.0,62.0,0.0,no,yes,no,yes,yes,yes,yes,yes,3.0,3.0,3.0,1.0,2.0,4.0,0.0,10,9,11
-201,GP,M,16,U,6.0,T,Middle School Education,Primary Education,other,other,course,mother,7.0,273.0,0.0,no,no,no,yes,yes,yes,yes,yes,4.0,2.0,3.0,1.0,2.0,5.0,0.0,13,14,16
+201,GP,M,16,U,1.0,T,Middle School Education,Primary Education,other,other,course,mother,7.0,273.0,0.0,no,no,no,yes,yes,yes,yes,yes,4.0,2.0,3.0,1.0,2.0,5.0,0.0,13,14,16
 202,GP,F,17,U,6.0,A,Secondary Education,unknown,health,unknown,reputation,mother,3.0,256.0,0.0,Unknown,yes,no,no,no,yes,yes,yes,3.0,3.0,3.0,1.0,3.0,3.0,10.0,12,13,14
 203,GP,M,17,R,8.0,T,Primary Education,Middle School Education,at_home,other,home,mother,15.0,160.0,0.0,no,no,no,no,yes,yes,no,no,3.0,1.0,3.0,1.0,5.0,3.0,6.0,9,9,10
 204,GP,F,16,U,5.0,T,Middle School Education,Secondary Education,services,unknown,course,mother,12.0,203.5,0.0,no,no,no,no,yes,yes,yes,no,4.0,3.0,3.0,1.0,1.0,2.0,0.0,12,12,13
@@ -219,18 +219,18 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 217,GP,F,17,R,7.0,T,Middle School Education,Middle School Education,other,other,reputation,mother,1.0,99.0,0.0,no,yes,no,no,yes,yes,yes,no,5.0,3.0,2.0,1.0,2.0,3.0,21.0,13,13,13
 218,GP,F,16,R,9.0,T,Middle School Education,Middle School Education,services,services,reputation,mother,26.0,1270.0,0.0,no,yes,Unknown,yes,no,yes,yes,no,4.0,3.0,5.0,1.0,1.0,5.0,6.0,13,13,13
 219,GP,F,17,U,4.0,T,Secondary Education,Higher Education,at_home,services,home,mother,6.0,527.0,1.0,no,yes,yes,no,yes,yes,yes,yes,4.0,4.0,3.0,3.0,4.0,5.0,14.0,8,9,8
-220,GP,F,16,U,5.0,A,Secondary Education,Primary Education,services,other,course,mother,11.0,243.0,0.0,no,yes,no,no,yes,yes,yes,no,2.0,3.0,3.0,2.0,2.0,4.0,2.0,11,11,12
+220,GP,F,16,U,3.0,A,Secondary Education,Primary Education,services,other,course,mother,11.0,243.0,0.0,no,yes,no,no,yes,yes,yes,no,2.0,3.0,3.0,2.0,2.0,4.0,2.0,11,11,12
 221,GP,F,16,U,8.0,U,Higher Education,Secondary Education,teacher,other,other,mother,4.0,295.0,0.0,no,no,no,yes,yes,yes,yes,yes,1.0,3.0,2.0,1.0,1.0,1.0,4.0,14,15,15
 222,GP,F,16,U,5.0,T,Primary Education,Primary Education,at_home,other,home,mother,27.0,115.0,0.0,no,yes,no,no,yes,yes,no,no,4.0,3.0,2.0,1.0,4.0,5.0,2.0,12,13,13
 223,GP,F,17,R,9.0,U,Higher Education,Secondary Education,teacher,other,reputation,mother,30.0,518.0,0.0,no,yes,no,yes,yes,yes,yes,yes,4.0,4.0,2.0,1.0,1.0,4.0,0.0,11,12,12
 224,GP,F,19,U,5.0,T,Secondary Education,Secondary Education,other,other,reputation,other,12.0,946.0,0.0,no,yes,no,yes,yes,Unknown,yes,no,4.0,3.0,3.0,1.0,2.0,3.0,4.0,12,12,12
-225,GP,M,17,U,6.0,T,Higher Education,Higher Education,services,other,home,mother,13.0,224.0,0.0,Unknown,yes,no,no,yes,yes,yes,yes,5.0,3.0,5.0,4.0,5.0,3.0,15.0,13,12,12
+225,GP,M,17,U,1.0,T,Higher Education,Higher Education,services,other,home,mother,13.0,224.0,0.0,Unknown,yes,no,no,yes,yes,yes,yes,5.0,3.0,5.0,4.0,5.0,3.0,15.0,13,12,12
 226,GP,F,16,U,8.0,A,Middle School Education,Middle School Education,other,other,reputation,mother,3.0,209.0,0.0,yes,yes,no,no,yes,yes,yes,no,3.0,3.0,4.0,1.0,1.0,4.0,0.0,13,13,13
 227,GP,M,18,U,4.0,T,Middle School Education,Middle School Education,services,other,home,mother,3.0,260.0,0.0,no,yes,no,yes,yes,yes,yes,no,4.0,4.0,4.0,2.0,4.0,5.0,10.0,12,11,11
-228,GP,F,17,R,6.0,T,Higher Education,Higher Education,services,other,other,mother,7.0,17.0,0.0,no,yes,no,Unknown,yes,yes,no,no,5.0,2.0,1.0,1.0,2.0,3.0,6.0,12,11,11
-229,GP,F,17,U,6.0,T,Secondary Education,Middle School Education,other,other,reputation,mother,29.0,166.0,0.0,no,no,no,no,yes,yes,yes,no,4.0,4.0,4.0,1.0,3.0,1.0,2.0,14,16,15
+228,GP,F,17,R,1.0,T,Higher Education,Higher Education,services,other,other,mother,7.0,17.0,0.0,no,yes,no,Unknown,yes,yes,no,no,5.0,2.0,1.0,1.0,2.0,3.0,6.0,12,11,11
+229,GP,F,17,U,1.0,T,Secondary Education,Middle School Education,other,other,reputation,mother,29.0,166.0,0.0,no,no,no,no,yes,yes,yes,no,4.0,4.0,4.0,1.0,3.0,1.0,2.0,14,16,15
 230,GP,F,17,U,9.0,T,Higher Education,Secondary Education,other,other,reputation,mother,2.0,220.0,0.0,no,no,no,no,yes,yes,yes,yes,3.0,4.0,5.0,2.0,4.0,1.0,16.0,11,9,10
-231,GP,M,18,U,6.0,T,Secondary Education,Secondary Education,services,health,home,father,0.0,182.0,0.0,no,yes,no,no,yes,yes,yes,no,3.0,2.0,4.0,2.0,4.0,4.0,10.0,10,10,10
+231,GP,M,18,U,1.0,T,Secondary Education,Secondary Education,services,health,home,father,0.0,182.0,0.0,no,yes,no,no,yes,yes,yes,no,3.0,2.0,4.0,2.0,4.0,4.0,10.0,10,10,10
 232,GP,F,17,U,4.0,T,Middle School Education,Secondary Education,at_home,other,home,father,28.0,49.0,0.0,no,yes,no,no,yes,yes,no,no,3.0,3.0,3.0,1.0,4.0,3.0,4.0,12,13,13
 233,GP,F,17,U,6.0,T,Middle School Education,Middle School Education,at_home,at_home,course,mother,7.0,418.0,0.0,no,yes,no,yes,yes,yes,yes,Unknown,4.0,3.0,3.0,1.0,1.0,4.0,0.0,12,12,13
 234,GP,F,17,R,9.0,T,Middle School Education,Primary Education,at_home,services,reputation,mother,21.0,291.0,0.0,no,yes,no,yes,yes,yes,yes,no,4.0,2.0,5.0,1.0,2.0,5.0,0.0,11,10,11
@@ -241,9 +241,9 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 239,GP,F,18,R,7.0,T,Secondary Education,Primary Education,other,other,reputation,mother,1.0,177.0,0.0,no,no,no,yes,yes,yes,yes,yes,5.0,3.0,3.0,1.0,1.0,4.0,4.0,8,8,8
 240,GP,U,17,U,6.0,T,Secondary Education,Middle School Education,other,other,course,mother,6.0,241.0,0.0,no,no,Unknown,yes,no,yes,yes,no,5.0,3.0,4.0,1.0,3.0,3.0,2.0,17,18,17
 241,GP,M,17,U,3.0,T,Middle School Education,Secondary Education,services,services,reputation,father,9.0,248.0,0.0,no,yes,no,no,no,yes,yes,no,5.0,3.0,3.0,1.0,3.0,4.0,0.0,10,11,11
-242,GP,M,18,U,6.0,U,Middle School Education,Primary Education,at_home,other,course,mother,134.0,226.0,0.0,yes,Unknown,no,yes,yes,yes,yes,yes,4.0,3.0,2.0,4.0,5.0,3.0,2.0,9,10,11
+242,GP,M,18,U,1.0,U,Middle School Education,Primary Education,at_home,other,course,mother,134.0,226.0,0.0,yes,Unknown,no,yes,yes,yes,yes,yes,4.0,3.0,2.0,4.0,5.0,3.0,2.0,9,10,11
 243,GP,F,17,U,8.0,A,unknown,Primary Education,other,other,course,mother,29.0,425.0,0.0,no,no,no,yes,yes,yes,yes,yes,3.0,2.0,3.0,1.0,2.0,3.0,0.0,15,15,16
-244,GP,F,17,U,6.0,T,Higher Education,Secondary Education,health,other,reputation,father,1.0,152.0,0.0,no,no,no,yes,yes,yes,yes,yes,3.0,2.0,3.0,1.0,2.0,3.0,0.0,14,12,12
+244,GP,F,17,U,1.0,T,Higher Education,Secondary Education,health,other,reputation,father,1.0,152.0,0.0,no,no,no,yes,yes,yes,yes,yes,3.0,2.0,3.0,1.0,2.0,3.0,0.0,14,12,12
 245,GP,M,17,R,9.0,U,Middle School Education,Middle School Education,other,other,course,father,19.0,157.0,0.0,no,yes,no,yes,yes,Unknown,yes,no,4.0,5.0,2.0,1.0,1.0,1.0,0.0,12,13,13
 246,GP,M,17,U,4.0,T,Higher Education,Higher Education,teacher,teacher,reputation,mother,9.0,165.0,0.0,yes,yes,no,yes,yes,yes,yes,yes,4.0,5.0,5.0,1.0,3.0,2.0,0.0,13,13,13
 247,GP,M,16,U,5.0,T,Higher Education,Higher Education,health,other,reputation,father,2.0,228.0,0.0,no,yes,no,yes,yes,yes,yes,no,4.0,2.0,4.0,2.0,4.0,1.0,0.0,13,13,14
@@ -252,23 +252,23 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 250,GP,M,17,U,3.0,T,Middle School Education,Middle School Education,other,other,home,father,9.0,186.0,0.0,no,no,no,yes,no,yes,yes,yes,4.0,4.0,2.0,5.0,5.0,4.0,0.0,16,16,16
 251,GP,F,16,U,5.0,T,Middle School Education,Primary Education,other,other,home,mother,4.0,84.0,0.0,no,no,no,no,yes,yes,yes,yes,4.0,5.0,2.0,1.0,1.0,5.0,4.0,9,10,10
 252,GP,F,16,U,4.0,A,Higher Education,Primary Education,other,other,home,mother,0.0,134.0,0.0,no,no,no,yes,yes,yes,yes,yes,5.0,3.0,3.0,1.0,2.0,5.0,0.0,14,13,13
-253,GP,F,18,U,5.0,A,Middle School Education,Higher Education,services,other,course,mother,28.0,225.0,1.0,no,yes,no,no,yes,yes,yes,no,4.0,3.0,3.0,1.0,1.0,3.0,18.0,10,10,10
-254,GP,F,18,U,6.0,T,Middle School Education,Middle School Education,at_home,services,course,mother,6.0,266.0,1.0,Unknown,yes,no,no,no,yes,yes,yes,5.0,3.0,1.0,1.0,1.0,5.0,16.0,9,8,10
+253,GP,F,18,U,1.0,A,Middle School Education,Higher Education,services,other,course,mother,28.0,225.0,1.0,no,yes,no,no,yes,yes,yes,no,4.0,3.0,3.0,1.0,1.0,3.0,18.0,10,10,10
+254,GP,F,18,U,1.0,T,Middle School Education,Middle School Education,at_home,services,course,mother,6.0,266.0,1.0,Unknown,yes,no,no,no,yes,yes,yes,5.0,3.0,1.0,1.0,1.0,5.0,16.0,9,8,10
 255,GP,F,18,U,8.0,T,Secondary Education,Secondary Education,other,other,course,mother,24.0,99.0,1.0,no,no,no,no,yes,no,yes,no,4.0,1.0,1.0,1.0,1.0,3.0,14.0,8,7,7
 256,GP,M,18,U,8.0,T,unknown,Middle School Education,other,at_home,course,other,13.0,118.0,1.0,no,yes,no,yes,no,no,yes,yes,4.0,4.0,3.0,2.0,2.0,1.0,26.0,7,8,8
 257,GP,M,17,U,6.0,T,Higher Education,Higher Education,teacher,teacher,course,mother,0.0,116.0,0.0,no,yes,no,yes,no,yes,yes,no,4.0,2.0,1.0,1.0,2.0,5.0,6.0,10,8,9
 258,GP,F,17,U,5.0,T,Secondary Education,Middle School Education,other,other,course,father,8.0,171.0,0.0,no,no,no,yes,yes,yes,no,no,5.0,4.0,2.0,1.0,1.0,3.0,4.0,14,14,15
 259,GP,F,17,U,3.0,T,Primary Education,Primary Education,at_home,at_home,unknown,mother,13.0,425.0,0.0,no,yes,no,yes,yes,yes,yes,yes,4.0,3.0,2.0,1.0,2.0,4.0,10.0,11,10,10
-260,GP,F,16,U,6.0,T,unknown,Middle School Education,other,other,course,mother,4.0,18.0,0.0,no,no,no,no,yes,no,Unknown,no,5.0,3.0,5.0,1.0,2.0,5.0,4.0,12,11,11
+260,GP,F,16,U,5.0,T,unknown,Middle School Education,other,other,course,mother,4.0,18.0,0.0,no,no,no,no,yes,no,Unknown,no,5.0,3.0,5.0,1.0,2.0,5.0,4.0,12,11,11
 261,GP,F,17,R,5.0,T,Middle School Education,Primary Education,at_home,services,course,mother,43.0,230.0,0.0,no,no,no,yes,yes,yes,no,no,2.0,1.0,1.0,1.0,1.0,3.0,2.0,13,13,13
-262,GP,F,17,R,7.0,A,Primary Education,Higher Education,other,other,course,other,140.0,98.0,1.0,no,yes,no,no,yes,yes,yes,no,5.0,5.0,4.0,1.0,1.0,4.0,14.0,9,9,8
+262,GP,F,17,R,1.0,A,Primary Education,Higher Education,other,other,course,other,140.0,98.0,1.0,no,yes,no,no,yes,yes,yes,no,5.0,5.0,4.0,1.0,1.0,4.0,14.0,9,9,8
 263,GP,M,18,U,5.0,T,Middle School Education,Middle School Education,other,services,reputation,father,4.0,125.0,0.0,no,no,no,no,yes,no,yes,no,5.0,5.0,4.0,3.0,5.0,2.0,16.0,8,7,8
-264,GP,F,17,U,5.0,A,Middle School Education,Middle School Education,other,other,home,mother,1.0,3.0,1.0,no,yes,no,no,no,no,yes,no,3.0,1.0,2.0,1.0,1.0,1.0,8.0,11,9,10
-265,GP,F,17,R,6.0,T,Primary Education,Primary Education,at_home,other,course,mother,20.0,383.0,0.0,no,no,no,yes,yes,yes,yes,no,4.0,3.0,3.0,1.0,3.0,5.0,4.0,15,14,15
-266,GP,F,17,U,5.0,A,Higher Education,unknown,teacher,other,course,mother,9.0,122.0,0.0,no,yes,no,yes,yes,yes,no,no,4.0,3.0,2.0,1.0,1.0,4.0,4.0,15,14,14
+264,GP,F,17,U,1.0,A,Middle School Education,Middle School Education,other,other,home,mother,1.0,3.0,1.0,no,yes,no,no,no,no,yes,no,3.0,1.0,2.0,1.0,1.0,1.0,8.0,11,9,10
+265,GP,F,17,R,1.0,T,Primary Education,Primary Education,at_home,other,course,mother,20.0,383.0,0.0,no,no,no,yes,yes,yes,yes,no,4.0,3.0,3.0,1.0,3.0,5.0,4.0,15,14,15
+266,GP,F,17,U,1.0,A,Higher Education,unknown,teacher,other,course,mother,9.0,122.0,0.0,no,yes,no,yes,yes,yes,no,no,4.0,3.0,2.0,1.0,1.0,4.0,4.0,15,14,14
 267,GP,M,17,U,2.0,T,Higher Education,Secondary Education,health,other,course,mother,30.0,141.0,0.0,no,no,no,yes,yes,yes,yes,yes,2.0,5.0,5.0,1.0,4.0,5.0,8.0,15,15,15
 268,GP,M,17,R,3.0,A,Higher Education,Higher Education,teacher,other,course,mother,17.0,226.0,0.0,no,yes,no,no,yes,yes,yes,no,3.0,3.0,3.0,2.0,3.0,4.0,0.0,12,12,12
-269,GP,M,16,U,6.0,T,Higher Education,Secondary Education,teacher,other,course,mother,4.0,116.0,0.0,no,no,no,yes,no,yes,yes,no,5.0,4.0,5.0,1.0,1.0,3.0,7.0,14,14,15
+269,GP,M,16,U,1.0,T,Higher Education,Secondary Education,teacher,other,course,mother,4.0,116.0,0.0,no,no,no,yes,no,yes,yes,no,5.0,4.0,5.0,1.0,1.0,3.0,7.0,14,14,15
 270,GP,M,16,U,8.0,T,Higher Education,Higher Education,services,services,course,mother,6.0,57.0,0.0,no,no,yes,yes,yes,yes,yes,no,5.0,3.0,2.0,1.0,2.0,5.0,4.0,14,15,15
 271,GP,F,17,U,7.0,U,Higher Education,Higher Education,teacher,services,course,mother,13.0,200.0,0.0,no,yes,yes,no,yes,yes,yes,yes,5.0,3.0,1.0,1.0,4.0,5.0,2.0,11,11,12
 272,GP,M,17,R,4.0,T,Primary Education,Primary Education,other,other,home,father,26.0,589.0,0.0,no,no,no,no,no,yes,yes,yes,4.0,3.0,3.0,1.0,1.0,1.0,2.0,13,14,15
@@ -279,18 +279,18 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 277,GP,F,17,U,4.0,T,Primary Education,Primary Education,other,services,course,father,3.0,270.0,0.0,no,yes,no,no,yes,yes,no,no,4.0,3.0,4.0,1.0,2.0,5.0,4.0,11,10,11
 278,GP,M,17,U,4.0,T,Middle School Education,Secondary Education,other,other,course,father,22.0,84.0,0.0,no,no,no,no,yes,yes,yes,no,5.0,2.0,3.0,1.0,2.0,2.0,2.0,9,12,13
 279,GP,M,22,U,8.0,T,Secondary Education,Primary Education,services,services,other,mother,5.0,21.0,3.0,no,no,no,no,no,no,yes,yes,5.0,4.0,5.0,5.0,5.0,1.0,12.0,7,8,5
-280,GP,M,18,R,6.0,T,Secondary Education,Secondary Education,other,services,course,mother,8.0,206.0,0.0,no,yes,no,no,yes,yes,yes,yes,4.0,3.0,3.0,1.0,3.0,5.0,8.0,10,9,10
+280,GP,M,18,R,1.0,T,Secondary Education,Secondary Education,other,services,course,mother,8.0,206.0,0.0,no,yes,no,no,yes,yes,yes,yes,4.0,3.0,3.0,1.0,3.0,5.0,8.0,10,9,10
 281,GP,M,16,U,6.0,T,None,Middle School Education,other,other,other,mother,12.0,72.0,0.0,no,no,no,no,no,yes,yes,no,4.0,3.0,2.0,2.0,4.0,5.0,0.0,11,12,11
 282,GP,M,18,U,8.0,T,Secondary Education,Middle School Education,services,other,course,mother,21.0,93.0,0.0,no,no,Unknown,no,yes,no,yes,no,4.0,3.0,5.0,2.0,4.0,5.0,8.0,7,8,7
 283,GP,M,16,U,5.0,T,Secondary Education,Secondary Education,at_home,other,reputation,other,34.0,192.0,1.0,yes,yes,no,no,no,yes,yes,no,5.0,3.0,3.0,1.0,2.0,2.0,4.0,9,11,10
 284,GP,M,18,U,9.0,T,Middle School Education,Primary Education,services,services,other,mother,5.0,96.0,2.0,no,no,no,no,no,no,yes,no,3.0,2.0,5.0,2.0,5.0,5.0,0.0,7,8,6
 285,GP,M,16,R,9.0,T,unknown,Primary Education,other,other,course,mother,16.0,60.0,0.0,no,no,no,Unknown,no,yes,no,no,3.0,3.0,2.0,1.0,3.0,3.0,2.0,14,13,12
 286,GP,M,17,R,4.0,T,Middle School Education,Primary Education,other,other,course,mother,1.0,109.0,0.0,no,no,no,no,no,yes,yes,no,4.0,4.0,3.0,2.0,4.0,5.0,0.0,12,12,13
-287,GP,M,17,U,6.0,T,Primary Education,Primary Education,health,other,course,mother,20.0,67.0,1.0,no,yes,no,yes,yes,yes,yes,no,4.0,4.0,4.0,1.0,2.0,5.0,0.0,9,10,10
+287,GP,M,17,U,1.0,T,Primary Education,Primary Education,health,other,course,mother,20.0,67.0,1.0,no,yes,no,yes,yes,yes,yes,no,4.0,4.0,4.0,1.0,2.0,5.0,0.0,9,10,10
 288,GP,F,18,U,3.0,A,Middle School Education,Primary Education,other,other,course,mother,4.0,278.0,0.0,no,yes,no,no,no,yes,yes,yes,4.0,3.0,4.0,1.0,3.0,5.0,2.0,12,12,13
-289,GP,F,17,U,6.0,U,Higher Education,Middle School Education,teacher,services,reputation,mother,8.0,1310.0,0.0,no,yes,no,yes,yes,yes,yes,no,4.0,2.0,3.0,1.0,1.0,4.0,2.0,14,15,17
+289,GP,F,17,U,1.0,U,Higher Education,Middle School Education,teacher,services,reputation,mother,8.0,1310.0,0.0,no,yes,no,yes,yes,yes,yes,no,4.0,2.0,3.0,1.0,1.0,4.0,2.0,14,15,17
 290,GP,F,19,U,9.0,T,Middle School Education,Middle School Education,services,services,home,mother,4.0,147.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,3.0,3.0,1.0,1.0,5.0,0.0,10,10,11
-291,GP,M,18,U,6.0,T,Middle School Education,Primary Education,services,other,course,mother,45.0,143.0,1.0,no,no,no,yes,no,no,yes,no,4.0,4.0,5.0,4.0,4.0,5.0,4.0,11,10,11
+291,GP,M,18,U,1.0,T,Middle School Education,Primary Education,services,other,course,mother,45.0,143.0,1.0,no,no,no,yes,no,no,yes,no,4.0,4.0,5.0,4.0,4.0,5.0,4.0,11,10,11
 292,GP,F,17,R,4.0,T,Higher Education,Middle School Education,other,other,course,mother,5.0,203.5,0.0,no,yes,no,yes,yes,yes,yes,no,4.0,3.0,4.0,1.0,3.0,5.0,2.0,11,12,14
 293,GP,F,18,U,3.0,T,unknown,Primary Education,other,at_home,home,mother,4.0,337.0,0.0,no,yes,no,no,no,yes,no,no,4.0,4.0,3.0,2.0,3.0,3.0,4.0,11,12,14
 294,GP,F,18,R,4.0,T,Middle School Education,Middle School Education,other,other,home,mother,8.0,294.0,0.0,yes,no,no,no,yes,yes,no,no,3.0,2.0,3.0,1.0,1.0,5.0,4.0,11,11,13
@@ -305,28 +305,28 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 303,GP,F,17,U,7.0,T,Secondary Education,Secondary Education,other,other,home,mother,3.0,418.0,0.0,no,no,no,yes,no,yes,no,no,4.0,2.0,3.0,1.0,1.0,4.0,2.0,15,12,13
 304,GP,F,18,U,4.0,T,Middle School Education,Middle School Education,at_home,services,home,mother,12.0,363.0,0.0,no,yes,no,yes,yes,yes,yes,yes,4.0,3.0,3.0,1.0,1.0,3.0,0.0,11,12,13
 305,GP,M,17,U,8.0,T,Middle School Education,Middle School Education,other,other,home,father,21.0,203.5,0.0,no,no,no,no,yes,no,yes,no,4.0,4.0,4.0,2.0,3.0,4.0,8.0,8,8,9
-306,GP,M,18,R,5.0,A,Secondary Education,Higher Education,other,other,reputation,mother,29.0,267.0,0.0,no,yes,no,yes,yes,yes,yes,no,4.0,2.0,5.0,3.0,4.0,1.0,6.0,15,16,16
+306,GP,M,18,R,1.0,A,Secondary Education,Higher Education,other,other,reputation,mother,29.0,267.0,0.0,no,yes,no,yes,yes,yes,yes,no,4.0,2.0,5.0,3.0,4.0,1.0,6.0,15,16,16
 307,GP,M,17,U,9.0,T,Secondary Education,Primary Education,services,other,other,mother,13.0,209.0,0.0,Unknown,no,no,yes,yes,yes,yes,yes,5.0,4.0,4.0,3.0,4.0,5.0,0.0,11,11,14
 308,GP,F,18,R,6.0,T,Higher Education,Higher Education,teacher,other,reputation,mother,27.0,270.0,0.0,no,no,no,yes,yes,yes,yes,no,4.0,3.0,4.0,2.0,2.0,4.0,8.0,10,11,12
 309,GP,M,18,U,6.0,T,Higher Education,Middle School Education,health,other,reputation,father,1.0,297.0,0.0,no,yes,no,yes,yes,yes,yes,yes,5.0,4.0,5.0,1.0,3.0,5.0,4.0,10,12,14
 310,GP,F,18,R,8.0,T,Middle School Education,Primary Education,other,other,reputation,mother,19.0,257.0,0.0,no,yes,no,no,yes,no,yes,yes,4.0,3.0,5.0,1.0,2.0,3.0,12.0,8,9,10
 311,GP,F,19,U,9.0,T,Secondary Education,Secondary Education,other,services,home,other,9.0,299.0,0.0,no,yes,no,yes,yes,yes,yes,no,4.0,3.0,5.0,3.0,3.0,5.0,16.0,11,12,12
 312,GP,F,18,U,4.0,T,Middle School Education,Secondary Education,other,services,reputation,father,7.0,1366.0,0.0,no,yes,no,yes,yes,yes,yes,yes,4.0,5.0,5.0,1.0,3.0,2.0,10.0,16,16,16
-313,GP,F,18,U,6.0,T,Primary Education,Primary Education,other,other,home,mother,24.0,278.0,0.0,no,yes,no,no,no,yes,no,no,4.0,4.0,3.0,1.0,1.0,3.0,2.0,13,13,13
+313,GP,F,18,U,1.0,T,Primary Education,Primary Education,other,other,home,mother,24.0,278.0,0.0,no,yes,no,no,no,yes,no,no,4.0,4.0,3.0,1.0,1.0,3.0,2.0,13,13,13
 314,GP,M,17,R,8.0,T,Primary Education,Middle School Education,at_home,at_home,home,mother,7.0,211.0,0.0,no,yes,no,yes,no,yes,no,yes,3.0,5.0,2.0,2.0,2.0,1.0,2.0,16,17,18
 315,GP,F,18,U,7.0,T,Middle School Education,Primary Education,other,other,home,mother,9.0,255.0,0.0,no,yes,no,no,yes,yes,yes,yes,4.0,2.0,5.0,1.0,2.0,1.0,8.0,14,14,15
 316,GP,F,17,U,5.0,T,Middle School Education,Higher Education,at_home,health,reputation,mother,23.0,154.0,0.0,no,yes,no,no,yes,yes,yes,yes,4.0,3.0,3.0,1.0,1.0,1.0,6.0,15,16,16
-317,GP,F,17,U,6.0,T,Middle School Education,Middle School Education,services,other,course,mother,22.0,130.0,0.0,yes,yes,no,no,Unknown,yes,yes,yes,4.0,4.0,4.0,2.0,3.0,5.0,6.0,12,12,12
+317,GP,F,17,U,1.0,T,Middle School Education,Middle School Education,services,other,course,mother,22.0,130.0,0.0,yes,yes,no,no,Unknown,yes,yes,yes,4.0,4.0,4.0,2.0,3.0,5.0,6.0,12,12,12
 318,GP,F,18,R,4.0,A,Secondary Education,Middle School Education,other,services,home,mother,19.0,229.0,0.0,no,no,no,no,no,no,yes,yes,4.0,3.0,1.0,1.0,1.0,5.0,15.0,12,9,10
 319,GP,U,18,U,5.0,T,Higher Education,Higher Education,unknown,services,home,mother,30.0,203.5,0.0,no,no,no,yes,yes,yes,yes,no,3.0,2.0,4.0,1.0,4.0,3.0,0.0,11,12,12
 320,GP,F,18,U,7.0,T,Higher Education,Higher Education,health,health,reputation,father,0.0,284.0,1.0,yes,yes,no,yes,yes,yes,yes,yes,2.0,4.0,4.0,1.0,1.0,4.0,2.0,14,12,13
 321,GP,F,17,U,8.0,T,Middle School Education,Middle School Education,unknown,services,reputation,father,50.0,571.0,0.0,no,yes,no,no,yes,yes,yes,yes,4.0,2.0,3.0,1.0,2.0,1.0,8.0,13,15,15
 322,GP,F,19,R,4.0,T,Secondary Education,Middle School Education,services,services,reputation,father,12.0,212.0,1.0,yes,yes,no,no,yes,no,yes,no,3.0,3.0,3.0,4.0,2.0,4.0,0.0,9,8,10
-323,GP,M,18,U,6.0,T,Higher Education,Secondary Education,teacher,services,course,mother,20.0,72.0,0.0,no,no,no,yes,yes,yes,yes,no,4.0,2.0,3.0,1.0,2.0,1.0,0.0,10,10,10
+323,GP,M,18,U,1.0,T,Higher Education,Secondary Education,teacher,services,course,mother,20.0,72.0,0.0,no,no,no,yes,yes,yes,yes,no,4.0,2.0,3.0,1.0,2.0,1.0,0.0,10,10,10
 324,GP,M,18,U,9.0,T,Primary Education,Middle School Education,at_home,other,home,other,9.0,9.0,0.0,no,no,no,no,no,no,yes,no,3.0,4.0,4.0,2.0,4.0,4.0,10.0,10,10,11
-325,GP,M,17,U,5.0,A,Higher Education,Primary Education,services,other,home,mother,21.0,95.0,0.0,no,no,no,yes,yes,yes,yes,yes,4.0,5.0,4.0,1.0,4.0,5.0,22.0,11,11,10
+325,GP,M,17,U,1.0,A,Higher Education,Primary Education,services,other,home,mother,21.0,95.0,0.0,no,no,no,yes,yes,yes,yes,yes,4.0,5.0,4.0,1.0,4.0,5.0,22.0,11,11,10
 326,GP,M,17,U,2.0,A,unknown,Middle School Education,teacher,services,home,mother,7.0,67.0,0.0,no,no,no,no,yes,yes,yes,no,4.0,3.0,4.0,3.0,4.0,3.0,18.0,13,13,13
-327,GP,F,18,unknown,6.0,T,Primary Education,Primary Education,at_home,other,reputation,mother,30.0,687.0,0.0,no,yes,no,yes,yes,yes,no,no,4.0,2.0,2.0,1.0,1.0,3.0,2.0,17,17,18
+327,GP,F,18,unknown,1.0,T,Primary Education,Primary Education,at_home,other,reputation,mother,30.0,687.0,0.0,no,yes,no,yes,yes,yes,no,no,4.0,2.0,2.0,1.0,1.0,3.0,2.0,17,17,18
 328,GP,F,18,unknown,7.0,T,Primary Education,Primary Education,other,other,home,mother,18.0,277.0,0.0,yes,no,no,yes,yes,yes,yes,no,5.0,4.0,4.0,1.0,2.0,4.0,0.0,12,13,13
 329,GP,F,17,U,4.0,T,Middle School Education,Middle School Education,other,other,course,mother,1.0,229.0,0.0,Unknown,yes,no,no,no,yes,yes,no,5.0,4.0,5.0,1.0,2.0,5.0,12.0,12,12,14
 330,GP,F,18,U,9.0,T,Middle School Education,Primary Education,other,other,reputation,mother,30.0,239.0,0.0,no,no,no,yes,yes,yes,yes,yes,4.0,3.0,1.0,1.0,1.0,5.0,10.0,12,13,14
@@ -337,19 +337,19 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 335,GP,M,18,U,2.0,A,Higher Education,Higher Education,teacher,teacher,reputation,mother,10.0,225.0,0.0,no,yes,no,yes,yes,Unknown,yes,no,5.0,4.0,3.0,1.0,1.0,2.0,0.0,17,17,17
 336,GP,M,18,U,8.0,T,Higher Education,Middle School Education,teacher,other,home,mother,15.0,196.0,0.0,no,yes,no,yes,yes,yes,yes,yes,4.0,3.0,2.0,1.0,4.0,5.0,2.0,15,16,16
 337,GP,F,17,U,9.0,T,Higher Education,Secondary Education,health,services,reputation,mother,0.0,364.0,0.0,no,yes,no,Unknown,yes,yes,yes,no,4.0,2.0,2.0,1.0,2.0,3.0,0.0,17,18,18
-338,GP,F,17,unknown,6.0,T,Secondary Education,Primary Education,services,other,reputation,mother,30.0,817.0,0.0,no,yes,no,no,yes,yes,no,no,3.0,3.0,2.0,1.0,1.0,3.0,0.0,18,19,19
-339,GP,U,18,R,6.0,T,Secondary Education,Middle School Education,services,other,reputation,mother,16.0,466.0,0.0,no,yes,no,yes,yes,yes,yes,no,5.0,4.0,2.0,1.0,1.0,4.0,0.0,14,15,15
+338,GP,F,17,unknown,1.0,T,Secondary Education,Primary Education,services,other,reputation,mother,30.0,817.0,0.0,no,yes,no,no,yes,yes,no,no,3.0,3.0,2.0,1.0,1.0,3.0,0.0,18,19,19
+339,GP,U,18,R,1.0,T,Secondary Education,Middle School Education,services,other,reputation,mother,16.0,466.0,0.0,no,yes,no,yes,yes,yes,yes,no,5.0,4.0,2.0,1.0,1.0,4.0,0.0,14,15,15
 340,GP,M,17,U,7.0,T,Secondary Education,Secondary Education,health,other,home,mother,0.0,109.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,4.0,3.0,1.0,3.0,5.0,0.0,14,15,15
 341,GP,F,19,U,9.0,T,Higher Education,Higher Education,health,other,reputation,other,24.0,183.0,0.0,no,yes,no,Unknown,yes,yes,yes,no,2.0,3.0,4.0,2.0,3.0,2.0,2.0,14,13,13
 342,GP,F,18,U,3.0,T,Higher Education,Secondary Education,other,other,home,other,16.0,140.0,0.0,no,yes,no,no,yes,yes,yes,yes,4.0,4.0,5.0,1.0,2.0,2.0,0.0,13,14,14
 343,GP,F,18,U,9.0,U,Higher Education,Secondary Education,other,other,reputation,father,9.0,1336.0,0.0,no,Unknown,no,no,yes,yes,yes,no,4.0,3.0,3.0,1.0,1.0,3.0,0.0,16,17,17
 344,GP,M,18,U,2.0,T,Higher Education,Higher Education,teacher,teacher,home,mother,15.0,3.0,0.0,no,yes,no,no,yes,yes,yes,yes,1.0,4.0,2.0,2.0,2.0,1.0,0.0,18,18,17
 345,GP,F,18,U,2.0,A,Higher Education,Higher Education,health,other,home,mother,3.0,275.0,0.0,no,yes,yes,no,yes,yes,yes,yes,4.0,3.0,4.0,1.0,1.0,4.0,0.0,14,15,15
-346,GP,M,17,U,6.0,T,Higher Education,unknown,other,teacher,home,father,17.0,109.0,0.0,no,no,no,no,Unknown,yes,yes,no,4.0,1.0,1.0,2.0,2.0,5.0,0.0,12,13,13
+346,GP,M,17,U,1.0,T,Higher Education,unknown,other,teacher,home,father,17.0,109.0,0.0,no,no,no,no,Unknown,yes,yes,no,4.0,1.0,1.0,2.0,2.0,5.0,0.0,12,13,13
 347,GP,F,17,R,5.0,T,Higher Education,Higher Education,services,services,reputation,mother,29.0,323.0,0.0,no,yes,no,yes,yes,yes,yes,no,5.0,3.0,4.0,1.0,1.0,5.0,0.0,7,7,8
 348,GP,F,17,U,8.0,T,Higher Education,Middle School Education,other,other,reputation,mother,19.0,348.0,0.0,Unknown,yes,no,no,yes,yes,yes,no,4.0,3.0,3.0,1.0,1.0,3.0,0.0,16,16,16
 349,GP,F,17,U,8.0,T,Secondary Education,Middle School Education,health,health,reputation,father,8.0,1298.0,0.0,no,yes,no,Unknown,no,yes,yes,no,5.0,2.0,2.0,1.0,2.0,5.0,0.0,18,18,18
-350,GP,M,19,R,6.0,T,Middle School Education,Primary Education,at_home,services,course,mother,28.0,330.0,1.0,no,no,no,yes,yes,yes,yes,yes,4.0,3.0,1.0,1.0,1.0,5.0,0.0,9,10,11
+350,GP,M,19,R,1.0,T,Middle School Education,Primary Education,at_home,services,course,mother,28.0,330.0,1.0,no,no,no,yes,yes,yes,yes,yes,4.0,3.0,1.0,1.0,1.0,5.0,0.0,9,10,11
 351,GP,M,20,U,7.0,A,Secondary Education,Middle School Education,services,other,course,other,5.0,86.0,2.0,no,no,no,yes,yes,yes,no,no,5.0,5.0,3.0,1.0,1.0,5.0,0.0,14,15,15
 352,GP,M,19,R,9.0,T,unknown,Secondary Education,other,unknown,reputation,father,7.0,167.0,0.0,no,no,no,yes,yes,yes,no,yes,4.0,5.0,3.0,1.0,2.0,5.0,0.0,10,10,11
 353,GP,F,18,U,6.0,T,Primary Education,Higher Education,other,teacher,home,mother,15.0,236.0,0.0,yes,yes,Unknown,no,no,yes,no,yes,4.0,4.0,4.0,1.0,2.0,5.0,2.0,10,10,11
@@ -357,7 +357,7 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 355,GP,F,17,U,4.0,T,Middle School Education,Secondary Education,other,other,course,father,23.0,151.0,0.0,no,no,no,yes,Unknown,yes,yes,yes,4.0,2.0,1.0,1.0,1.0,3.0,2.0,11,12,14
 356,GP,F,17,R,4.0,T,Higher Education,Higher Education,teacher,teacher,course,mother,7.0,119.0,0.0,no,no,no,yes,yes,yes,yes,no,4.0,4.0,4.0,1.0,1.0,5.0,2.0,15,16,17
 357,GP,F,18,U,5.0,T,Higher Education,Secondary Education,other,other,course,mother,12.0,414.0,0.0,no,yes,no,yes,yes,yes,yes,yes,4.0,3.0,4.0,1.0,1.0,5.0,2.0,14,15,17
-358,GP,U,18,U,6.0,T,Higher Education,Secondary Education,health,services,course,mother,24.0,118.0,0.0,no,yes,no,no,yes,yes,yes,no,3.0,2.0,4.0,1.0,4.0,1.0,8.0,12,12,15
+358,GP,U,18,U,1.0,T,Higher Education,Secondary Education,health,services,course,mother,24.0,118.0,0.0,no,yes,no,no,yes,yes,yes,no,3.0,2.0,4.0,1.0,4.0,1.0,8.0,12,12,15
 359,GP,U,17,R,6.0,T,Secondary Education,Higher Education,at_home,services,course,father,7.0,330.0,0.0,no,yes,no,yes,no,yes,yes,no,4.0,3.0,4.0,2.0,2.0,5.0,2.0,15,15,17
 360,GP,F,18,U,7.0,T,Secondary Education,Secondary Education,at_home,other,course,father,13.0,290.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,1.0,4.0,1.0,1.0,3.0,8.0,11,12,14
 361,GP,M,19,U,4.0,T,Higher Education,Middle School Education,health,other,course,mother,25.0,126.0,0.0,no,yes,no,yes,yes,yes,yes,yes,5.0,4.0,4.0,1.0,1.0,1.0,9.0,11,10,10
@@ -365,16 +365,16 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 363,GP,F,18,U,9.0,T,Secondary Education,Higher Education,other,other,course,mother,4.0,41.0,0.0,no,yes,no,yes,yes,yes,yes,yes,5.0,4.0,4.0,1.0,2.0,1.0,4.0,11,12,14
 364,GP,F,17,U,4.0,T,Higher Education,Higher Education,health,health,course,mother,3.0,83.0,0.0,no,no,no,yes,yes,yes,yes,no,5.0,3.0,4.0,1.0,2.0,5.0,2.0,14,15,17
 365,GP,F,17,U,7.0,A,Higher Education,Secondary Education,services,services,course,mother,4.0,246.0,0.0,no,yes,no,no,yes,yes,yes,yes,5.0,2.0,2.0,1.0,2.0,5.0,14.0,15,14,17
-366,GP,F,17,U,5.0,A,Secondary Education,Secondary Education,services,other,home,mother,13.0,264.0,0.0,yes,yes,no,no,yes,yes,yes,no,5.0,3.0,3.0,1.0,1.0,5.0,0.0,12,12,13
-367,GP,F,17,U,6.0,T,Middle School Education,Primary Education,other,other,home,father,8.0,240.0,0.0,no,no,no,yes,yes,yes,yes,no,4.0,2.0,3.0,2.0,2.0,2.0,2.0,11,12,14
-368,GP,M,18,U,6.0,U,Higher Education,Higher Education,other,other,reputation,father,0.0,34.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,2.0,5.0,3.0,4.0,5.0,2.0,8,9,11
+366,GP,F,17,U,1.0,A,Secondary Education,Secondary Education,services,other,home,mother,13.0,264.0,0.0,yes,yes,no,no,yes,yes,yes,no,5.0,3.0,3.0,1.0,1.0,5.0,0.0,12,12,13
+367,GP,F,17,U,1.0,T,Middle School Education,Primary Education,other,other,home,father,8.0,240.0,0.0,no,no,no,yes,yes,yes,yes,no,4.0,2.0,3.0,2.0,2.0,2.0,2.0,11,12,14
+368,GP,M,18,U,1.0,U,Higher Education,Higher Education,other,other,reputation,father,0.0,34.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,2.0,5.0,3.0,4.0,5.0,2.0,8,9,11
 369,GP,F,19,U,7.0,T,Primary Education,Primary Education,other,other,course,other,51.0,333.0,0.0,no,no,no,yes,yes,no,no,yes,1.0,5.0,5.0,4.0,3.0,5.0,12.0,10,10,11
 370,GP,F,19,U,3.0,A,Primary Education,Primary Education,other,other,course,other,35.0,282.0,2.0,no,yes,no,Unknown,no,yes,yes,yes,5.0,3.0,4.0,1.0,1.0,4.0,2.0,8,8,9
 371,GP,F,18,U,7.0,T,Middle School Education,Middle School Education,other,other,course,mother,6.0,77.0,0.0,no,yes,no,yes,yes,yes,yes,yes,4.0,3.0,5.0,2.0,4.0,5.0,2.0,10,10,10
 372,GP,F,17,U,5.0,T,Middle School Education,Middle School Education,other,other,course,mother,12.0,282.0,0.0,no,yes,no,no,yes,yes,no,yes,4.0,3.0,2.0,1.0,1.0,3.0,4.0,14,13,13
-373,GP,F,17,R,6.0,T,Middle School Education,Middle School Education,services,services,course,mother,6.0,302.0,0.0,no,yes,no,yes,yes,yes,yes,no,3.0,3.0,2.0,2.0,2.0,3.0,0.0,11,11,10
+373,GP,F,17,R,1.0,T,Middle School Education,Middle School Education,services,services,course,mother,6.0,302.0,0.0,no,yes,no,yes,yes,yes,yes,no,3.0,3.0,2.0,2.0,2.0,3.0,0.0,11,11,10
 374,GP,F,17,U,8.0,T,Secondary Education,Primary Education,services,services,course,father,7.0,462.0,0.0,no,yes,no,no,no,yes,yes,no,3.0,4.0,3.0,2.0,3.0,5.0,0.0,17,18,17
-375,GP,F,17,U,6.0,T,None,Middle School Education,at_home,at_home,home,father,17.0,382.0,0.0,no,no,no,no,yes,yes,yes,no,3.0,3.0,3.0,2.0,2.0,2.0,0.0,14,14,15
+375,GP,F,17,U,1.0,T,None,Middle School Education,at_home,at_home,home,father,17.0,382.0,0.0,no,no,no,no,yes,yes,yes,no,3.0,3.0,3.0,2.0,2.0,2.0,0.0,14,14,15
 376,GP,F,18,U,7.0,T,Primary Education,Primary Education,other,other,home,mother,30.0,508.0,0.0,no,no,no,yes,Unknown,yes,yes,no,4.0,5.0,5.0,1.0,2.0,2.0,0.0,14,14,14
 377,GP,M,18,U,5.0,T,Higher Education,Higher Education,other,other,course,mother,15.0,431.0,0.0,no,no,no,yes,yes,yes,yes,no,4.0,3.0,3.0,2.0,2.0,3.0,0.0,13,14,13
 378,GP,M,17,U,7.0,T,Secondary Education,Secondary Education,other,services,reputation,mother,6.0,16.0,0.0,no,no,no,Unknown,no,yes,yes,no,4.0,3.0,5.0,3.0,5.0,5.0,0.0,17,18,17
@@ -382,7 +382,7 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 380,GP,F,17,U,8.0,T,Higher Education,Higher Education,teacher,services,course,mother,3.0,469.0,0.0,no,yes,no,yes,yes,yes,yes,no,5.0,4.0,4.0,1.0,3.0,4.0,0.0,13,12,13
 381,GP,F,17,U,8.0,T,Higher Education,Higher Education,teacher,teacher,course,mother,22.0,599.0,0.0,no,yes,no,no,no,yes,yes,yes,4.0,3.0,3.0,1.0,2.0,4.0,4.0,15,14,15
 382,GP,F,17,U,6.0,T,Secondary Education,Secondary Education,at_home,other,course,mother,13.0,11.0,0.0,no,yes,yes,yes,yes,yes,yes,no,4.0,2.0,3.0,2.0,5.0,5.0,2.0,11,12,11
-383,GP,M,18,U,6.0,T,Middle School Education,Middle School Education,other,other,course,mother,9.0,969.0,0.0,no,yes,yes,yes,yes,yes,yes,no,4.0,5.0,5.0,2.0,4.0,5.0,0.0,11,11,12
+383,GP,M,18,U,1.0,T,Middle School Education,Middle School Education,other,other,course,mother,9.0,969.0,0.0,no,yes,yes,yes,yes,yes,yes,no,4.0,5.0,5.0,2.0,4.0,5.0,0.0,11,11,12
 384,GP,M,19,U,8.0,T,Secondary Education,Middle School Education,at_home,services,home,other,3.0,40.0,0.0,Unknown,yes,no,no,no,yes,no,yes,5.0,3.0,4.0,2.0,2.0,5.0,0.0,11,10,10
 385,GP,F,18,U,4.0,T,Middle School Education,Middle School Education,at_home,other,course,mother,130.0,204.0,0.0,no,no,no,yes,yes,Unknown,no,yes,4.0,2.0,5.0,1.0,1.0,2.0,2.0,10,9,10
 386,GP,F,17,R,9.0,T,Middle School Education,Higher Education,at_home,other,course,father,12.0,554.0,0.0,no,yes,no,no,yes,yes,yes,yes,4.0,4.0,3.0,1.0,1.0,5.0,0.0,15,15,15
@@ -392,7 +392,7 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 390,GP,F,18,R,8.0,T,Middle School Education,Middle School Education,at_home,other,course,mother,17.0,1195.0,0.0,no,no,no,yes,yes,yes,no,no,4.0,4.0,3.0,1.0,1.0,4.0,6.0,14,13,14
 391,GP,F,17,U,6.0,T,Secondary Education,Higher Education,services,other,course,mother,4.0,432.0,0.0,no,no,no,no,Unknown,yes,yes,no,4.0,4.0,5.0,1.0,3.0,5.0,8.0,11,13,14
 392,GP,F,17,U,9.0,T,Secondary Education,Middle School Education,other,other,home,mother,13.0,127.0,0.0,no,yes,no,no,yes,yes,yes,yes,4.0,3.0,2.0,2.0,3.0,2.0,0.0,12,13,15
-393,GP,F,18,U,6.0,T,Secondary Education,unknown,services,services,home,mother,0.0,754.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,3.0,3.0,1.0,1.0,1.0,4.0,14,14,15
+393,GP,F,18,U,1.0,T,Secondary Education,unknown,services,services,home,mother,0.0,754.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,3.0,3.0,1.0,1.0,1.0,4.0,14,14,15
 394,GP,F,17,U,7.0,A,Secondary Education,Middle School Education,other,other,home,mother,0.0,131.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,3.0,3.0,2.0,3.0,2.0,0.0,14,14,16
 395,GP,M,18,U,7.0,T,Higher Education,Higher Education,teacher,services,home,father,4.0,238.0,0.0,Unknown,yes,no,yes,yes,yes,yes,no,4.0,3.0,3.0,2.0,2.0,4.0,0.0,12,12,13
 396,GP,M,18,U,2.0,T,Secondary Education,Higher Education,services,other,home,mother,3.0,180.0,0.0,no,no,no,yes,yes,yes,yes,yes,4.0,3.0,3.0,1.0,3.0,4.0,6.0,16,16,17
@@ -404,22 +404,22 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 402,GP,F,17,U,6.0,T,Higher Education,Secondary Education,health,other,reputation,mother,15.0,551.0,0.0,no,Unknown,no,yes,yes,yes,yes,yes,4.0,4.0,3.0,1.0,3.0,4.0,0.0,11,12,13
 403,GP,F,17,U,6.0,T,Middle School Education,Primary Education,services,other,course,mother,21.0,171.0,0.0,no,yes,no,yes,yes,yes,yes,yes,4.0,3.0,4.0,2.0,2.0,1.0,10.0,12,15,15
 404,GP,F,17,U,7.0,T,Middle School Education,Primary Education,services,other,reputation,mother,4.0,160.0,0.0,no,yes,no,yes,yes,yes,yes,no,4.0,3.0,5.0,2.0,4.0,4.0,4.0,12,16,16
-405,GP,F,19,U,7.0,A,Middle School Education,Secondary Education,at_home,other,home,other,20.0,29.0,1.0,no,no,no,no,yes,no,yes,no,2.0,2.0,3.0,3.0,4.0,5.0,16.0,10,11,11
+405,GP,F,19,U,1.0,A,Middle School Education,Secondary Education,at_home,other,home,other,20.0,29.0,1.0,no,no,no,no,yes,no,yes,no,2.0,2.0,3.0,3.0,4.0,5.0,16.0,10,11,11
 406,GP,F,17,U,5.0,T,unknown,unknown,other,at_home,home,mother,5.0,58.0,1.0,no,yes,Unknown,no,yes,yes,yes,yes,4.0,1.0,2.0,1.0,1.0,3.0,6.0,10,13,13
-407,GP,U,21,U,7.0,T,Higher Education,unknown,other,other,reputation,other,13.0,532.0,2.0,no,no,yes,yes,yes,yes,yes,no,3.0,3.0,2.0,1.0,1.0,5.0,0.0,9,12,12
+407,GP,U,21,U,1.0,T,Higher Education,unknown,other,other,reputation,other,13.0,532.0,2.0,no,no,yes,yes,yes,yes,yes,no,3.0,3.0,2.0,1.0,1.0,5.0,0.0,9,12,12
 408,GP,M,18,U,2.0,T,Middle School Education,Middle School Education,services,services,reputation,mother,5.0,265.0,0.0,no,yes,no,yes,no,no,yes,no,4.0,4.0,4.0,1.0,3.0,3.0,11.0,9,11,12
 409,GP,M,18,U,3.0,A,unknown,Higher Education,other,other,reputation,other,6.0,184.0,0.0,no,no,no,yes,yes,yes,yes,yes,4.0,3.0,5.0,1.0,4.0,2.0,9.0,13,14,15
 410,GP,F,17,U,9.0,T,Middle School Education,Middle School Education,services,services,reputation,mother,4.0,246.0,0.0,no,yes,no,yes,yes,yes,yes,no,4.0,3.0,4.0,1.0,3.0,4.0,0.0,13,17,17
-411,GP,M,17,U,5.0,A,Higher Education,Higher Education,health,other,reputation,mother,11.0,558.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,4.0,2.0,1.0,2.0,4.0,2.0,12,15,15
-412,GP,F,18,U,6.0,T,Higher Education,Middle School Education,teacher,other,course,mother,0.0,229.0,0.0,no,yes,no,yes,yes,yes,yes,no,4.0,2.0,2.0,1.0,2.0,3.0,0.0,14,17,17
-413,GP,M,21,R,7.0,T,Primary Education,Primary Education,at_home,other,course,other,27.0,253.0,2.0,no,Unknown,no,yes,yes,no,yes,yes,5.0,3.0,3.0,5.0,2.0,4.0,21.0,9,10,10
+411,GP,M,17,U,1.0,A,Higher Education,Higher Education,health,other,reputation,mother,11.0,558.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,4.0,2.0,1.0,2.0,4.0,2.0,12,15,15
+412,GP,F,18,U,1.0,T,Higher Education,Middle School Education,teacher,other,course,mother,0.0,229.0,0.0,no,yes,no,yes,yes,yes,yes,no,4.0,2.0,2.0,1.0,2.0,3.0,0.0,14,17,17
+413,GP,M,21,R,1.0,T,Primary Education,Primary Education,at_home,other,course,other,27.0,253.0,2.0,no,Unknown,no,yes,yes,no,yes,yes,5.0,3.0,3.0,5.0,2.0,4.0,21.0,9,10,10
 414,GP,F,20,R,9.0,T,Primary Education,Primary Education,other,other,reputation,other,20.0,385.0,0.0,no,no,no,no,yes,yes,yes,yes,3.0,3.0,2.0,1.0,3.0,3.0,8.0,11,15,15
 415,GP,F,19,U,9.0,T,Higher Education,Higher Education,teacher,other,home,other,6.0,75.0,1.0,no,yes,no,no,yes,yes,yes,yes,3.0,2.0,5.0,4.0,4.0,5.0,5.0,9,10,11
-416,GP,M,17,U,5.0,A,Secondary Education,Middle School Education,other,other,reputation,mother,1.0,135.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,4.0,4.0,1.0,2.0,5.0,10.0,16,18,18
+416,GP,M,17,U,1.0,A,Secondary Education,Middle School Education,other,other,reputation,mother,1.0,135.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,4.0,4.0,1.0,2.0,5.0,10.0,16,18,18
 417,GP,F,18,U,4.0,T,Secondary Education,Middle School Education,at_home,other,reputation,father,12.0,544.0,0.0,no,yes,no,no,yes,yes,yes,yes,4.0,3.0,4.0,1.0,2.0,2.0,5.0,14,17,17
 418,GP,M,18,R,6.0,T,Middle School Education,Secondary Education,other,services,reputation,father,10.0,104.0,0.0,no,no,no,no,yes,yes,yes,no,3.0,1.0,3.0,4.0,5.0,4.0,13.0,13,14,14
 419,GP,M,19,U,8.0,U,Middle School Education,Primary Education,other,other,reputation,mother,14.0,39.0,0.0,no,no,no,no,yes,yes,yes,no,5.0,3.0,4.0,1.0,4.0,4.0,10.0,7,11,11
-420,GP,U,18,U,5.0,A,unknown,Middle School Education,services,other,reputation,mother,26.0,194.0,0.0,no,yes,no,Unknown,yes,yes,yes,no,4.0,1.0,4.0,1.0,3.0,4.0,10.0,14,17,17
+420,GP,U,18,U,1.0,A,unknown,Middle School Education,services,other,reputation,mother,26.0,194.0,0.0,no,yes,no,Unknown,yes,yes,yes,no,4.0,1.0,4.0,1.0,3.0,4.0,10.0,14,17,17
 421,GP,F,20,U,8.0,T,Primary Education,None,other,other,reputation,mother,22.0,16.0,1.0,yes,no,no,no,yes,yes,yes,yes,5.0,3.0,1.0,1.0,1.0,5.0,5.0,8,10,10
 422,GP,F,18,U,5.0,T,unknown,Middle School Education,services,other,home,mother,5.0,170.0,0.0,no,yes,no,yes,no,yes,yes,yes,3.0,1.0,2.0,1.0,2.0,1.0,4.0,10,13,13
 423,MS,F,16,U,6.0,T,Primary Education,Secondary Education,at_home,other,other,father,27.0,79.0,0.0,no,yes,no,no,yes,Unknown,yes,yes,4.0,3.0,3.0,1.0,3.0,5.0,11.0,10,11,11
@@ -435,17 +435,17 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 433,MS,F,15,R,9.0,U,Higher Education,Higher Education,teacher,other,course,mother,18.0,43.0,0.0,no,no,no,no,yes,yes,yes,yes,1.0,5.0,1.0,3.0,5.0,5.0,0.0,13,14,14
 434,MS,F,16,U,2.0,A,Middle School Education,Middle School Education,at_home,other,reputation,mother,24.0,680.0,0.0,no,no,no,yes,no,no,no,yes,1.0,2.0,1.0,1.0,1.0,1.0,4.0,10,9,11
 435,MS,F,15,R,2.0,U,Primary Education,Primary Education,at_home,services,reputation,father,18.0,174.0,0.0,no,yes,no,no,yes,yes,yes,no,5.0,4.0,3.0,1.0,2.0,4.0,0.0,10,10,10
-436,MS,F,15,R,6.0,T,Primary Education,Primary Education,other,services,course,mother,21.0,49.0,1.0,no,yes,Unknown,no,yes,yes,yes,yes,4.0,4.0,3.0,1.0,2.0,2.0,4.0,6,7,8
+436,MS,F,15,R,1.0,T,Primary Education,Primary Education,other,services,course,mother,21.0,49.0,1.0,no,yes,Unknown,no,yes,yes,yes,yes,4.0,4.0,3.0,1.0,2.0,2.0,4.0,6,7,8
 437,MS,F,16,R,5.0,T,None,Middle School Education,other,other,other,mother,28.0,35.0,0.0,no,yes,no,yes,yes,yes,no,no,3.0,2.0,3.0,1.0,2.0,2.0,0.0,12,11,12
 438,MS,F,17,R,9.0,T,Middle School Education,Secondary Education,other,other,course,mother,24.0,156.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,5.0,5.0,1.0,3.0,3.0,2.0,10,11,12
 439,MS,F,15,R,4.0,T,Secondary Education,Secondary Education,other,services,course,father,29.0,95.0,0.0,no,no,no,no,no,yes,yes,no,4.0,1.0,3.0,1.0,1.0,4.0,0.0,14,16,16
 440,MS,M,16,U,9.0,T,Primary Education,Primary Education,at_home,services,home,mother,25.0,286.0,0.0,Unknown,yes,no,yes,yes,yes,no,yes,5.0,4.0,5.0,4.0,5.0,3.0,0.0,7,0,0
 441,MS,M,17,unknown,9.0,T,Primary Education,Primary Education,other,other,home,mother,7.0,235.0,0.0,no,no,yes,no,no,yes,yes,no,4.0,4.0,3.0,2.0,4.0,5.0,4.0,8,9,9
-442,MS,M,15,R,6.0,T,Higher Education,Primary Education,health,services,reputation,father,0.0,122.0,0.0,no,yes,no,yes,yes,yes,yes,no,5.0,3.0,3.0,1.0,2.0,2.0,0.0,12,13,14
+442,MS,M,15,R,1.0,T,Higher Education,Primary Education,health,services,reputation,father,0.0,122.0,0.0,no,yes,no,yes,yes,yes,yes,no,5.0,3.0,3.0,1.0,2.0,2.0,0.0,12,13,14
 443,MS,M,15,R,3.0,T,Higher Education,Primary Education,health,services,reputation,father,0.0,150.0,0.0,no,yes,no,yes,yes,yes,yes,no,5.0,3.0,4.0,1.0,2.0,2.0,7.0,7,9,8
 444,MS,M,16,R,4.0,T,Secondary Education,Higher Education,other,health,other,mother,52.0,259.0,0.0,no,no,no,no,no,yes,no,no,3.0,4.0,5.0,1.0,2.0,5.0,4.0,9,10,11
 445,MS,M,15,R,6.0,T,Primary Education,Primary Education,other,other,course,mother,135.0,133.0,0.0,no,yes,no,yes,yes,yes,no,yes,5.0,4.0,5.0,2.0,4.0,4.0,8.0,7,9,9
-446,MS,M,15,U,6.0,T,Secondary Education,Secondary Education,at_home,at_home,reputation,father,1.0,150.0,0.0,no,yes,no,yes,yes,yes,yes,no,5.0,3.0,3.0,1.0,1.0,5.0,0.0,11,11,11
+446,MS,M,15,U,5.0,T,Secondary Education,Secondary Education,at_home,at_home,reputation,father,1.0,150.0,0.0,no,yes,no,yes,yes,yes,yes,no,5.0,3.0,3.0,1.0,1.0,5.0,0.0,11,11,11
 447,MS,M,17,R,7.0,T,Middle School Education,Primary Education,other,other,other,mother,41.0,113.0,0.0,no,no,no,yes,yes,no,no,yes,5.0,5.0,5.0,5.0,5.0,3.0,8.0,8,10,9
 448,MS,F,16,R,6.0,T,Higher Education,Higher Education,teacher,teacher,course,mother,18.0,356.0,0.0,no,no,no,yes,yes,yes,yes,yes,4.0,2.0,2.0,1.0,1.0,4.0,6.0,16,16,17
 449,MS,F,15,R,6.0,T,Primary Education,Middle School Education,other,services,course,mother,29.0,97.0,0.0,no,no,no,no,yes,yes,no,no,5.0,1.0,2.0,1.0,1.0,1.0,3.0,11,13,13
@@ -472,28 +472,28 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 470,MS,F,15,R,9.0,T,Secondary Education,Secondary Education,services,other,reputation,mother,1.0,155.0,0.0,no,yes,no,no,yes,yes,yes,yes,4.0,5.0,4.0,1.0,1.0,1.0,0.0,13,12,12
 471,MS,F,16,R,7.0,T,Middle School Education,Middle School Education,at_home,other,course,mother,25.0,194.0,1.0,no,yes,no,yes,no,yes,no,no,4.0,4.0,4.0,2.0,3.0,5.0,2.0,12,11,12
 472,MS,F,16,R,2.0,T,Middle School Education,Middle School Education,other,other,home,father,34.0,41.0,0.0,no,yes,no,yes,yes,yes,no,yes,4.0,3.0,2.0,1.0,1.0,4.0,0.0,14,14,16
-473,MS,M,16,U,6.0,T,Middle School Education,Primary Education,at_home,services,course,mother,24.0,106.0,0.0,no,yes,no,yes,yes,yes,yes,no,2.0,4.0,3.0,2.0,3.0,4.0,4.0,10,8,10
+473,MS,M,16,U,1.0,T,Middle School Education,Primary Education,at_home,services,course,mother,24.0,106.0,0.0,no,yes,no,yes,yes,yes,yes,no,2.0,4.0,3.0,2.0,3.0,4.0,4.0,10,8,10
 474,MS,M,15,R,2.0,T,Primary Education,Secondary Education,at_home,other,reputation,father,50.0,66.0,0.0,no,yes,no,yes,yes,yes,yes,no,4.0,2.0,4.0,3.0,5.0,3.0,2.0,10,11,11
 475,MS,F,15,U,5.0,T,Middle School Education,Middle School Education,other,services,course,mother,21.0,437.0,0.0,no,yes,no,yes,yes,yes,no,no,5.0,3.0,2.0,1.0,1.0,4.0,0.0,12,13,14
-476,MS,F,16,R,6.0,T,Middle School Education,Primary Education,other,unknown,home,mother,2.0,43.0,0.0,no,yes,no,no,yes,yes,yes,yes,5.0,4.0,3.0,1.0,1.0,5.0,2.0,10,8,8
+476,MS,F,16,R,1.0,T,Middle School Education,Primary Education,other,unknown,home,mother,2.0,43.0,0.0,no,yes,no,no,yes,yes,yes,yes,5.0,4.0,3.0,1.0,1.0,5.0,2.0,10,8,8
 477,MS,M,15,U,4.0,T,Secondary Education,Secondary Education,services,services,course,father,28.0,116.0,0.0,no,yes,no,yes,Unknown,yes,yes,no,4.0,3.0,3.0,2.0,4.0,3.0,11.0,12,10,11
 478,MS,F,16,unknown,9.0,U,Primary Education,Primary Education,at_home,other,course,father,17.0,200.0,3.0,yes,yes,no,no,yes,yes,no,no,3.0,4.0,3.0,1.0,1.0,1.0,0.0,7,7,8
 479,MS,F,17,U,5.0,T,Middle School Education,Middle School Education,other,at_home,course,mother,15.0,65.0,0.0,no,yes,no,yes,yes,no,no,no,4.0,5.0,3.0,1.0,1.0,5.0,4.0,9,9,10
 480,MS,F,19,U,5.0,T,Middle School Education,Secondary Education,at_home,services,course,other,8.0,50.0,1.0,no,no,no,no,yes,no,yes,yes,4.0,4.0,4.0,1.0,1.0,2.0,0.0,9,9,10
 481,MS,F,17,R,8.0,T,Middle School Education,unknown,at_home,other,course,mother,31.0,87.0,0.0,no,yes,no,yes,yes,no,no,yes,5.0,5.0,3.0,1.0,2.0,3.0,2.0,9,10,11
-482,MS,F,15,R,6.0,T,Primary Education,Primary Education,at_home,other,course,mother,22.0,29.0,0.0,no,yes,no,no,yes,no,no,yes,5.0,2.0,1.0,1.0,3.0,4.0,0.0,9,10,9
+482,MS,F,15,R,1.0,T,Primary Education,Primary Education,at_home,other,course,mother,22.0,29.0,0.0,no,yes,no,no,yes,no,no,yes,5.0,2.0,1.0,1.0,3.0,4.0,0.0,9,10,9
 483,MS,F,16,R,9.0,T,Middle School Education,Middle School Education,other,other,course,father,53.0,193.0,0.0,no,yes,Unknown,no,yes,no,yes,no,3.0,4.0,5.0,1.0,2.0,1.0,1.0,9,10,11
 484,MS,F,16,U,3.0,A,Middle School Education,Middle School Education,other,other,home,mother,11.0,69.0,0.0,no,yes,no,no,yes,no,no,no,4.0,3.0,4.0,1.0,2.0,1.0,6.0,7,7,8
 485,MS,F,17,R,8.0,T,Middle School Education,Middle School Education,at_home,other,course,mother,26.0,255.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,3.0,5.0,1.0,2.0,4.0,0.0,11,10,11
 486,MS,F,16,U,7.0,T,Middle School Education,Middle School Education,other,services,course,father,10.0,109.0,1.0,no,yes,yes,yes,no,yes,yes,no,4.0,4.0,3.0,1.0,4.0,3.0,1.0,9,10,10
-487,MS,F,18,R,7.0,A,Secondary Education,Middle School Education,other,other,course,other,22.0,568.0,2.0,no,yes,no,no,no,no,no,yes,3.0,3.0,2.0,1.0,1.0,2.0,6.0,7,9,10
+487,MS,F,18,R,1.0,A,Secondary Education,Middle School Education,other,other,course,other,22.0,568.0,2.0,no,yes,no,no,no,no,no,yes,3.0,3.0,2.0,1.0,1.0,2.0,6.0,7,9,10
 488,MS,F,19,U,7.0,T,Primary Education,Primary Education,at_home,services,course,mother,1.0,384.0,1.0,Unknown,no,no,yes,yes,no,no,yes,5.0,3.0,1.0,1.0,1.0,3.0,6.0,7,9,9
 489,MS,M,18,R,9.0,T,Primary Education,Primary Education,other,other,home,mother,27.0,112.0,1.0,no,no,no,yes,yes,no,yes,no,4.0,4.0,3.0,3.0,4.0,4.0,0.0,8,9,10
 490,MS,F,18,R,4.0,T,Primary Education,Primary Education,at_home,at_home,course,mother,22.0,50.0,1.0,no,no,no,no,no,no,yes,yes,3.0,2.0,3.0,1.0,1.0,2.0,4.0,9,11,10
 491,MS,F,19,U,7.0,T,Primary Education,Primary Education,other,other,course,other,19.0,215.0,0.0,no,yes,Unknown,no,yes,yes,yes,yes,1.0,1.0,4.0,4.0,1.0,1.0,12.0,7,8,9
 492,MS,F,16,R,6.0,A,Middle School Education,Middle School Education,health,other,course,mother,15.0,199.0,0.0,no,no,no,no,no,yes,no,yes,3.0,3.0,2.0,1.0,1.0,3.0,2.0,8,10,10
 493,MS,F,17,U,4.0,T,None,Primary Education,other,unknown,course,father,25.0,100.0,0.0,no,no,no,yes,no,Unknown,no,no,2.0,4.0,4.0,3.0,5.0,5.0,5.0,9,9,10
-494,MS,F,16,R,6.0,T,Primary Education,Middle School Education,at_home,other,course,mother,12.0,279.0,0.0,no,no,Unknown,yes,yes,no,yes,no,4.0,4.0,5.0,1.0,3.0,3.0,0.0,8,9,9
+494,MS,F,16,R,1.0,T,Primary Education,Middle School Education,at_home,other,course,mother,12.0,279.0,0.0,no,no,Unknown,yes,yes,no,yes,no,4.0,4.0,5.0,1.0,3.0,3.0,0.0,8,9,9
 495,MS,F,16,U,8.0,T,Secondary Education,Secondary Education,other,other,reputation,mother,1.0,98.0,0.0,no,no,no,yes,yes,no,yes,yes,4.0,5.0,4.0,1.0,1.0,4.0,0.0,14,13,13
 496,MS,F,16,R,3.0,T,Primary Education,Primary Education,services,services,home,mother,11.0,86.0,0.0,no,yes,no,yes,yes,yes,yes,yes,4.0,4.0,4.0,2.0,2.0,4.0,2.0,14,14,14
 497,MS,M,17,U,9.0,U,Secondary Education,Secondary Education,services,at_home,course,mother,19.0,904.0,1.0,no,yes,yes,yes,yes,yes,no,no,5.0,4.0,5.0,3.0,4.0,5.0,0.0,10,11,10
@@ -506,9 +506,9 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 504,MS,F,19,U,2.0,T,Middle School Education,Middle School Education,other,other,home,mother,9.0,381.0,0.0,no,no,no,no,yes,yes,yes,yes,5.0,4.0,3.0,1.0,1.0,1.0,0.0,12,13,13
 505,MS,F,17,unknown,9.0,T,Primary Education,Primary Education,at_home,other,reputation,mother,22.0,32.0,0.0,no,yes,no,yes,no,yes,yes,yes,4.0,4.0,5.0,1.0,2.0,5.0,0.0,11,11,11
 506,MS,F,20,U,5.0,T,Secondary Education,Secondary Education,at_home,services,other,mother,29.0,287.0,1.0,no,no,no,yes,yes,yes,yes,yes,3.0,3.0,4.0,2.0,4.0,3.0,8.0,11,9,10
-507,MS,F,17,U,6.0,T,Primary Education,Primary Education,other,services,course,father,7.0,419.0,0.0,no,yes,no,no,yes,yes,Unknown,yes,4.0,3.0,3.0,1.0,1.0,3.0,0.0,11,11,10
+507,MS,F,17,U,1.0,T,Primary Education,Primary Education,other,services,course,father,7.0,419.0,0.0,no,yes,no,no,yes,yes,Unknown,yes,4.0,3.0,3.0,1.0,1.0,3.0,0.0,11,11,10
 508,MS,M,17,R,6.0,T,Middle School Education,Middle School Education,other,other,course,mother,44.0,7.0,1.0,no,yes,Unknown,no,no,yes,yes,no,4.0,4.0,5.0,1.0,2.0,5.0,0.0,10,9,9
-509,MS,F,16,R,6.0,T,Primary Education,Primary Education,at_home,other,course,father,47.0,243.0,0.0,no,yes,no,no,yes,yes,no,no,5.0,3.0,2.0,1.0,1.0,1.0,0.0,16,17,18
+509,MS,F,16,R,1.0,T,Primary Education,Primary Education,at_home,other,course,father,47.0,243.0,0.0,no,yes,no,no,yes,yes,no,no,5.0,3.0,2.0,1.0,1.0,1.0,0.0,16,17,18
 510,MS,F,17,R,8.0,T,Middle School Education,Middle School Education,other,other,reputation,mother,18.0,253.0,0.0,no,yes,no,yes,yes,yes,no,no,5.0,3.0,2.0,1.0,1.0,1.0,0.0,15,17,17
 511,MS,F,17,U,8.0,A,Primary Education,None,other,other,other,mother,30.0,203.0,0.0,Unknown,no,no,no,yes,yes,yes,yes,4.0,4.0,5.0,1.0,1.0,4.0,1.0,11,9,10
 512,MS,F,18,R,8.0,T,Primary Education,Primary Education,at_home,unknown,other,mother,25.0,175.0,1.0,no,yes,no,no,yes,yes,yes,yes,4.0,3.0,2.0,1.0,2.0,5.0,9.0,7,7,7
@@ -516,43 +516,43 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 514,MS,F,16,unknown,8.0,T,Secondary Education,Middle School Education,services,at_home,course,mother,9.0,61.0,0.0,no,no,no,no,yes,yes,yes,no,3.0,1.0,3.0,1.0,4.0,3.0,2.0,7,6,7
 515,MS,F,18,U,2.0,T,Primary Education,Primary Education,other,at_home,reputation,mother,30.0,192.0,0.0,yes,no,no,Unknown,yes,yes,no,no,2.0,3.0,5.0,1.0,4.0,3.0,8.0,9,8,10
 516,MS,F,16,R,7.0,T,Higher Education,Higher Education,health,teacher,reputation,father,2.0,191.0,0.0,no,no,no,yes,no,yes,yes,yes,4.0,3.0,3.0,2.0,3.0,2.0,0.0,14,16,16
-517,MS,F,16,R,6.0,U,Primary Education,Middle School Education,other,other,reputation,mother,24.0,61.0,0.0,no,no,no,yes,yes,yes,yes,no,5.0,4.0,5.0,1.0,4.0,2.0,0.0,14,14,15
+517,MS,F,16,R,1.0,U,Primary Education,Middle School Education,other,other,reputation,mother,24.0,61.0,0.0,no,no,no,yes,yes,yes,yes,no,5.0,4.0,5.0,1.0,4.0,2.0,0.0,14,14,15
 518,MS,F,18,U,8.0,A,Middle School Education,Higher Education,other,services,reputation,father,8.0,273.0,1.0,no,yes,no,no,yes,yes,yes,no,2.0,3.0,3.0,1.0,3.0,1.0,8.0,8,5,8
 519,MS,M,16,R,8.0,T,Middle School Education,Primary Education,other,services,reputation,mother,28.0,286.0,0.0,no,no,no,yes,yes,yes,yes,no,5.0,2.0,1.0,1.0,1.0,2.0,0.0,8,7,0
-520,MS,F,16,U,6.0,T,Primary Education,Primary Education,at_home,other,other,mother,37.0,230.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,3.0,2.0,1.0,3.0,5.0,6.0,6,8,8
+520,MS,F,16,U,1.0,T,Primary Education,Primary Education,at_home,other,other,mother,37.0,230.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,3.0,2.0,1.0,3.0,5.0,6.0,6,8,8
 521,MS,F,16,R,5.0,T,Middle School Education,Secondary Education,at_home,services,other,mother,25.0,135.0,0.0,no,yes,no,yes,yes,yes,yes,no,3.0,3.0,3.0,1.0,1.0,2.0,0.0,8,10,10
 522,MS,F,16,U,7.0,T,Higher Education,Higher Education,health,health,course,mother,6.0,278.0,0.0,Unknown,yes,Unknown,no,yes,yes,yes,yes,4.0,3.0,4.0,1.0,2.0,3.0,4.0,8,8,8
-523,MS,M,18,U,6.0,T,Higher Education,Higher Education,at_home,health,home,mother,14.0,871.0,0.0,no,yes,no,yes,yes,no,yes,yes,5.0,5.0,5.0,5.0,5.0,5.0,2.0,5,6,6
-524,MS,F,16,R,6.0,T,Secondary Education,Higher Education,at_home,other,other,mother,37.0,273.0,0.0,no,yes,no,no,no,yes,no,no,4.0,2.0,1.0,1.0,1.0,2.0,2.0,7,9,8
+523,MS,M,18,U,1.0,T,Higher Education,Higher Education,at_home,health,home,mother,14.0,871.0,0.0,no,yes,no,yes,yes,no,yes,yes,5.0,5.0,5.0,5.0,5.0,5.0,2.0,5,6,6
+524,MS,F,16,R,1.0,T,Secondary Education,Higher Education,at_home,other,other,mother,37.0,273.0,0.0,no,yes,no,no,no,yes,no,no,4.0,2.0,1.0,1.0,1.0,2.0,2.0,7,9,8
 525,MS,M,17,U,2.0,T,Higher Education,Higher Education,other,services,home,mother,11.0,586.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,4.0,3.0,1.0,2.0,5.0,0.0,15,14,16
 526,MS,F,17,R,5.0,T,Higher Education,Primary Education,other,other,other,mother,4.0,91.0,0.0,no,no,no,no,yes,yes,yes,yes,4.0,2.0,3.0,1.0,2.0,5.0,1.0,13,14,14
-527,MS,M,16,U,6.0,T,Middle School Education,Middle School Education,services,services,other,mother,87.0,565.0,0.0,no,no,no,Unknown,yes,yes,no,no,5.0,1.0,3.0,2.0,2.0,3.0,0.0,10,9,10
+527,MS,M,16,U,1.0,T,Middle School Education,Middle School Education,services,services,other,mother,87.0,565.0,0.0,no,no,no,Unknown,yes,yes,no,no,5.0,1.0,3.0,2.0,2.0,3.0,0.0,10,9,10
 528,MS,F,17,R,6.0,T,Middle School Education,Middle School Education,at_home,other,other,mother,1.0,82.0,0.0,no,yes,yes,no,yes,Unknown,yes,no,5.0,1.0,3.0,1.0,2.0,5.0,5.0,9,9,9
 529,MS,F,16,U,2.0,T,Higher Education,unknown,services,services,other,father,23.0,18.0,0.0,no,yes,no,Unknown,yes,yes,no,no,5.0,1.0,3.0,1.0,2.0,5.0,0.0,11,11,11
 530,MS,M,17,U,4.0,T,Secondary Education,Secondary Education,services,services,home,mother,6.0,22.0,0.0,no,yes,no,yes,yes,yes,yes,no,4.0,1.0,4.0,5.0,5.0,3.0,8.0,7,10,9
 531,MS,M,17,U,7.0,T,Primary Education,Primary Education,at_home,services,other,mother,44.0,201.0,0.0,no,no,no,no,yes,yes,yes,yes,5.0,1.0,3.0,3.0,3.0,1.0,0.0,10,10,10
 532,MS,M,16,U,8.0,T,Middle School Education,Primary Education,health,services,other,mother,28.0,137.0,0.0,no,no,no,no,no,yes,yes,yes,4.0,2.0,2.0,1.0,4.0,5.0,2.0,9,7,8
-533,MS,F,16,U,6.0,T,Middle School Education,Primary Education,other,services,other,mother,10.0,124.0,0.0,Unknown,no,no,no,yes,yes,yes,yes,3.0,2.0,2.0,1.0,1.0,3.0,0.0,14,15,16
+533,MS,F,16,U,1.0,T,Middle School Education,Primary Education,other,services,other,mother,10.0,124.0,0.0,Unknown,no,no,no,yes,yes,yes,yes,3.0,2.0,2.0,1.0,1.0,3.0,0.0,14,15,16
 534,MS,M,16,U,2.0,T,Higher Education,Higher Education,teacher,health,other,father,7.0,156.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,1.0,2.0,2.0,5.0,5.0,0.0,11,12,12
 535,MS,M,15,R,8.0,T,Primary Education,Middle School Education,other,services,course,mother,48.0,185.0,0.0,no,yes,no,yes,yes,yes,no,no,5.0,5.0,5.0,1.0,3.0,5.0,11.0,9,11,10
 536,MS,M,15,U,3.0,A,Middle School Education,Middle School Education,other,other,reputation,mother,55.0,680.0,0.0,Unknown,yes,no,yes,yes,yes,no,no,5.0,4.0,5.0,2.0,3.0,5.0,8.0,13,14,14
 537,MS,M,15,U,2.0,A,Middle School Education,Primary Education,services,services,course,mother,10.0,100.0,0.0,no,no,no,yes,yes,yes,yes,no,4.0,3.0,3.0,1.0,2.0,5.0,11.0,12,13,12
-538,MS,F,16,R,6.0,T,Middle School Education,Middle School Education,other,other,course,mother,13.0,492.0,0.0,no,yes,no,no,no,yes,no,yes,4.0,3.0,3.0,2.0,2.0,5.0,2.0,11,11,11
+538,MS,F,16,R,1.0,T,Middle School Education,Middle School Education,other,other,course,mother,13.0,492.0,0.0,no,yes,no,no,no,yes,no,yes,4.0,3.0,3.0,2.0,2.0,5.0,2.0,11,11,11
 539,MS,F,16,U,3.0,T,Higher Education,Primary Education,other,other,home,mother,18.0,223.0,0.0,no,yes,no,yes,yes,yes,yes,no,1.0,2.0,4.0,2.0,2.0,1.0,8.0,9,10,10
 540,MS,F,17,U,5.0,T,Secondary Education,Middle School Education,at_home,other,home,mother,26.0,110.0,0.0,no,no,no,no,yes,yes,no,yes,4.0,3.0,3.0,2.0,2.0,1.0,5.0,9,11,11
 541,MS,F,17,R,4.0,T,Middle School Education,Middle School Education,other,other,other,mother,24.0,270.0,0.0,yes,no,Unknown,no,yes,yes,no,no,5.0,1.0,3.0,1.0,1.0,5.0,0.0,11,9,11
 542,MS,F,16,U,7.0,T,Higher Education,Higher Education,teacher,services,course,mother,22.0,577.0,0.0,no,yes,no,no,yes,yes,yes,yes,5.0,3.0,5.0,1.0,4.0,5.0,1.0,10,11,12
 543,MS,M,17,R,9.0,T,Higher Education,Higher Education,health,other,course,father,59.0,63.0,3.0,no,no,no,yes,yes,yes,yes,yes,3.0,3.0,3.0,1.0,3.0,5.0,2.0,9,9,8
-544,MS,M,17,R,6.0,T,Primary Education,Secondary Education,other,other,course,father,18.0,16.0,0.0,no,no,no,yes,yes,yes,no,yes,5.0,1.0,2.0,3.0,3.0,5.0,2.0,12,11,12
+544,MS,M,17,R,1.0,T,Primary Education,Secondary Education,other,other,course,father,18.0,16.0,0.0,no,no,no,yes,yes,yes,no,yes,5.0,1.0,2.0,3.0,3.0,5.0,2.0,12,11,12
 545,MS,M,17,U,4.0,T,Secondary Education,Higher Education,services,other,other,mother,13.0,135.0,1.0,no,yes,no,yes,no,yes,yes,yes,5.0,4.0,4.0,3.0,4.0,5.0,8.0,8,9,8
 546,MS,F,17,U,4.0,T,Higher Education,Higher Education,health,health,course,father,0.0,242.0,0.0,no,yes,no,no,yes,yes,yes,no,5.0,2.0,5.0,1.0,1.0,5.0,0.0,13,15,16
-547,MS,M,16,R,6.0,T,unknown,Primary Education,other,at_home,other,father,11.0,77.0,0.0,no,no,no,no,yes,yes,yes,no,4.0,1.0,2.0,2.0,1.0,2.0,0.0,10,11,11
+547,MS,M,16,R,1.0,T,unknown,Primary Education,other,at_home,other,father,11.0,77.0,0.0,no,no,no,no,yes,yes,yes,no,4.0,1.0,2.0,2.0,1.0,2.0,0.0,10,11,11
 548,MS,F,17,U,8.0,A,Primary Education,Primary Education,at_home,at_home,other,mother,14.0,170.0,0.0,no,no,no,yes,yes,yes,yes,yes,4.0,5.0,5.0,1.0,2.0,3.0,2.0,11,10,11
 549,MS,F,17,R,7.0,T,Higher Education,Middle School Education,other,other,course,mother,26.0,255.0,0.0,yes,yes,no,no,no,yes,yes,no,4.0,3.0,3.0,2.0,3.0,5.0,0.0,17,18,18
-550,MS,M,16,U,5.0,A,Middle School Education,Middle School Education,other,services,course,father,17.0,150.0,0.0,no,yes,no,no,no,yes,yes,yes,4.0,1.0,2.0,2.0,2.0,5.0,0.0,12,13,13
+550,MS,M,16,U,1.0,A,Middle School Education,Middle School Education,other,services,course,father,17.0,150.0,0.0,no,yes,no,no,no,yes,yes,yes,4.0,1.0,2.0,2.0,2.0,5.0,0.0,12,13,13
 551,MS,M,17,U,9.0,T,Secondary Education,Middle School Education,other,other,other,father,19.0,132.0,0.0,no,yes,yes,no,yes,yes,yes,no,4.0,1.0,2.0,2.0,2.0,1.0,0.0,13,14,13
 552,MS,M,19,U,8.0,U,Primary Education,Primary Education,other,other,other,mother,11.0,269.0,2.0,no,yes,no,yes,yes,no,yes,no,4.0,4.0,3.0,3.0,4.0,4.0,2.0,9,9,10
-553,MS,M,17,U,5.0,A,Primary Education,None,other,other,home,mother,7.0,156.0,0.0,no,no,no,no,yes,yes,no,yes,4.0,1.0,2.0,1.0,1.0,5.0,4.0,11,11,12
+553,MS,M,17,U,1.0,A,Primary Education,None,other,other,home,mother,7.0,156.0,0.0,no,no,no,no,yes,yes,no,yes,4.0,1.0,2.0,1.0,1.0,5.0,4.0,11,11,12
 554,MS,F,17,R,4.0,T,Primary Education,Primary Education,at_home,at_home,course,father,16.0,28.0,0.0,no,yes,no,yes,yes,no,yes,yes,3.0,5.0,5.0,2.0,2.0,4.0,3.0,10,11,10
 555,MS,F,16,R,8.0,T,Primary Education,Middle School Education,other,other,home,father,2.0,560.0,0.0,yes,yes,no,no,no,yes,yes,yes,4.0,3.0,3.0,1.0,1.0,3.0,5.0,13,14,13
 556,MS,M,16,R,3.0,T,Primary Education,unknown,other,at_home,course,mother,6.0,65.0,0.0,no,no,no,no,yes,yes,no,no,4.0,4.0,4.0,2.0,4.0,5.0,4.0,9,10,11
@@ -560,8 +560,8 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 558,MS,M,17,R,4.0,T,Middle School Education,Middle School Education,other,other,course,mother,22.0,35.0,0.0,no,no,no,yes,yes,no,no,yes,5.0,5.0,5.0,3.0,5.0,5.0,0.0,8,13,10
 559,MS,M,18,R,9.0,T,Primary Education,None,at_home,at_home,unknown,other,38.0,50.0,1.0,yes,yes,no,no,yes,yes,no,no,4.0,3.0,2.0,1.0,1.0,4.0,0.0,12,12,13
 560,MS,M,17,R,9.0,T,Primary Education,Primary Education,other,services,course,mother,26.0,65.0,0.0,no,yes,no,yes,no,yes,yes,yes,4.0,5.0,5.0,1.0,3.0,2.0,0.0,10,9,10
-561,MS,M,18,U,6.0,T,Primary Education,Primary Education,at_home,at_home,course,mother,25.0,226.0,0.0,no,yes,no,yes,yes,yes,no,no,4.0,3.0,3.0,1.0,2.0,5.0,6.0,10,9,10
-562,MS,F,16,R,6.0,T,Middle School Education,Middle School Education,other,services,course,father,2.0,149.0,0.0,no,no,no,yes,yes,yes,no,yes,5.0,4.0,3.0,1.0,1.0,1.0,0.0,11,13,12
+561,MS,M,18,U,1.0,T,Primary Education,Primary Education,at_home,at_home,course,mother,25.0,226.0,0.0,no,yes,no,yes,yes,yes,no,no,4.0,3.0,3.0,1.0,2.0,5.0,6.0,10,9,10
+562,MS,F,16,R,1.0,T,Middle School Education,Middle School Education,other,services,course,father,2.0,149.0,0.0,no,no,no,yes,yes,yes,no,yes,5.0,4.0,3.0,1.0,1.0,1.0,0.0,11,13,12
 563,MS,M,17,U,6.0,T,Middle School Education,Middle School Education,other,other,course,mother,4.0,61.0,1.0,no,no,no,Unknown,yes,yes,no,yes,1.0,2.0,1.0,2.0,3.0,5.0,0.0,7,0,0
 564,MS,M,16,R,9.0,T,Secondary Education,Middle School Education,services,other,course,father,22.0,88.0,0.0,no,no,no,no,yes,yes,yes,no,4.0,5.0,5.0,2.0,3.0,5.0,0.0,11,9,10
 565,MS,M,16,R,2.0,T,Primary Education,Primary Education,at_home,other,course,mother,24.0,77.0,0.0,no,no,no,yes,yes,yes,yes,no,4.0,5.0,5.0,2.0,4.0,5.0,0.0,10,10,9
@@ -578,15 +578,15 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 576,MS,M,18,R,4.0,T,Secondary Education,Middle School Education,other,other,course,mother,21.0,112.0,0.0,no,yes,no,no,no,yes,yes,no,2.0,5.0,5.0,5.0,5.0,5.0,8.0,9,10,11
 577,MS,M,19,R,7.0,T,Primary Education,Primary Education,other,services,home,other,58.0,173.0,1.0,no,no,no,no,yes,yes,yes,no,5.0,4.0,4.0,3.0,3.0,2.0,8.0,10,9,11
 578,MS,M,17,U,6.0,T,Secondary Education,Secondary Education,health,other,course,mother,28.0,224.0,1.0,no,yes,no,no,yes,yes,yes,no,4.0,5.0,4.0,2.0,3.0,3.0,4.0,8,9,10
-579,MS,M,18,U,6.0,T,Primary Education,Secondary Education,at_home,services,course,mother,6.0,42.0,0.0,no,no,no,Unknown,yes,no,yes,yes,4.0,3.0,3.0,2.0,3.0,3.0,0.0,9,10,9
+579,MS,M,18,U,1.0,T,Primary Education,Secondary Education,at_home,services,course,mother,6.0,42.0,0.0,no,no,no,Unknown,yes,no,yes,yes,4.0,3.0,3.0,2.0,3.0,3.0,0.0,9,10,9
 580,MS,M,19,R,5.0,T,Primary Education,Primary Education,other,other,home,other,51.0,32.0,1.0,no,yes,no,no,yes,yes,yes,no,4.0,4.0,4.0,3.0,2.0,5.0,4.0,8,9,10
 581,MS,F,18,U,6.0,A,Primary Education,Middle School Education,at_home,unknown,course,mother,20.0,294.0,2.0,no,yes,no,no,yes,yes,no,no,4.0,3.0,3.0,1.0,1.0,5.0,2.0,6,8,8
 582,MS,F,19,U,3.0,A,Primary Education,Primary Education,at_home,other,course,mother,7.0,156.0,0.0,no,yes,no,Unknown,yes,no,no,no,4.0,4.0,4.0,1.0,1.0,5.0,0.0,6,8,7
 583,MS,F,18,R,5.0,T,Middle School Education,Middle School Education,other,other,other,mother,23.0,11.0,1.0,no,no,no,no,yes,no,yes,yes,5.0,5.0,5.0,1.0,1.0,3.0,0.0,8,6,0
 584,MS,F,17,R,9.0,T,None,None,at_home,other,course,mother,16.0,21.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,4.0,3.0,1.0,1.0,5.0,0.0,10,11,11
-585,MS,F,17,R,7.0,A,Secondary Education,Primary Education,other,at_home,course,other,17.0,309.0,0.0,no,yes,yes,no,yes,no,no,no,4.0,2.0,3.0,2.0,2.0,3.0,5.0,8,7,8
+585,MS,F,17,R,1.0,A,Secondary Education,Primary Education,other,at_home,course,other,17.0,309.0,0.0,no,yes,yes,no,yes,no,no,no,4.0,2.0,3.0,2.0,2.0,3.0,5.0,8,7,8
 586,MS,F,17,U,8.0,T,Higher Education,Middle School Education,teacher,services,home,mother,13.0,224.0,0.0,yes,yes,no,yes,yes,yes,yes,no,5.0,5.0,5.0,1.0,3.0,5.0,0.0,8,8,0
-587,MS,F,18,R,6.0,T,Middle School Education,Middle School Education,services,services,course,mother,3.0,131.0,1.0,no,yes,no,yes,yes,yes,yes,no,2.0,3.0,3.0,1.0,2.0,4.0,3.0,7,6,8
+587,MS,F,18,R,1.0,T,Middle School Education,Middle School Education,services,services,course,mother,3.0,131.0,1.0,no,yes,no,yes,yes,yes,yes,no,2.0,3.0,3.0,1.0,2.0,4.0,3.0,7,6,8
 588,MS,F,17,U,5.0,T,Higher Education,Primary Education,health,at_home,course,mother,2.0,109.0,0.0,no,yes,no,no,yes,yes,no,yes,3.0,2.0,2.0,1.0,1.0,5.0,0.0,8,10,9
 589,MS,F,17,U,3.0,T,Primary Education,Middle School Education,at_home,other,course,father,1.0,114.0,0.0,no,no,no,no,yes,yes,yes,no,5.0,5.0,1.0,1.0,1.0,3.0,0.0,7,10,10
 590,MS,F,18,U,8.0,T,Primary Education,Primary Education,other,other,unknown,mother,53.0,283.0,2.0,no,no,no,yes,yes,yes,no,yes,3.0,4.0,4.0,2.0,2.0,5.0,3.0,7,8,7
@@ -606,18 +606,18 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 604,MS,F,18,U,5.0,T,Primary Education,Primary Education,at_home,services,course,mother,57.0,273.0,1.0,no,no,no,no,Unknown,no,no,no,4.0,4.0,2.0,1.0,2.0,2.0,2.0,9,10,10
 605,MS,F,19,U,5.0,T,Primary Education,Primary Education,at_home,services,other,father,20.0,83.0,1.0,no,no,no,no,yes,no,no,no,5.0,5.0,5.0,2.0,3.0,2.0,0.0,5,0,0
 606,MS,F,17,U,5.0,T,Higher Education,Middle School Education,teacher,other,unknown,father,24.0,837.0,0.0,no,no,no,no,yes,yes,yes,yes,4.0,2.0,3.0,3.0,1.0,5.0,0.0,18,18,18
-607,MS,F,17,R,5.0,A,Middle School Education,Primary Education,services,other,reputation,mother,30.0,215.0,0.0,no,no,no,yes,yes,yes,yes,yes,5.0,3.0,3.0,1.0,2.0,2.0,5.0,11,11,12
-608,MS,F,18,U,5.0,A,Primary Education,Primary Education,at_home,unknown,course,mother,3.0,149.0,0.0,no,no,no,Unknown,yes,yes,no,yes,5.0,2.0,3.0,1.0,2.0,3.0,2.0,8,10,11
+607,MS,F,17,R,1.0,A,Middle School Education,Primary Education,services,other,reputation,mother,30.0,215.0,0.0,no,no,no,yes,yes,yes,yes,yes,5.0,3.0,3.0,1.0,2.0,2.0,5.0,11,11,12
+608,MS,F,18,U,1.0,A,Primary Education,Primary Education,at_home,unknown,course,mother,3.0,149.0,0.0,no,no,no,Unknown,yes,yes,no,yes,5.0,2.0,3.0,1.0,2.0,3.0,2.0,8,10,11
 609,MS,F,18,U,8.0,T,Primary Education,Middle School Education,at_home,at_home,course,father,30.0,189.0,0.0,no,yes,no,no,yes,no,no,no,4.0,1.0,1.0,1.0,1.0,4.0,0.0,11,11,12
 610,MS,F,19,R,9.0,U,Primary Education,Primary Education,at_home,at_home,course,other,29.0,252.0,0.0,no,yes,no,yes,yes,no,no,yes,3.0,5.0,4.0,1.0,4.0,1.0,0.0,8,0,0
 611,MS,F,18,R,4.0,T,Middle School Education,Middle School Education,services,other,home,mother,18.0,501.0,0.0,no,no,no,no,yes,yes,yes,yes,4.0,2.0,1.0,1.0,1.0,4.0,5.0,14,14,15
 612,MS,M,17,R,8.0,T,unknown,Secondary Education,services,other,home,mother,25.0,185.0,1.0,no,yes,yes,yes,Unknown,yes,yes,yes,4.0,5.0,3.0,1.0,3.0,2.0,4.0,10,11,11
 613,MS,F,18,U,6.0,T,Secondary Education,Secondary Education,services,services,course,mother,12.0,129.0,0.0,no,yes,no,no,Unknown,yes,no,yes,5.0,3.0,4.0,1.0,1.0,5.0,0.0,10,10,10
 614,MS,F,17,R,8.0,T,Higher Education,Higher Education,teacher,services,other,father,29.0,190.0,0.0,no,yes,yes,yes,yes,yes,yes,no,4.0,3.0,3.0,1.0,2.0,5.0,2.0,12,12,12
-615,MS,F,17,U,5.0,A,Secondary Education,unknown,services,other,reputation,mother,17.0,232.0,0.0,no,no,no,no,yes,yes,no,yes,1.0,3.0,3.0,1.0,2.0,5.0,0.0,15,14,15
-616,MS,M,18,U,6.0,T,Primary Education,Primary Education,other,services,home,mother,24.0,17.0,0.0,no,no,no,no,no,yes,yes,yes,3.0,3.0,2.0,1.0,2.0,3.0,2.0,14,13,14
+615,MS,F,17,U,1.0,A,Secondary Education,unknown,services,other,reputation,mother,17.0,232.0,0.0,no,no,no,no,yes,yes,no,yes,1.0,3.0,3.0,1.0,2.0,5.0,0.0,15,14,15
+616,MS,M,18,U,1.0,T,Primary Education,Primary Education,other,services,home,mother,24.0,17.0,0.0,no,no,no,no,no,yes,yes,yes,3.0,3.0,2.0,1.0,2.0,3.0,2.0,14,13,14
 617,MS,F,18,U,2.0,T,Primary Education,Primary Education,at_home,services,course,father,17.0,322.0,0.0,no,no,no,no,yes,yes,yes,no,5.0,3.0,3.0,1.0,1.0,4.0,0.0,19,17,18
-618,MS,F,18,R,5.0,A,Primary Education,Middle School Education,at_home,other,course,mother,35.0,216.0,0.0,no,no,no,no,yes,yes,no,yes,4.0,3.0,4.0,1.0,4.0,4.0,0.0,16,15,15
+618,MS,F,18,R,1.0,A,Primary Education,Middle School Education,at_home,other,course,mother,35.0,216.0,0.0,no,no,no,no,yes,yes,no,yes,4.0,3.0,4.0,1.0,4.0,4.0,0.0,16,15,15
 619,MS,F,18,U,5.0,T,Secondary Education,Secondary Education,services,services,other,mother,17.0,181.0,0.0,no,yes,no,no,yes,yes,yes,yes,4.0,3.0,2.0,1.0,3.0,3.0,6.0,13,12,13
 620,MS,F,17,U,3.0,T,unknown,Higher Education,at_home,at_home,course,mother,2.0,165.0,0.0,no,yes,no,yes,yes,yes,yes,yes,2.0,3.0,4.0,1.0,1.0,1.0,4.0,15,14,15
 621,MS,F,17,R,5.0,T,Primary Education,Middle School Education,other,services,course,father,19.0,170.0,0.0,no,no,no,no,no,yes,no,no,3.0,2.0,3.0,1.0,2.0,3.0,0.0,13,13,13
@@ -646,5 +646,5 @@ student_row_id,school,sex,age,address,famsize,Pstatus,Medu,Fedu,Mjob,Fjob,reason
 644,MS,F,19,R,7.0,T,Middle School Education,Secondary Education,services,other,course,mother,9.0,555.0,1.0,no,no,no,yes,no,yes,yes,no,5.0,4.0,2.0,1.0,2.0,5.0,4.0,10,11,10
 645,MS,F,18,U,3.0,T,Secondary Education,Primary Education,teacher,services,course,mother,11.0,228.0,0.0,no,yes,no,no,yes,yes,yes,no,4.0,3.0,4.0,1.0,1.0,1.0,4.0,15,15,16
 646,MS,F,18,U,9.0,T,Primary Education,Primary Education,other,unknown,course,mother,24.0,191.0,0.0,no,no,no,yes,yes,yes,no,no,1.0,1.0,1.0,1.0,1.0,5.0,6.0,11,12,9
-647,MS,M,17,U,6.0,T,Secondary Education,Primary Education,services,services,course,mother,30.0,11.0,0.0,no,no,no,no,no,yes,yes,no,2.0,4.0,5.0,1.0,4.0,2.0,6.0,10,10,10
-648,MS,M,18,R,6.0,T,Secondary Education,Middle School Education,services,other,course,mother,41.0,116.0,0.0,Unknown,no,no,no,no,yes,yes,no,4.0,4.0,1.0,3.0,4.0,5.0,4.0,10,11,11
+647,MS,M,17,U,1.0,T,Secondary Education,Primary Education,services,services,course,mother,30.0,11.0,0.0,no,no,no,no,no,yes,yes,no,2.0,4.0,5.0,1.0,4.0,2.0,6.0,10,10,10
+648,MS,M,18,R,1.0,T,Secondary Education,Middle School Education,services,other,course,mother,41.0,116.0,0.0,Unknown,no,no,no,no,yes,yes,no,4.0,4.0,1.0,3.0,4.0,5.0,4.0,10,11,11
