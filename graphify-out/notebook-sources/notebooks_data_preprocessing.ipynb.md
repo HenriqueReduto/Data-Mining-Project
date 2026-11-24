@@ -1,7 +1,5 @@
 # Notebook source: notebooks/data_preprocessing.ipynb
 
-Source-only extract; outputs omitted. Cell numbers are zero-based.
-
 ## Cell 0 (markdown)
 # Data preprocessing
 
@@ -350,6 +348,46 @@ assert student_data_clean[rating_columns].where(
 rating_check
 
 ## Cell 39 (markdown)
+### Residence of students who live close to GP
+
+GP is treated as an urban school: most of its students with a recorded
+residence live in urban areas, while MS is evenly split.
+
+## Cell 40 (code)
+pd.crosstab(
+    student_data['school'],
+    student_data['address'],
+    normalize='index'
+).mul(100).round(1)
+
+## Cell 41 (markdown)
+Among GP students who chose the school because it is close to home and
+travel 5 minutes or less, every student with a recorded residence is urban.
+
+## Cell 42 (code)
+close_to_gp = (
+    student_data['school'].eq('GP')
+    & student_data['reason'].eq('home')
+    & student_data['traveltime'].le(5)
+)
+
+student_data.loc[close_to_gp, 'address'].value_counts(dropna=False)
+
+## Cell 43 (markdown)
+The two students in this group with a missing residence (rows 384 and 394)
+are therefore recorded as urban ("U").
+
+## Cell 44 (code)
+filled_address = close_to_gp & student_data['address'].isna()
+
+student_data_clean.loc[filled_address, 'address'] = 'U'
+
+assert filled_address.sum() == 2
+assert student_data_clean.loc[filled_address, 'address'].eq('U').all()
+
+student_data_clean.loc[filled_address, ['school', 'reason', 'traveltime', 'address']]
+
+## Cell 45 (markdown)
 ### Treatment of missing categorical values
 
 Missing parental status, parental education, parental occupation,
@@ -368,7 +406,10 @@ no basis for inferring, for example, a parent's occupation or education.
 The unknown category has no position on the education scale. This must
 be considered when parental education is encoded.
 
-## Cell 40 (code)
+The 15 remaining missing residences are labelled "unknown" here, after two
+were recorded as urban in the previous step.
+
+## Cell 46 (code)
 student_data_clean['Pstatus'] = student_data_clean['Pstatus'].fillna('U')
 
 unknown_columns = ['Medu', 'Fedu', 'Fjob', 'address', 'reason', 'Mjob']
@@ -376,13 +417,13 @@ unknown_columns = ['Medu', 'Fedu', 'Fjob', 'address', 'reason', 'Mjob']
 for column in unknown_columns:
     student_data_clean[column] = student_data_clean[column].fillna('unknown')
 
-## Cell 41 (markdown)
+## Cell 47 (markdown)
 ### Validation of categorical replacement
 
 Before-and-after counts verify that every missing value became the
 unknown category and that recorded categories are unchanged.
 
-## Cell 42 (code)
+## Cell 48 (code)
 category_columns = ['Pstatus'] + unknown_columns
 
 unknown_after = student_data_clean[unknown_columns].eq('unknown').sum()
@@ -401,7 +442,7 @@ assert student_data_clean[category_columns].where(
 
 category_check
 
-## Cell 43 (markdown)
+## Cell 49 (markdown)
 ### Treatment of missing sex
 
 Ten students have no recorded sex. The missing values are recorded as a
@@ -409,15 +450,15 @@ separate category, "U", rather than assigned to the more frequent
 category. Following the single-letter coding of "F" and "M", "U" marks
 an unknown value, as in `Pstatus`.
 
-## Cell 44 (code)
+## Cell 50 (code)
 student_data_clean['sex'] = student_data_clean['sex'].fillna('U')
 
-## Cell 45 (markdown)
+## Cell 51 (markdown)
 ### Validation of sex replacement
 
 Category counts before and after filling are compared.
 
-## Cell 46 (code)
+## Cell 52 (code)
 sex_check = pd.DataFrame({
     'Before': student_data['sex'].value_counts(dropna=False),
     'After': student_data_clean['sex'].value_counts(dropna=False)
@@ -427,7 +468,7 @@ assert student_data_clean['sex'].isna().sum() == 0
 
 sex_check
 
-## Cell 47 (markdown)
+## Cell 53 (markdown)
 ### Treatment of missing guardian
 
 Eight students have no recorded guardian. The missing values are replaced
@@ -435,17 +476,17 @@ with the most frequent guardian (the mode). Mothers are the recorded
 guardian for most students, and eight values are too few to change the
 distribution meaningfully.
 
-## Cell 48 (code)
+## Cell 54 (code)
 guardian_mode = student_data_clean['guardian'].mode()[0]
 
 student_data_clean['guardian'] = student_data_clean['guardian'].fillna(guardian_mode)
 
-## Cell 49 (markdown)
+## Cell 55 (markdown)
 ### Validation of guardian replacement
 
 Guardian counts before and after filling are compared.
 
-## Cell 50 (code)
+## Cell 56 (code)
 guardian_check = pd.DataFrame({
     'Before': student_data['guardian'].value_counts(dropna=False),
     'After': student_data_clean['guardian'].value_counts(dropna=False)
@@ -455,47 +496,98 @@ assert student_data_clean['guardian'].isna().sum() == 0
 
 guardian_check
 
-## Cell 51 (markdown)
-### Exclusion of family size
+## Cell 57 (markdown)
+### Family size: values of 0 and 1
 
-`famsize` is excluded from the working dataset.
+`famsize` does not count the student, so the smallest possible size is 1.
+Sizes of 0 and 1 are counted by parental status.
 
-- **The values are unreliable.** 57 students have a family size of 0 and
-  31 more have a family size of 1 while living with both parents. These
-  88 inconsistent records (13.56%), together with 3 missing values, affect
-  91 students (14.02%).
-- **The errors cannot be corrected.** No other feature records the number
-  of family members, so a correct value cannot be derived for these
-  students. Replacing 91 values would introduce invented data, and it is
-  unclear whether the remaining values count the student, the household,
-  or the wider family.
-- **Little information is lost.** In `data_exploration.ipynb` (Correlation
-  between numerical features), `famsize` has a correlation of −0.06 with
-  the final grade. Family context remains represented by `Pstatus`,
-  `guardian`, `famrel`, and `famsup`.
-
-Because the feature is excluded, its 3 missing values require no
-treatment.
-
-## Cell 52 (code)
-student_data_clean = student_data_clean.drop(columns=['famsize'])
-
-student_data_clean.shape
-
-## Cell 53 (markdown)
-### Validation of family-size exclusion
-
-The checks confirm that `famsize` is no longer present, that only that
-column was removed, and that every student is retained.
-
-## Cell 54 (code)
-assert 'famsize' not in student_data_clean.columns
-assert list(student_data_clean.columns) == list(
-    student_data.columns.drop('famsize')
+## Cell 58 (code)
+pd.crosstab(
+    student_data.loc[student_data['famsize'].isin([0, 1]), 'famsize'],
+    student_data.loc[student_data['famsize'].isin([0, 1]), 'Pstatus'].fillna('Missing')
 )
-assert student_data_clean.index.equals(student_data.index)
 
-## Cell 55 (markdown)
+## Cell 59 (markdown)
+**Observation:** 31 students have a family size of 1 although their parents
+live together. These values are kept: the parents may be married but live in
+separate households.
+
+## Cell 60 (markdown)
+### Family size of 0
+
+A size of 0 is impossible, since every student has a guardian. Students
+recorded with 0 have parents living apart about as often as small families,
+so the 0 most likely stands for a small family and is replaced with 1, the
+smallest possible size.
+
+## Cell 61 (code)
+size_group = pd.cut(
+    student_data['famsize'], bins=[-1, 0, 3, 9], labels=['0', '1 to 3', '4 to 9']
+).rename('Family size')
+
+recorded_status = student_data['Pstatus'].notna()
+parents_apart = student_data.loc[recorded_status, 'Pstatus'].eq('A')
+
+family_size_status = pd.DataFrame({
+    'Students': size_group[recorded_status].value_counts().sort_index(),
+    'Parents apart (%)': (
+        parents_apart.groupby(size_group[recorded_status], observed=True).mean() * 100
+    ).round(1)
+})
+
+family_size_status
+
+## Cell 62 (code)
+zero_family = student_data['famsize'].eq(0)
+
+student_data_clean.loc[zero_family, 'famsize'] = 1
+
+assert student_data_clean['famsize'].ne(0).all()
+
+print('Family sizes of 0 replaced with 1:', zero_family.sum())
+
+## Cell 63 (markdown)
+### Missing family size
+
+Three students have no recorded family size. To choose which students to
+compare them with, the median and mean family size are compared across
+several characteristics, using recorded sizes of 1 or more.
+
+## Cell 64 (code)
+recorded_family = student_data.loc[student_data['famsize'] >= 1]
+
+pd.concat({
+    column: recorded_family.groupby(column)['famsize'].agg(['count', 'median', 'mean'])
+    for column in ['Pstatus', 'school', 'address', 'sex', 'guardian']
+}).round(2)
+
+## Cell 65 (markdown)
+Parental status is the only characteristic that clearly changes family size:
+families whose parents live apart are about 1.6 people smaller on average.
+Every other characteristic changes it by less than half a person.
+
+## Cell 66 (markdown)
+### Treatment of missing family size
+
+Each missing size receives the median size of students with the same
+parental status: 3 when the parents live apart and 5 when they live
+together. All three students have a recorded parental status.
+
+## Cell 67 (code)
+missing_family = student_data['famsize'].isna()
+
+status_family_median = recorded_family.groupby('Pstatus')['famsize'].median()
+
+student_data_clean.loc[missing_family, 'famsize'] = (
+    student_data.loc[missing_family, 'Pstatus'].map(status_family_median)
+)
+
+assert student_data_clean['famsize'].isna().sum() == 0
+
+student_data_clean.loc[missing_family, ['Pstatus', 'famsize']]
+
+## Cell 68 (markdown)
 ### Treatment of missing school
 
 One student has no recorded school. The value is replaced with the most
@@ -503,17 +595,17 @@ frequent school (the mode). With a single missing value, this has no
 meaningful effect on the distribution. `.mode()` returns a Series because
 several values can tie, so `[0]` selects the first.
 
-## Cell 56 (code)
+## Cell 69 (code)
 school_mode = student_data_clean['school'].mode()[0]
 
 student_data_clean['school'] = student_data_clean['school'].fillna(school_mode)
 
-## Cell 57 (markdown)
+## Cell 70 (markdown)
 ### Validation of school replacement
 
 School counts before and after filling are compared.
 
-## Cell 58 (code)
+## Cell 71 (code)
 school_check = pd.DataFrame({
     'Before': student_data['school'].value_counts(dropna=False),
     'After': student_data_clean['school'].value_counts(dropna=False)
@@ -523,18 +615,18 @@ assert student_data_clean['school'].isna().sum() == 0
 
 school_check
 
-## Cell 59 (markdown)
+## Cell 72 (markdown)
 ### Remaining missing values
 
 After all treatments, no missing values should remain in the working
 dataset.
 
-## Cell 60 (code)
+## Cell 73 (code)
 assert student_data_clean.isna().sum().sum() == 0
 
 student_data_clean.shape
 
-## Cell 61 (markdown)
+## Cell 74 (markdown)
 ### Working dataset
 
 The prepared table is available as `student_data_clean` in this notebook.
@@ -545,18 +637,21 @@ with the median of the student's school, and missing travel times with
 the median of the student's school and residence type. Missing ratings
 are replaced with the median of each feature. Missing parental status and
 sex are recorded as "U"; missing parental education, parental occupation,
-reason, and residence are recorded as "Unknown". Missing guardians and the
-missing school are replaced with the mode. `famsize` is excluded because
-of inconsistent values. Further treatments require an explicit decision.
+reason, and residence are recorded as "Unknown", except two GP students who
+live close to the school and are recorded as urban. Missing guardians and the
+missing school are replaced with the mode. Family sizes of 0 are replaced with
+1, and missing family sizes receive the median size of students with the
+same parental status. Further treatments require an
+explicit decision.
 Duplicate records are evaluated above.
 
-## Cell 62 (markdown)
+## Cell 75 (markdown)
 ### Save the prepared dataset
 
 The processed-data folder is created if needed, then the prepared dataset
 is saved with its source row identifier.
 
-## Cell 63 (code)
+## Cell 76 (code)
 output_path = Path('../data/processed/student_data_preprocessed.csv')
 output_path.parent.mkdir(parents=True, exist_ok=True)
 

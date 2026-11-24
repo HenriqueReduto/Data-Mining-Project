@@ -3,7 +3,7 @@
 Read entries relevant to the active task and verify potentially stale claims against current files.
 
 - `decisions.md`: confirmed choices, reasons, scope, and evidence.
-- `course-baseline.md`: core agent coding and teaching guide, source citation convention, and exact index of all 12 lab notebooks. Read its relevant task reference before proposing notebook code.
+- `course-baseline.md`: core agent coding and teaching guide, including the confirmed brief-purpose/stage-comment style, source citation convention, and exact index of all 12 lab notebooks. Read its relevant task reference before proposing notebook code.
 - `course-reference/exploration.md`: loading, selection, summaries, missingness, and grouped/categorical comparisons.
 - `course-reference/preprocessing.md`: duplicates, approved filling, types, encoding, scaling, and dataset handoff checks.
 - `course-reference/visualization.md`: distributions, categorical plots, relationships, heatmaps, subplot loops, and rendered-output checks.

@@ -1,7 +1,5 @@
 # Notebook source: notebooks/aitest/GroupXX_DMI_2627_Modelling.ipynb
 
-Source-only extract; outputs omitted. Cell numbers are zero-based.
-
 ## Cell 0 (markdown)
 # Application of course models
 

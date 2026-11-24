@@ -1,26 +1,26 @@
 {
-  "node_count": 512,
+  "node_count": 727,
   "unverified_node_count": 0,
-  "raw_edge_count": 657,
+  "raw_edge_count": 1163,
   "non_object_edges": 0,
   "missing_endpoint_edges": 0,
   "dangling_endpoint_edges": 0,
   "external_reference_edges": 0,
   "self_loop_edges": 0,
-  "valid_candidate_edges": 657,
+  "valid_candidate_edges": 1163,
   "exact_duplicate_edges": 0,
-  "directed_unique_endpoint_pairs": 656,
-  "directed_same_endpoint_collapsed_edges": 1,
-  "undirected_unique_endpoint_pairs": 640,
-  "undirected_same_endpoint_collapsed_edges": 17,
-  "same_endpoint_group_count": 1,
+  "directed_unique_endpoint_pairs": 1028,
+  "directed_same_endpoint_collapsed_edges": 135,
+  "undirected_unique_endpoint_pairs": 1017,
+  "undirected_same_endpoint_collapsed_edges": 146,
+  "same_endpoint_group_count": 75,
   "relation_variant_groups": 1,
   "source_file_variant_groups": 0,
-  "source_location_variant_groups": 0,
+  "source_location_variant_groups": 74,
   "context_variant_groups": 0,
   "post_build_graph_type": "Graph",
-  "post_build_node_count": 512,
-  "post_build_edge_count": 640,
+  "post_build_node_count": 727,
+  "post_build_edge_count": 1017,
   "post_build_error": "",
   "producer_suppression": {
     "path": "C:\\Users\\alver\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\graphify\\extract.py",
@@ -103,23 +103,115 @@
   },
   "examples": [
     {
-      "source": "scripts_validate_famsize_variants",
-      "target": "scripts_validate_famsize_variants_save_figures",
-      "edge_count": 2,
+      "source": "graphify_out_notebook_sources_notebooks_reference_groupxx_dmi_2627_eda_ipynb_3_3_q2_how_do_students_perform_academically_implementation",
+      "target": "graphify_out_notebook_sources_notebooks_reference_groupxx_dmi_2627_eda_ipynb_3_3_q2_how_do_students_perform_academically",
+      "edge_count": 7,
       "relations": [
-        "contains",
-        "indirect_call"
+        "implements"
       ],
       "source_files": [
-        "scripts/validate_famsize_variants.py"
+        "C:\\Data-Mining-Project\\graphify-out\\notebook-sources\\notebooks_reference_GroupXX_DMI_2627_EDA.ipynb.md"
       ],
       "source_locations": [
-        "L38",
-        "L51"
+        "cell 27",
+        "cell 30",
+        "cell 32",
+        "cell 34",
+        "cell 37",
+        "cell 39",
+        "cell 41"
       ],
       "contexts": [
-        "",
-        "assignment"
+        ""
+      ]
+    },
+    {
+      "source": "graphify_out_notebook_sources_notebooks_reference_groupxx_dmi_2627_eda_ipynb_notebook_source_notebooks_reference_groupxx_dmi_2627_eda_ipynb",
+      "target": "graphify_out_notebook_sources_notebooks_reference_groupxx_dmi_2627_eda_ipynb_3_3_q2_how_do_students_perform_academically_implementation",
+      "edge_count": 7,
+      "relations": [
+        "references"
+      ],
+      "source_files": [
+        "C:\\Data-Mining-Project\\graphify-out\\notebook-sources\\notebooks_reference_GroupXX_DMI_2627_EDA.ipynb.md"
+      ],
+      "source_locations": [
+        "cell 27",
+        "cell 30",
+        "cell 32",
+        "cell 34",
+        "cell 37",
+        "cell 39",
+        "cell 41"
+      ],
+      "contexts": [
+        ""
+      ]
+    },
+    {
+      "source": "graphify_out_notebook_sources_notebooks_reference_groupxx_dmi_2627_eda_ipynb_3_5_q4_what_do_engagement_and_lifestyle_look_like_implementation",
+      "target": "graphify_out_notebook_sources_notebooks_reference_groupxx_dmi_2627_eda_ipynb_3_5_q4_what_do_engagement_and_lifestyle_look_like",
+      "edge_count": 6,
+      "relations": [
+        "implements"
+      ],
+      "source_files": [
+        "C:\\Data-Mining-Project\\graphify-out\\notebook-sources\\notebooks_reference_GroupXX_DMI_2627_EDA.ipynb.md"
+      ],
+      "source_locations": [
+        "cell 51",
+        "cell 53",
+        "cell 56",
+        "cell 59",
+        "cell 62",
+        "cell 64"
+      ],
+      "contexts": [
+        ""
+      ]
+    },
+    {
+      "source": "graphify_out_notebook_sources_notebooks_reference_groupxx_dmi_2627_eda_ipynb_notebook_source_notebooks_reference_groupxx_dmi_2627_eda_ipynb",
+      "target": "graphify_out_notebook_sources_notebooks_reference_groupxx_dmi_2627_eda_ipynb_3_5_q4_what_do_engagement_and_lifestyle_look_like_implementation",
+      "edge_count": 6,
+      "relations": [
+        "references"
+      ],
+      "source_files": [
+        "C:\\Data-Mining-Project\\graphify-out\\notebook-sources\\notebooks_reference_GroupXX_DMI_2627_EDA.ipynb.md"
+      ],
+      "source_locations": [
+        "cell 51",
+        "cell 53",
+        "cell 56",
+        "cell 59",
+        "cell 62",
+        "cell 64"
+      ],
+      "contexts": [
+        ""
+      ]
+    },
+    {
+      "source": "graphify_out_notebook_sources_notebooks_reference_groupxx_dmi_2627_eda_ipynb_4_3_4_family_context_variables_pstatus_mjob_fjob_reason_guardian_implementation",
+      "target": "graphify_out_notebook_sources_notebooks_reference_groupxx_dmi_2627_eda_ipynb_4_3_4_family_context_variables_pstatus_mjob_fjob_reason_guardian",
+      "edge_count": 6,
+      "relations": [
+        "implements"
+      ],
+      "source_files": [
+        "C:\\Data-Mining-Project\\graphify-out\\notebook-sources\\notebooks_reference_GroupXX_DMI_2627_EDA.ipynb.md"
+      ],
+      "source_locations": [
+        "cell 140",
+        "cell 142",
+        "cell 144",
+        "cell 146",
+        "cell 148",
+        "cell 150"
+      ],
+      "contexts": [
+        ""
       ]
     }
   ]

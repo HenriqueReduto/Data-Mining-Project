@@ -12,10 +12,10 @@
     "semantic_hash": "a6e0af319cf08fae813e2d7c68c68e15"
   },
   "PLAN.md": {
-    "mtime": 1794933577.1278126,
-    "seen": 1794933920.4846735,
-    "ast_hash": "cd125d7604876090975a6730b9d2c5f1",
-    "semantic_hash": "cd125d7604876090975a6730b9d2c5f1"
+    "mtime": 1794933949.744655,
+    "seen": 1795535499.238817,
+    "ast_hash": "679afa7b42ea8d0f2091fe02eed5f15c",
+    "semantic_hash": "679afa7b42ea8d0f2091fe02eed5f15c"
   },
   "README.md": {
     "mtime": 1794933577.1088543,
@@ -84,16 +84,16 @@
     "semantic_hash": "dfda5182c3ce407f4e0927df5b807e7d"
   },
   "graphify-out/notebook-sources/notebooks_data_exploration.ipynb.md": {
-    "mtime": 1794933518.3578775,
-    "seen": 1794933920.4849012,
-    "ast_hash": "c9205e2c8074882f4cd330a6442be595",
-    "semantic_hash": "c9205e2c8074882f4cd330a6442be595"
+    "mtime": 1795535192.5621142,
+    "seen": 1795535499.2388575,
+    "ast_hash": "38c1f629db6f0036bc72303dc5ed9083",
+    "semantic_hash": "38c1f629db6f0036bc72303dc5ed9083"
   },
   "graphify-out/notebook-sources/notebooks_data_preprocessing.ipynb.md": {
-    "mtime": 1794933518.3680747,
-    "seen": 1794933920.4849148,
-    "ast_hash": "5f6a850c597a40d1a1895b6bccca06bb",
-    "semantic_hash": "5f6a850c597a40d1a1895b6bccca06bb"
+    "mtime": 1795535192.6659229,
+    "seen": 1795535499.238861,
+    "ast_hash": "d85771e30834aeb60aa757aa3b3be405",
+    "semantic_hash": "d85771e30834aeb60aa757aa3b3be405"
   },
   "scripts/create_famsize_variants.py": {
     "mtime": 1794933147.6216004,
@@ -108,39 +108,51 @@
     "semantic_hash": "98f33445539ea7b2054e61359e2fbc23"
   },
   "graphify-out/notebook-sources/notebooks_aitest_data_exploration_famsize.ipynb.md": {
-    "mtime": 1794933518.3030012,
-    "seen": 1794933920.484834,
-    "ast_hash": "059a7a8a3443076d6b59e7898c660917",
-    "semantic_hash": "059a7a8a3443076d6b59e7898c660917"
+    "mtime": 1795535191.9563968,
+    "seen": 1795535499.2388487,
+    "ast_hash": "6e9101a94b8ff1add3ef8573ee01f714",
+    "semantic_hash": "6e9101a94b8ff1add3ef8573ee01f714"
   },
   "graphify-out/notebook-sources/notebooks_aitest_data_preprocessing_famsize.ipynb.md": {
-    "mtime": 1794933518.313673,
-    "seen": 1794933920.4848466,
-    "ast_hash": "6be31686d2d306ab7ce160d54c844a05",
-    "semantic_hash": "6be31686d2d306ab7ce160d54c844a05"
+    "mtime": 1795535192.0781374,
+    "seen": 1795535499.2388508,
+    "ast_hash": "d46de4803b42c3bb7c332b4c4b0f77d4",
+    "semantic_hash": "d46de4803b42c3bb7c332b4c4b0f77d4"
   },
   "graphify-out/notebook-sources/notebooks_aitest_GroupXX_DMI_2627_Modelling.ipynb.md": {
-    "mtime": 1794933518.3242242,
-    "seen": 1794933920.4848592,
-    "ast_hash": "3cda2a5e69df4dd4f8980f4073945260",
-    "semantic_hash": "3cda2a5e69df4dd4f8980f4073945260"
+    "mtime": 1795535192.4291384,
+    "seen": 1795535499.2388523,
+    "ast_hash": "8c5a3c05391a50ff62e7827d1fe9f3b1",
+    "semantic_hash": "8c5a3c05391a50ff62e7827d1fe9f3b1"
   },
   "graphify-out/notebook-sources/notebooks_aitest_GroupXX_DMI_2627_Preprocessing.ipynb.md": {
-    "mtime": 1794933518.3323762,
-    "seen": 1794933920.4848711,
-    "ast_hash": "7c2507857427478bb8f579b309d5642b",
-    "semantic_hash": "7c2507857427478bb8f579b309d5642b"
+    "mtime": 1795535192.4788177,
+    "seen": 1795535499.238854,
+    "ast_hash": "a511197443ad0eaa8ef6cc1caece3e43",
+    "semantic_hash": "a511197443ad0eaa8ef6cc1caece3e43"
   },
   "graphify-out/notebook-sources/notebooks_clustering.ipynb.md": {
-    "mtime": 1794933518.335699,
-    "seen": 1794933920.4848876,
-    "ast_hash": "fee0541f275c52653bddd4cc1ebd8372",
-    "semantic_hash": "fee0541f275c52653bddd4cc1ebd8372"
+    "mtime": 1795535192.4993231,
+    "seen": 1795535499.2388556,
+    "ast_hash": "69297a9caf6d4647470507b403a2af3f",
+    "semantic_hash": "69297a9caf6d4647470507b403a2af3f"
   },
   "graphify-out/notebook-sources/notebooks_reference_GroupXX_DMI_2627_EDA.ipynb.md": {
-    "mtime": 1794933518.3919432,
-    "seen": 1794933920.4849272,
-    "ast_hash": "28fc3aaede24c98fbda06801920fcba3",
-    "semantic_hash": "28fc3aaede24c98fbda06801920fcba3"
+    "mtime": 1795535194.152977,
+    "seen": 1795535499.2388625,
+    "ast_hash": "6c2353b784ef857a893c6b6b83ac0275",
+    "semantic_hash": "6c2353b784ef857a893c6b6b83ac0275"
+  },
+  "docs/feature_roles_proposal.md": {
+    "mtime": 1795534862.6793964,
+    "seen": 1795535499.238824,
+    "ast_hash": "a0bd9cba70261b96afd390c981e02730",
+    "semantic_hash": "a0bd9cba70261b96afd390c981e02730"
+  },
+  "graphify-out/notebook-sources/notebooks_data_inconsistencies.ipynb.md": {
+    "mtime": 1795535192.6247427,
+    "seen": 1795535499.2388592,
+    "ast_hash": "d1ec41955291f1eb988c533ff1d44da4",
+    "semantic_hash": "d1ec41955291f1eb988c533ff1d44da4"
   }
 }

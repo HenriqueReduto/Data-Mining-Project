@@ -1,7 +1,5 @@
 # Notebook source: notebooks/aitest/data_preprocessing_famsize.ipynb
 
-Source-only extract; outputs omitted. Cell numbers are zero-based.
-
 ## Cell 0 (markdown)
 # Data preprocessing — retain and estimate family size
 

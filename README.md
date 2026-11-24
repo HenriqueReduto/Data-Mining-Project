@@ -104,6 +104,6 @@ For terminal interpreter identification, use `python --version`. The VS Code not
 
 Git is initialized. At inspection, `data/raw/student_data.csv` is tracked. Current ignore rules exclude `outputs/`, `labs/`, private reference documents, environment files and common generated files. Raw data and `graphify-out/` have no matching ignore rule. Ignore rules do not remove files already tracked or erase history.
 
-Confirm redistribution permissions before making the repository public. Saved notebook outputs can expose individual student records and local computer paths. A previous local screening found no recognizable secrets in the patterns checked, which provides limited screening evidence rather than a guarantee.
+Confirm redistribution permissions before making the repository public. Saved notebook outputs can expose individual student records and local computer paths. A previous local screening found no recognizable private info in the patterns checked, which provides limited screening evidence rather than a guarantee.
 
 The assignment requires an executed notebook or notebook ZIP with the final group identifier and member information. This PDF report supplements the notebook deliverable. Include required data or clear loading instructions, record dependencies and assumptions, and complete final validation and the chosen practical outcome before submission.

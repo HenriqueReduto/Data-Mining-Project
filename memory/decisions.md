@@ -2,6 +2,14 @@
 
 Entries are current unless marked otherwise. Setup entries are dated 2026-11-10; later decisions carry explicit dates. Evidence is the user's decisions and inspected source files where specified.
 
+## Explain code blocks with concise stage comments
+- Date/status: 2026-11-24; confirmed user preference.
+- Evidence: The user requested direct comments explaining code blocks in a few words, clarified that larger blocks should explain more, then explicitly requested applying this preference to AGENTS.md and memory for future coding.
+- Decision: Begin each logical Python block with a brief English purpose comment. For longer blocks, add concise comments before meaningful internal stages, explaining non-obvious selections, calculations, loops, transformations, plots and checks.
+- Scope: Future proposed or directly edited project Python code, including notebook cells and `.py` files. Short blocks need only a short comment; avoid line-by-line narration. Preserve short Markdown introductions above notebook steps.
+- Boundary: This style preference does not authorize unrelated code edits or methodological changes. Comments must accurately describe the code and preserve the distinction between assumptions, checks and verified findings.
+- Guide: See the comment-style section in `course-baseline.md`.
+
 ## Retain family size in separate correction-scenario notebooks
 - Date/status: 2026-11-17; retention direction confirmed, numerical correction method provisional.
 - Evidence: The user reports that the professor considered dropping `famsize` excessive, clarifies that the student is excluded from its count, and explicitly requests new exploration and preprocessing notebooks around retaining/correcting it.

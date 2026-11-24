@@ -25,6 +25,13 @@ For preprocessing, replace missing `failures` and `absences` with 0 in the worki
 
 Follow the supplied class notebooks: small sequential cells, explicit pandas operations, meaningful intermediate variables, short comments, and Markdown explaining decisions and findings. Introduce unfamiliar syntax gradually. Match class patterns while correcting errors and adapting Colab paths to VS Code; explain departures. Exercise thresholds, features, and cluster counts are examples, not project decisions.
 
+Comment new or revised Python code in the user's preferred style (confirmed 2026-11-24), in both notebook cells and `.py` files:
+- Start each logical code block with a brief English comment stating its purpose.
+- For longer blocks, add concise comments before the main stages: selection/filtering, intermediate calculations, loops, transformations, plotting and validation, as applicable. A single opening summary is insufficient when the block performs several operations.
+- Explain what the stage does and any non-obvious detail needed to follow it, such as a Boolean mask, percentage denominator, grouped median, plot layer or preservation check. Place comments inside loops when needed, with matching indentation.
+- Keep short blocks brief; avoid narrating every obvious line or repeating the same comment. Describe assumptions as assumptions and checks as checks, without claiming unverified results.
+- Retain the short Markdown introduction above notebook code steps; comments complement it. See `memory/course-baseline.md` for examples and `memory/decisions.md` for the preference's scope.
+
 ## Protected material and layout
 Preserve the contents of `data/raw/private/`, `docs/references/private/`, both original notebooks (`notebooks/datamining1.ipynb` and `notebooks/reference/datamining1.ipynb`), and `labs/`. The user authorized the workspace relocation; future reorganization requires a concrete project need. Choose a separate working notebook before analysis edits. The archived Loop component remains excluded as a source.
 

@@ -1,7 +1,5 @@
 # Notebook source: notebooks/clustering.ipynb
 
-Source-only extract; outputs omitted. Cell numbers are zero-based.
-
 ## Cell 0 (markdown)
 # Student clustering
 

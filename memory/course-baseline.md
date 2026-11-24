@@ -43,6 +43,19 @@ P1 cells 19–21 teach the shape attribute before execution. P1 Markdown cell 31
 - Build a single understood operation before generalizing it. Reusable helpers belong in `src/` when repetition and an explained interface justify them.
 - For modelling, follow explicit feature selection, preparation, construction, fit, inspection, label attachment, and original-unit profiling.
 
+## Comment style confirmed by the user
+
+On 2026-11-24 the user requested direct English comments describing each code block, then clarified that larger blocks need better explanations of their internal stages. This is a user preference for future project code, not a newly verified lab pattern. Apply it to proposed and directly edited notebook code and Python files.
+
+- Start a short logical block with one brief purpose comment.
+- In a longer block, explain each meaningful stage near the code it describes. Cover filtering, intermediate calculations, loops, transformations, plot layers and validation where relevant.
+- Explain details that help the learner follow the operation: what a mask selects, which rows supply a median, what denominator a percentage uses, why points are drawn in layers, or what an assertion protects.
+- Use a short sentence per comment, with matching indentation inside loops. Avoid commenting every obvious line or duplicating the opening summary.
+- Keep notebook Markdown for purpose, decisions and findings; keep code comments close to the operations. Neither replaces the other.
+- State only what the code establishes. A comment does not turn a provisional treatment into a confirmed decision or an unexecuted check into a verified result.
+
+Example comment wording for a short block: `# Count duplicate student records.` For a longer block, use separate stage comments such as `# Select rows whose travel time was originally missing.`, `# Fill gaps with the median for each school and residence group.`, and `# Check completeness and preserve originally recorded values.` Adapt the wording to the actual code rather than copying a generic template.
+
 ## Correctness and reproducibility adaptations
 
 | Source pattern | Adaptation and review trigger |

@@ -1,7 +1,5 @@
 # Notebook source: notebooks/data_exploration.ipynb
 
-Source-only extract; outputs omitted. Cell numbers are zero-based.
-
 ## Cell 0 (markdown)
 # Data exploration
 

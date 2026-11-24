@@ -1,7 +1,5 @@
 # Notebook source: notebooks/reference/GroupXX_DMI_2627_EDA.ipynb
 
-Source-only extract; outputs omitted. Cell numbers are zero-based.
-
 ## Cell 0 (markdown)
 # NOVA IMS - Data Mining I (2026/2027)
 ## Group Project: Student Segmentation
