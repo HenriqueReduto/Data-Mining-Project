@@ -64,22 +64,65 @@ Two of four variables are binary here, the maximum we should allow; their weight
 | Medu, Fedu | Combined into parent_edu |
 | Mjob, Fjob | Nominal with 5 categories → 10 one-hot columns that would dominate the distance; "other" is the most common category; partly captured by parent_edu |
 | Pstatus | 88% "together" (very unbalanced); sensitive family situation |
-| famsize | Unreliable: 14% of values were corrected |
+| famsize | About 9% of values were replaced (sizes of 0 set to 1, an assumption), and family size does not indicate a need the school can support |
 | guardian | 70% mother; useful in the profiling ("other" guardians) |
 | school | Would split students by school (as in the first test model); painted on the clusters afterwards |
 | sex, age, address | Fixed personal characteristics; grouping support by them is not appropriate |
 | reason, nursery, romantic, health, traveltime | Do not indicate a current need the school can support |
 
-## 5. Implications for the next steps
+## 5. Correlation check (preprocessed data)
 
-- **New features to create:** `total_alc = Dalc + Walc` and `parent_edu = max(Medu, Fedu)` (ordinal: None 0, Primary 1, Middle School 2, Secondary 3, Higher 4).
-- **Extreme values:** since traveltime only describes clusters, its extremes do not affect the models. The pending treatment only matters for **studytime** and **absences**.
-- **"Unknown" values:** as agreed, the main clustering uses the mode for Yes/No variables (one 0/1 column), with the Unknown version as a robustness check.
-- **Per perspective:** scale (MinMax), choose k (elbow + dendrogram + silhouette), compare K-means and Ward (crosstab), then profile with original values and the describing variables.
+Spearman correlations were computed within each perspective on `data/processed/student_data_preprocessed.csv` (latest version), including the new features `total_alc` and `parent_edu`. Spearman is used because most variables are ordinal (1–5 ratings, parent_edu) or binary. Correlations from the exploration notebook were not reused, because they were computed before missing values were filled (for example, failures–G3 was 0.01 on 98 students and is −0.44 on all 649).
 
-## 6. Open questions for the group
+| Perspective | Strongest relationships | Any pair above \|r\| = 0.8? |
+|---|---|---|
+| Academic | G3–failures −0.44; G3–higher 0.35; failures–higher −0.30 | No |
+| Habits | goout–freetime 0.35; goout–total_alc 0.35 | No |
+| Family | parent_edu–internet 0.24; all others ≈ 0 | No |
 
-1. Do we agree with the three perspectives and the variables in each?
-2. `parent_edu` as the maximum of both parents, or only Medu (slightly more related to G3: 0.28 vs 0.24)?
-3. Should `absences` be academic rather than habits?
-4. Do we cluster each perspective separately and then cross them (as in the class example), or pick one main perspective?
+**Conclusion:** no variable is redundant, so the proposal stays as it is. The relationships are moderate and expected. Family variables are only weakly related to each other, which may lead to less distinct family clusters.
+
+## 6. Encoding and scaling
+
+### Encoding
+| Variables | Type | Encoding |
+|---|---|---|
+| G3, failures, studytime, absences | Numerical | Unchanged |
+| goout, freetime, famrel, total_alc | Ordinal | Unchanged (already ordered numbers) |
+| parent_edu | Ordinal (0–4) | The 2 students with both parents unknown get the median (3) |
+| higher, activities, famsup, internet | Binary | yes = 1, no = 0; "Unknown" replaced with the mode (as agreed: yes, no, yes, yes) |
+
+### Scaling: StandardScaler instead of MinMax
+The share of the distance taken by each variable after scaling (its variance over the sum of variances):
+
+| Perspective | MinMaxScaler | StandardScaler |
+|---|---|---|
+| Academic | G3 16%, failures 21%, studytime 14%, **higher 50%** | 25% each |
+| Habits | **absences 4%**, goout 17%, freetime 14%, total_alc 12%, **activities 52%** | 20% each |
+| Family | parent_edu 14%, famrel 10%, **famsup 44%, internet 33%** | 25% each |
+
+With MinMax, a single binary variable takes about half of each perspective's distance, because 0/1 values always sit at the extremes of the range, while absences is squeezed by a few very high values. The academic clustering would mostly group students by whether they want higher education rather than by their grades. **StandardScaler** (z-scores) gives every variable variance 1, so all variables weigh the same, as in the SOM class (z-scores, each source "an eighth" of the distance).
+
+Side effect: rare values become extreme z-scores. The ~10% of students without higher-education aspirations get z ≈ −3 (acceptable, a group worth identifying), but a student with 32 absences gets z ≈ 6.1. **Extreme values of studytime and absences must therefore be treated before scaling.**
+
+## 7. Extreme values (studytime and absences)
+
+Only studytime and absences need treatment, because traveltime only describes the clusters. Both have long right tails: the gaps between percentiles grow towards the top (studytime: median 186, 90th percentile 510, maximum 1465 minutes; absences: median 2, 90th percentile 10, maximum 32).
+
+| | studytime | absences |
+|---|---|---|
+| Above the upper whisker (IQR rule) | 53 students (8.2%): a long tail rather than isolated outliers | 20 students (3.1%) |
+| Real or errors? | Real: these students get higher grades (G3 13.2 vs 11.8) and have fewer past failures | Real: these students get lower grades (G3 10.7 vs 11.9) and have more past failures |
+| Treatment for the clustering | Capped at the upper whisker (547 minutes) | Log-transformed (log1p) |
+| Result | Skew 0.85, no student with \|z\| > 3 | Skew 0.25, no student with \|z\| > 3 |
+
+Options compared (skew, and number of students with |z| > 3 after standardising):
+
+| Option | studytime | absences |
+|---|---|---|
+| Keep | 2.55, 18 | 2.07, 11 |
+| Cap at upper whisker | **0.85, 0** | 1.29, 0 |
+| Square root | 0.92, 13 | 0.45, 2 |
+| log1p | −1.25, 11 | **0.25, 0** |
+
+A log transform was not used for studytime because three students with 0–2 minutes would become new extremes at the bottom (z = −4.7). The transformed versions (`studytime_clip`, `absences_log`) are used only for the clustering; the original values are kept for the profiling.
